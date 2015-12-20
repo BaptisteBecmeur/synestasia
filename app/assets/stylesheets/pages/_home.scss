@@ -2,3 +2,33 @@
  * SASS code SPECIFIC TO your home page
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
+
+ .btn-success-outline {
+  border: 1px solid #5D9D9E;
+  border-radius:5px;
+  margin-right:10px;
+  color: #5C9C9D;
+}
+
+.coverhome {
+  background-image: url("http://res.cloudinary.com/dzr44aeiu/image/upload/v1448558045/background_nb_fbevqv.jpg");
+  background-size: cover;
+  position:relative;
+  height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 43%;
+  margin-top:0;
+  text-align:center;
+
+  h1 {
+    margin:0;
+    padding-top: 220px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:600;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+}
