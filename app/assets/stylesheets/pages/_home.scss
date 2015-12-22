@@ -9,6 +9,29 @@
   background-image: url("color-dance-background.jpg");
   background-size: cover;
   position:relative;
+  height: 530px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 43%;
+  margin-top:0;
+  text-align:center;
+
+  h1 {
+    margin:0;
+    padding-top: 220px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:600;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+}
+
+.cover-slide-one {
+  background-image: url("blue-background.png");
+  background-size: cover;
+  position:relative;
   height: 550px;
   width: 100%;
   background-repeat: no-repeat;
