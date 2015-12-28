@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'courses/index'
+
+  get 'courses/show'
+
   get 'items/show'
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
