@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+  root to: 'pages#home'
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  
   get 'chapters/show'
 
   get 'courses/index'
@@ -7,8 +11,20 @@ Rails.application.routes.draw do
 
   get 'items/show'
 
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
-  root to: 'pages#home'
+  # resources: :courses, only: [:show], path: "" do
+  #   resources: :chapters, only: [:show], path: "" do
+  #     resources: :items, only: [:show], path: ""
+  #   end
+
+
+  # root to: 'courses#index'
+  # devise_for :users
+
+  # resources :courses, only: [:show], path: "" do # => TODO: friendly-id
+  #   resources :chapters, only: [:show], path: "" do # => TODO: add simply the name
+  #     resources :items, only: [:show], path: "" # => friendly-id
+  #   end
+  # end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
