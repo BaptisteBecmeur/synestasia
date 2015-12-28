@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'items/show'
+
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   root to: 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
