@@ -1,10 +1,12 @@
 <nav class="navbar-wagon">
   <div class="container navbar-wagon-container">
 
-    <a href="">
-      <%= image_tag "logo.png", class: "navbar-wagon-logo" %>
-    </a>
-
+  <%= link_to root_path do  %>
+   <div class= "header_logo">
+  <%= image_tag "synestasia-logo.png" %>
+   </div>
+      <% end %>
+   
     <div class="navbar-wagon-pusher"></div>
 
     <form action="" class="navbar-wagon-search hidden-xs hidden-sm">
