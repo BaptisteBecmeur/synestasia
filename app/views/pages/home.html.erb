@@ -1,13 +1,26 @@
 <div class="coverhome">
   <div class="coverhome-filter">
     <div class="container-fluid">
-      <div class="row">         
-         <%=image_tag("synestasia-title.png", alt: "synestasia", class: 'synestasia-title' )%>   
-          <h1>L'approche synestésique </h1>
-              <h1>une révolution pédagogique</h1>      
+      <div class="row">
+
+          <%=image_tag("synestasia-title.png", alt: "synestasia", class: 'synestasia-title' )%>
+            <h1>L'approche synestésique </h1>
+            <h1>une révolution pédagogique</h1>
+
         <div class="col-xs-12 col-sm-12 col-md-12">
-          
-          		<!-- Searchform -->
+
+        <%= link_to start_path do %>
+          <div class="button-home-one">
+            <h4>Démarrer</h4>
+          </div>
+        <% end %>
+
+        <%= link_to about_path do %>
+          <div class="button-home-two">
+            <h4>Découvrir</h4>
+          </div>
+        <% end %>
+
         </div>
       </div>
     </div>
@@ -20,7 +33,7 @@
       <div class="row">
         <h1>SYNESTASIA</h1>
           <div class="col-xs-12 col-sm-12 col-md-12">
-          
+
               <!-- Searchform -->
 
             </div>
@@ -36,7 +49,7 @@
       <div class="row">
         <h1></h1>
           <div class="col-xs-12 col-sm-12 col-md-12">
-          
+
               <!-- Searchform -->
 
             </div>
