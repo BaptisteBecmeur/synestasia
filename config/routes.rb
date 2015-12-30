@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  
+
+  get 'about', to: 'pages#about'
+  get 'start', to: 'pages#start'
+
   root to: 'pages#home'
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
-  
+
   get 'chapters/show'
 
   get 'courses/index'
