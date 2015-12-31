@@ -1,26 +1,19 @@
 // Your footer style
 .footer{
-    background-color: rgba(0,0,0,0.95);
-    min-height: 200px;
+    background-color: rgba(0,0,0,0.99);
+    min-height: 150px;
     padding: 30px;
     font-size: 14px;
     color: #838689;
     font-weight: 300;
     padding-bottom: 0px;
-
-
-    // padding: 25px;
-    // background-color: #000;
-    // height: 350px;
-    // width:100%;
-    // font-weight: 300;
-    // font-size: 14px;
-    // padding-bottom: 0px;
+    text-align: center;
 }
+
 .footer a {
   color:whitesmoke;
   &:hover {
-    color:#c2d1d1;
+    color:#C7C9C7;
   }
 }
 
@@ -53,6 +46,4 @@
     font-weight:400;
 }
 
-.footer a {
-    color: #fff;
-}
+
