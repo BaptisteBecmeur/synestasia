@@ -1,1 +1,49 @@
 // Your footer style
+.footer{
+    background-color: rgba(0,0,0,0.99);
+    min-height: 150px;
+    padding: 30px;
+    font-size: 14px;
+    color: #838689;
+    font-weight: 300;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.footer a {
+  color:whitesmoke;
+  &:hover {
+    color:#C7C9C7;
+  }
+}
+
+.copyright {
+  color:whitesmoke;
+  font-size:16px;
+}
+
+.line-separator {
+    border-bottom: 1px solid white;
+    padding-top: 20px;
+}
+
+#footer-heart {
+    padding-top: 40px;
+
+ i {
+    color: #DB454D;
+  }
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.list-title p {
+    font-size:16px;
+    color: white;
+    font-weight:400;
+}
+
+
