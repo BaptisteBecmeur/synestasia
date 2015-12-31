@@ -1,3 +1,39 @@
+// boutons login + signup
+
+.btn-success-outline {
+  border: 1px solid #33B3EC;
+  border-radius:3px;
+  margin-right:10px;
+  color: #1eabe8;
+
+  &:hover {
+      color: #65c8f2;
+  }
+}
+
+a:link a:visited a:hover, a:focus {
+  text-decoration: none;
+}
+
+.btn-start {
+  border: 1px solid #33B3EC;
+  border-radius:3px;
+  margin-right:10px;
+  text-decoration: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #33B3EC;
+  color: white;
+
+  &:hover {
+      color: white;
+      background: #65c8f2;
+      border-color: darken(#65c8f2, 10%);
+  }
+}
+
+// bouton homepage
+
 a:hover {
   text-decoration: none;
 }
