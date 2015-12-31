@@ -1,13 +1,12 @@
 // Your footer style
 .footer{
     background-color: rgba(0,0,0,0.99);
-    min-height: 150px;
-    padding: 30px;
+    min-height: 90px;
+    padding: 15px;
     font-size: 14px;
     color: #838689;
     font-weight: 300;
-    padding-bottom: 0px;
-    text-align: center;
+    padding-bottom: 5px;
 }
 
 .footer a {
@@ -23,12 +22,12 @@
 }
 
 .line-separator {
-    border-bottom: 1px solid black;
-    padding-top: 10px;
+    border-bottom: 1px solid white;
+    padding-top: 5px;
 }
 
 #footer-heart {
-    padding-top: 40px;
+    padding-top: 15px;
 
  i {
     color: #DB454D;
@@ -45,5 +44,7 @@
     color: white;
     font-weight:400;
 }
+
+
 
 

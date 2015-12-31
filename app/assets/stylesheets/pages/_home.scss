@@ -1,36 +1,4 @@
- .btn-success-outline {
-  border: 1px solid #33B3EC;
-  border-radius:3px;
-  margin-right:10px;
-  color: #1eabe8;
-
-  &:hover {
-      color: #65c8f2;
-    }
-}
-
-a:link a:visited a:hover, a:focus {
-  text-decoration: none;
-}
-
-.btn-start {
-  border: 1px solid #33B3EC;
-  border-radius:3px;
-  margin-right:10px;
-  text-decoration: none;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  background-color: #33B3EC;
-  color: white;
-
-  &:hover {
-      color: white;
-      background: #65c8f2;
-      border-color: darken(#65c8f2, 10%);
-    }
-}
-
-.coverhome {
+ .coverhome {
   background-image: url("background-home-synestasia.jpg");
   background-size: cover;
   position: relative;
@@ -43,7 +11,7 @@ a:link a:visited a:hover, a:focus {
   background-color: rgba(255,255,255,0.85);
 
   .synestasia-title {
-    padding-top: 100px;
+    padding-top: 120px;
     width: 330px;
   }
 
@@ -59,11 +27,20 @@ a:link a:visited a:hover, a:focus {
   }
 }
 
+.coverhome-filter {
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  position:absolute;
+  background: rgba(0,0,0,0.4);
+}
+
 .cover-slide-one {
   background-image: url("background-home-synestasia-1.jpg");
   background-size: cover;
   position:relative;
-  height: 550px;
+  height: 620px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: 50% 43%;
@@ -86,7 +63,7 @@ a:link a:visited a:hover, a:focus {
   background-image: url("background-home-synestasia-2.jpg");
   background-size: cover;
   position:relative;
-  height: 550px;
+  height: 540px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: 50% 43%;
@@ -103,15 +80,6 @@ a:link a:visited a:hover, a:focus {
     color: #fff;
     text-shadow: 2px 2px #000;
   }
-}
-
-.coverhome-filter {
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  position:absolute;
-  background: rgba(0,0,0,0.6);
 }
 
 .coverhome-filter-one {
