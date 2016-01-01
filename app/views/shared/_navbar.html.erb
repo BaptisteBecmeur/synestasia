@@ -41,8 +41,8 @@
         </div>
       </div>
     <% else %>
-      <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "btn btn-success-outline btn-sm" %>
-      <%= link_to t(".sign_up", default: "S'inscrire"), new_user_registration_path, class: "btn btn-success-outline btn-sm" %>
+      <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "sign-navbar" %>
+      <%= link_to t(".sign_up", default: "S'inscrire"), new_user_registration_path, class: "sign-navbar signup-navbar" %>
     <% end %>
   </div>
 </nav>
