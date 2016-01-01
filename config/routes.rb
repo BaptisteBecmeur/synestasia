@@ -6,6 +6,13 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
+  # resources :courses, only [:show] do
+    # resources :chapters, only [:show] do
+      # resources :items, only [:show]
+    # end
+  # end
+
+
   get 'chapters/show'
 
   get 'courses/index'
@@ -13,6 +20,9 @@ Rails.application.routes.draw do
   get 'courses/show'
 
   get 'items/show'
+
+end
+
 
   # resources: :courses, only: [:show], path: "" do
   #   resources: :chapters, only: [:show], path: "" do
@@ -83,4 +93,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+

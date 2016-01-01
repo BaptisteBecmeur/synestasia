@@ -38,7 +38,7 @@
 
 
 .cover-slide-two {
-  background-image: url("background-home-synestasia-1.jpg");
+  background-image: url("background-democlass.jpg");
   background-size: cover;
   position:relative;
   height: 620px;
@@ -50,14 +50,39 @@
 
   h1 {
     margin:0;
-    padding-top: 150px;
+    padding-top: 130px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight:600;
-    font-size: 40px;
+    font-size: 45px;
     color: #fff;
     text-shadow: 2px 2px #000;
+  }
 
+  .separator {
+    padding-top: 40px;
+  }
+
+  h2 {
+    line-height: 50px;
+    margin:0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:300;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+
+
+
+    .coverhome-filter-one {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+    background: rgba(162, 48, 110, 0.8);
   }
 }
 
