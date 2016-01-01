@@ -1,14 +1,22 @@
-// boutons login + signup
+// links login + signup
 
-.btn-success-outline {
-
+.sign-navbar {
   border-radius:6px;
   margin-right:10px;
-  color: #1eabe8;
-  font-size:18px;
+  color: #007FFF;
+  font-size:16px;
+  padding: 8px;
 
   &:hover {
-      color: #65c8f2;
+      color: #559EFF;
+  }
+}
+
+.signup-navbar {
+  color: #FF0044;
+
+  &:hover {
+    color: #E86751;
   }
 }
 
@@ -40,7 +48,7 @@ a:hover {
 }
 
 .start-button {
-   background: #fa0;
+   background: #FF5E4D;
    padding-top:5px;
    padding-bottom:5px;
    padding-right:15px;
@@ -91,7 +99,7 @@ h5 {
 }
 
 .about-button {
-   background: #fa0;
+   background: #CEDD27;
    padding-top:5px;
    padding-bottom:5px;
    padding-right:15px;
