@@ -37,11 +37,24 @@
     <div class="container-fluid">
       <div class="row">
         <h1>Inscrivez-vous à une Demo Class !</h1>
-        <div class="col-xs-12 col-sm-12 col-md-12 separator">
+          <div class="col-xs-12 col-sm-12 col-md-12 separator">
+            <h2>Samedi 30 janvier - à Paris </h2>
+            <h2>Samedi 6 février - à Grenoble </h2>
+            <h2>Samedi 13 février - à Paris </h2>
+          </div>
+            <ul class="list-unstyled list-inline">
+              <li>
+                <%= link_to about_path do %>
+                <div class="subscribe-button">
+                  <h5>Je m'inscris</h5>
+                </div>
+                <% end %>
+              </li>
 
-          <h2>Samedi 30 janvier - à Paris </h2>
-          <h2>Samedi 6 février - à Grenoble </h2>
-          <h2>Samedi 13 février - à Paris </h2>
+            <div class="subscribe">
+            <%= link_to "Je m'inscris", "http://www.google.com", class:'subscribe-button' %>
+            </div>
+
         </div>
       </div>
     </div>
@@ -53,7 +66,8 @@
   <div class="coverhome-filter">
     <div class="container-fluid">
       <div class="row">
-        <h1></h1>
+        <h1>Stage à Tokyo</h1>
+        <h2>(Bientôt)</h2>
         <div class="col-xs-12 col-sm-12 col-md-12">
 
           <!-- Searchform -->

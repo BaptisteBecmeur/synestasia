@@ -151,5 +151,60 @@ h5 {
 }
 
 
+.subscribe-button
+
+{
+   background: #FF5E4D;
+   padding-top:5px;
+   padding-bottom:5px;
+   padding-right:15px;
+   padding-left:15px;
+   margin-top:30px;
+   margin-bottom:30px;
+   margin-left:20px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   color: #fff;
+   font-family: Arial, sans-serif;
+   text-decoration: none;
+   letter-spacing: 0.1em;
+   font-weight:bold;
+   width: auto;
+   transition: .7s;
+   -moz-transition: .7s; /* Firefox 4 */
+   -webkit-transition: .7s; /* Safari and Chrome */
+   -o-transition: .7s; /* Opera */
+   opacity: 1;
+
+ &:hover {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  transition: .7s;
+  -moz-transition: .7s; /* Firefox 4 */
+  -webkit-transition: .7s; /* Safari and Chrome */
+  -o-transition: .7s; /* Opera */
+  opacity: 0.8;
+}
+
+a:hover {
+  transition-duration: 400ms;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+&:active {
+ background: #f90;
+}
+
+h5 {
+ font-size:24px;
+ text-transform: uppercase;
+}
+}
+
+
+
 
 

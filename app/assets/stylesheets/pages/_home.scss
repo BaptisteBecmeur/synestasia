@@ -8,7 +8,6 @@
   background-position: 50% 43%;
   margin-top:0;
   text-align:center;
-  background-color: rgba(255,255,255,0.85);
 
   .synestasia-title {
     padding-top: 120px;
@@ -60,7 +59,7 @@
   }
 
   .separator {
-    padding-top: 40px;
+    padding-top: 50px;
   }
 
   h2 {
@@ -68,13 +67,11 @@
     margin:0;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight:300;
+    font-weight:400;
     font-size: 30px;
     color: #fff;
     text-shadow: 2px 2px #000;
   }
-
-
 
     .coverhome-filter-one {
     top:0;
@@ -82,7 +79,7 @@
     left:0;
     right:0;
     position:absolute;
-    background: rgba(162, 48, 110, 0.8);
+    background: rgba(0,0,0,0.5);
   }
 }
 
@@ -99,24 +96,38 @@
 
   h1 {
     margin:0;
-    padding-top: 220px;
+    padding-top: 200px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight:600;
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
     text-shadow: 2px 2px #000;
   }
-}
+
+  h2 {
+    line-height: 60px;
+    margin:0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:300;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
 
 .coverhome-filter-one {
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  position:absolute;
-  background: rgba(0,0,0,0.4);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+    background: rgba(0,0,0,0.4);
+  }
+
 }
+
+
 
 
 
