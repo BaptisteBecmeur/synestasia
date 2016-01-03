@@ -176,6 +176,7 @@ h5 {
    -webkit-transition: .7s; /* Safari and Chrome */
    -o-transition: .7s; /* Opera */
    opacity: 1;
+   text-transform: uppercase;
 
    &:hover {
     -webkit-border-radius: 25px;
@@ -187,6 +188,7 @@ h5 {
     -o-transition: .7s; /* Opera */
     opacity: 0.8;
     color: #fff;
+    text-transform: uppercase;
   }
 
   a:hover {
