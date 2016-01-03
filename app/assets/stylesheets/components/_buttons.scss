@@ -177,32 +177,29 @@ h5 {
    -o-transition: .7s; /* Opera */
    opacity: 1;
 
- &:hover {
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  transition: .7s;
-  -moz-transition: .7s; /* Firefox 4 */
-  -webkit-transition: .7s; /* Safari and Chrome */
-  -o-transition: .7s; /* Opera */
-  opacity: 0.8;
+   &:hover {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    transition: .7s;
+    -moz-transition: .7s; /* Firefox 4 */
+    -webkit-transition: .7s; /* Safari and Chrome */
+    -o-transition: .7s; /* Opera */
+    opacity: 0.8;
+    color: #fff;
+  }
+
+  a:hover {
+    transition-duration: 400ms;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+
+  &:active {
+   background: #f90;
+  }
 }
 
-a:hover {
-  transition-duration: 400ms;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-&:active {
- background: #f90;
-}
-
-h5 {
- font-size:24px;
- text-transform: uppercase;
-}
-}
 
 
 
