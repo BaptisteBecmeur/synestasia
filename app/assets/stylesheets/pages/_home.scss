@@ -1,7 +1,7 @@
  .coverhome {
   background-image: url("background-japon.png");
   background-size: cover;
-  position: relative;
+  position:relative;
   height: 550px;
   width: 100%;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@
   background-image: url("background-democlass.jpg");
   background-size: cover;
   position:relative;
-  height: 640px;
+  height: 650px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: 50% 43%;
@@ -48,7 +48,7 @@
 
   h1 {
     margin:0;
-    padding-top: 130px;
+    padding-top: 110px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight:600;
@@ -58,13 +58,13 @@
   }
 
   .separator {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   h2 {
-    line-height: 50px;
+    line-height: 40px;
     margin:0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 2px;
     font-weight:400;
     font-size: 30px;
@@ -105,12 +105,12 @@
   }
 
   h2 {
-    line-height: 60px;
+    line-height: 40px;
     margin:0;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight:300;
-    font-size: 40px;
+    font-size: 35px;
     color: #fff;
     text-shadow: 2px 2px #000;
   }
