@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   get 'chapters/show'
 
-  get 'courses/index'
+  get 'courses/:id' => 'courses#show', as: :courses_show
 
   get 'courses/show'
 
