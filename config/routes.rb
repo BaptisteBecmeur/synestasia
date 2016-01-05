@@ -17,9 +17,10 @@ Rails.application.routes.draw do
 
   get 'chapters/show'
 
-  get 'courses/:id' => 'courses#show', as: :courses_show
+  get 'courses/index'
 
-  get 'courses/show'
+ get 'courses/:id' => 'courses#show', as: :courses_show
+
 
   get 'items/show'
 
