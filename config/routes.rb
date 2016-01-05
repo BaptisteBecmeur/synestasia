@@ -26,6 +26,15 @@ Rails.application.routes.draw do
 end
 
 
+
+
+
+
+
+
+
+
+
   # resources: :courses, only: [:show], path: "" do
   #   resources: :chapters, only: [:show], path: "" do
   #     resources: :items, only: [:show], path: ""
