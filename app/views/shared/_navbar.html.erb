@@ -2,14 +2,12 @@
   <div class="container navbar-wagon-container">
 
   <%= link_to root_path do  %>
-   <div class= "header-logo">
-  <%= image_tag "logo-head.png" %>
-   </div>
-      <% end %>
+     <div class= "header-logo">
+        <%= image_tag "logo-head.png" %>
+     </div>
+  <% end %>
 
     <div class="navbar-wagon-pusher"></div>
-
-    <div class="hidden-xs hidden-sm"></div>
     <% if user_signed_in? %>
       <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link hidden-xs" do %>
         <div class="icon-badge-container">
