@@ -9,13 +9,9 @@
 
     <div class="navbar-wagon-pusher"></div>
     <% if user_signed_in? %>
-      <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link hidden-xs" do %>
-        <div class="icon-badge-container">
-          <i class="fa fa-envelope-o"></i>
-          <div class="icon-badge icon-badge-blue">3</div>
-        </div>
-      <% end %>
-      <hr>
+
+    <%= link_to t(".top_call_to_action", default: "Mes cours"), courses_path, class: "separator-navbar" %>
+
       <div class="navbar-wagon-item">
         <div class="dropdown">
           <%= image_tag current_user.picture, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
@@ -23,6 +19,11 @@
             <li>
               <%= link_to "#" do %>
                 <i class="fa fa-user"></i> <%= t ".profile", default: "Profile" %>
+              <% end %>
+            </li>
+             <li>
+              <%= link_to courses_path do %>
+                <i class="fa fa-pencil"></i>  <%= t ".profile", default: "Mes cours" %>
               <% end %>
             </li>
             <li>

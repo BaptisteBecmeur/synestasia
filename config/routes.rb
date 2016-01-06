@@ -15,15 +15,12 @@ Rails.application.routes.draw do
   # end
 
 
-  get 'chapters/show'
+  get 'courses', to: 'courses#index'
 
-  get 'courses/index'
-
-  get 'courses/:id' => 'courses#show', as: :courses_show do
-    get 'courses/:id' => 'chapters/show', as: :courses_show do
+  get 'courses/:id' => 'courses#show', as: :courses_show
+    get 'chapters/show'
       get 'items/show'
-    end
-  end
+
 
 end
 
