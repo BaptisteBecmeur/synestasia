@@ -2,7 +2,7 @@
   background-image: url("background-japon.png");
   background-size: cover;
   position:relative;
-  height: 550px;
+  height: 555px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: 50% 43%;
@@ -39,24 +39,24 @@
   background-image: url("background-democlass.jpg");
   background-size: cover;
   position:relative;
-  height: 650px;
+  height: 660px;
   width: 100%;
   margin-top:0;
   text-align:center;
 
   h1 {
     margin:0;
-    padding-top: 160px;
+    padding-top: 200px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight:600;
-    font-size: 40px;
+    font-size: 48px;
     color: #fff;
     text-shadow: 2px 2px #000;
   }
 
   .separator {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 
   h2 {
@@ -75,7 +75,7 @@
     left:0;
     right:0;
     position:absolute;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.40);
   }
 }
 
@@ -83,7 +83,7 @@
   background-image: url("background-home-synestasia-2.jpg");
   background-size: cover;
   position:relative;
-  height: 540px;
+  height: 545px;
   width: 100%;
   background-repeat: no-repeat;
   margin-top:0;
@@ -162,4 +162,9 @@
 
 .separcontact {
   padding-top: 50px;
+}
+
+// Page en cours de réalisation
+.page-progress {
+  padding-top:230px;
 }
