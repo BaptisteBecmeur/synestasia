@@ -1,23 +1,24 @@
-<div class="container-fluid container-page">
-  <div class="margin-page">
-    <div class="row">
-      <div class= "col-md-8 col-md-offset-2 form-page">
-        <div class="form-bgpage text-center separcontact">
-
-          <h3>Pour vous tenir informé, envoyez-nous un e-mail à :
-            <%= mail_to "kim@synestasia.co " do %>
-            kim@synestasia.co
-            <% end %>
-          </h3>
-          <br/>
+<div class="container-page">
+  <div class="padding-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class= "col-md-8 col-md-offset-2 form-page">
+          <div class="form-bgpage text-center separcontact">
+            <h3>Pour vous tenir informé, envoyez-nous un e-mail à :
+              <%= mail_to "kim@synestasia.co " do %>
+              kim@synestasia.co
+              <% end %>
+            </h3>
+            <br/>
             <h4>
               ou
             </h4>
-          <ul class="list-unstyled list-inline text-center">
+            <ul class="list-unstyled list-inline text-center">
               <li class="contact-section">
                 <%= link_to "En cliquant ici", "https://synestasia.typeform.com/to/Pxq5oS", class:'subscribe-button contact-button subscribe-contact', target: '_blank' %>
               </li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
