@@ -8,18 +8,25 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
-  # resources :courses, only [:show] do
-    # resources :chapters, only [:show] do
-      # resources :items, only [:show]
-    # end
-  # end
+  resources :courses, only: [:show] do
+    resources :chapters, only: [:show] do
+      resources :items, only: [:show]
+    end
+  end
+
+
+  # resources :courses do
+  #     resources :chapters do
+  #       resources :items
+  #     end
+  #   end
 
 
   get 'courses', to: 'courses#index'
 
-  get 'courses/:id' => 'courses#show', as: :courses_show
-    get 'chapters/show'
-      get 'items/show'
+  # get 'courses/:id' => 'courses#show', as: :courses_show
+  #   get 'chapters/show'
+  #     get 'items/show'
 
 
 end
