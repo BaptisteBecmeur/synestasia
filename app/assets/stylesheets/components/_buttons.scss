@@ -66,20 +66,20 @@ a:hover {
    letter-spacing: 0.1em;
    font-weight:bold;
    width: auto;
-   transition: .7s;
-   -moz-transition: .7s; /* Firefox 4 */
-   -webkit-transition: .7s; /* Safari and Chrome */
-   -o-transition: .7s; /* Opera */
+   transition: .4s;
+   -moz-transition: .4s; /* Firefox 4 */
+   -webkit-transition: .4s; /* Safari and Chrome */
+   -o-transition: .4s; /* Opera */
    opacity: 1;
 
  &:hover {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  transition: .7s;
-  -moz-transition: .7s; /* Firefox 4 */
-  -webkit-transition: .7s; /* Safari and Chrome */
-  -o-transition: .7s; /* Opera */
+  transition: .4s;
+  -moz-transition: .4s; /* Firefox 4 */
+  -webkit-transition: .4s; /* Safari and Chrome */
+  -o-transition: .4s; /* Opera */
   opacity: 0.8;
 }
 
@@ -121,10 +121,10 @@ h5 {
    letter-spacing: 0.1em;
    font-weight:bold;
    width: auto;
-   transition: .7s;
-   -moz-transition: .7s; /* Firefox 4 */
-   -webkit-transition: .7s; /* Safari and Chrome */
-   -o-transition: .7s; /* Opera */
+   transition: .4s;
+   -moz-transition: .4s; /* Firefox 4 */
+   -webkit-transition: .4s; /* Safari and Chrome */
+   -o-transition: .4s; /* Opera */
    opacity: 1;
    text-transform: uppercase;
 
@@ -132,10 +132,10 @@ h5 {
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    transition: .7s;
-    -moz-transition: .7s; /* Firefox 4 */
-    -webkit-transition: .7s; /* Safari and Chrome */
-    -o-transition: .7s; /* Opera */
+    transition: .4s;
+    -moz-transition: .4s; /* Firefox 4 */
+    -webkit-transition: .4s; /* Safari and Chrome */
+    -o-transition: .4s; /* Opera */
     opacity: 0.8;
     color: #fff;
     text-transform: uppercase;
