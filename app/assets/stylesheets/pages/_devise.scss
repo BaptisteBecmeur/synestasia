@@ -86,8 +86,16 @@
   }
 }
 
-h3 p{
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
+
+    h3 p {
   font-weight: 300;
+}
+
 }
 
 
