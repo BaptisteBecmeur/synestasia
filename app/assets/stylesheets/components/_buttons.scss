@@ -157,6 +157,24 @@ h5 {
    background: #89D700;
 }
 
+.subscribe-democlass {
+  background: #0C2C5A;
+  color: #FFF;
+  font-size: 20px;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-right:30px;
+  padding-left:30px;
+  margin-top:40px;
+  margin-bottom:40px;
+  margin-left:30px;
+  margin-left:0px;
+
+  &:hover {
+  color: #FFF;
+  }
+}
+
 .subscribe-training {
   background: #FFF;
   color: #000;
@@ -171,23 +189,6 @@ h5 {
 
    &:hover {
   color: #000;
-  }
-}
-
-.subscribe-democlass {
-  background: #0C2C5A;
-  color: #FFF;
-  font-size: 20px;
-  padding-top:30px;
-  padding-bottom:30px;
-  padding-right:30px;
-  padding-left:30px;
-  margin-top:40px;
-  margin-bottom:40px;
-  margin-left:30px;
-
-  &:hover {
-  color: #FFF;
   }
 }
 
