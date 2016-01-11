@@ -13,7 +13,7 @@
             <ul class="list-unstyled">
               <% @course.chapters.each do |chapter| %>
               <li>
-                <h3><%= link_to chapter.title, [@course, chapter] %></h3>
+                <%= link_to chapter.title, [@course, chapter] %>
               </li>
               <% end %>
             </ul>
