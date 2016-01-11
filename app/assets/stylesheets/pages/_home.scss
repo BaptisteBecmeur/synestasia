@@ -36,8 +36,9 @@
 }
 
 .cover-slide-two {
-  background-image: url("http://res.cloudinary.com/dzr44aeiu/image/upload/v1452088422/background-democlass.jpg");
+  background-image: url("http://res.cloudinary.com/dzr44aeiu/image/upload/v1452345175/teach-colors_iy5lgf.jpg");
   background-size: cover;
+  background-position: 50% 50%;
   position:relative;
   height: 660px;
   width: 100%;
@@ -75,7 +76,7 @@
     left:0;
     right:0;
     position:absolute;
-    background: rgba(0,0,0,0.40);
+    background: rgba(0,0,0,0.35);
   }
 }
 
@@ -102,11 +103,10 @@
 
   h2 {
     line-height: 40px;
-    margin:0;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight:300;
-    font-size: 35px;
+    font-size: 40px;
     color: #fff;
     text-shadow: 2px 2px #000;
   }
@@ -117,7 +117,7 @@
     left:0;
     right:0;
     position:absolute;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
   }
 }
 

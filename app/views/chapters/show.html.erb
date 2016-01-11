@@ -1,2 +1,17 @@
-<h1>Chapters#show</h1>
-<p>Find me in app/views/chapters/show.html.erb</p>
+
+<h2>
+  <%= @chapter.title %>
+</h2>
+
+<ul class="list-unstyled">
+<% @chapter.items.each do |item| %>
+  <li>
+    <h3>
+      <%= link_to item.title, [@course, @chapter, item] %>
+      <small>(<%= item.actable_type %>)</small>
+    </h3>
+  </li>
+<% end %>
+</ul>
+
+<%= link_to "< back", @chapter.course %>

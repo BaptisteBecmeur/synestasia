@@ -3,8 +3,9 @@
 .sign-navbar {
   border-radius:6px;
   margin-right:10px;
-  color: #007FFF;
+  color: #1174BA;
   font-size:16px;
+  font-weight: 300;
   padding: 8px;
 
   &:hover {
@@ -13,7 +14,7 @@
 }
 
 .signup-navbar {
-  color: #007FFF;
+  color: #1174BA;
 
   &:hover {
     color: #559EFF;
@@ -66,20 +67,20 @@ a:hover {
    letter-spacing: 0.1em;
    font-weight:bold;
    width: auto;
-   transition: .7s;
-   -moz-transition: .7s; /* Firefox 4 */
-   -webkit-transition: .7s; /* Safari and Chrome */
-   -o-transition: .7s; /* Opera */
+   transition: .4s;
+   -moz-transition: .4s; /* Firefox 4 */
+   -webkit-transition: .4s; /* Safari and Chrome */
+   -o-transition: .4s; /* Opera */
    opacity: 1;
 
  &:hover {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  transition: .7s;
-  -moz-transition: .7s; /* Firefox 4 */
-  -webkit-transition: .7s; /* Safari and Chrome */
-  -o-transition: .7s; /* Opera */
+  transition: .4s;
+  -moz-transition: .4s; /* Firefox 4 */
+  -webkit-transition: .4s; /* Safari and Chrome */
+  -o-transition: .4s; /* Opera */
   opacity: 0.8;
 }
 
@@ -121,10 +122,10 @@ h5 {
    letter-spacing: 0.1em;
    font-weight:bold;
    width: auto;
-   transition: .7s;
-   -moz-transition: .7s; /* Firefox 4 */
-   -webkit-transition: .7s; /* Safari and Chrome */
-   -o-transition: .7s; /* Opera */
+   transition: .4s;
+   -moz-transition: .4s; /* Firefox 4 */
+   -webkit-transition: .4s; /* Safari and Chrome */
+   -o-transition: .4s; /* Opera */
    opacity: 1;
    text-transform: uppercase;
 
@@ -132,10 +133,10 @@ h5 {
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    transition: .7s;
-    -moz-transition: .7s; /* Firefox 4 */
-    -webkit-transition: .7s; /* Safari and Chrome */
-    -o-transition: .7s; /* Opera */
+    transition: .4s;
+    -moz-transition: .4s; /* Firefox 4 */
+    -webkit-transition: .4s; /* Safari and Chrome */
+    -o-transition: .4s; /* Opera */
     opacity: 0.8;
     color: #fff;
     text-transform: uppercase;
@@ -156,6 +157,24 @@ h5 {
    background: #89D700;
 }
 
+.subscribe-democlass {
+  background: #0C2C5A;
+  color: #FFF;
+  font-size: 20px;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-right:30px;
+  padding-left:30px;
+  margin-top:40px;
+  margin-bottom:40px;
+  margin-left:30px;
+  margin-left:0px
+
+  &:hover {
+  color: #FFF;
+  }
+}
+
 .subscribe-training {
   background: #FFF;
   color: #000;
@@ -166,27 +185,10 @@ h5 {
   padding-left:20px;
   margin-top:30px;
   margin-bottom:30px;
-  margin-left:20px;
+  margin-left:0px;
 
    &:hover {
   color: #000;
-  }
-}
-
-.subscribe-democlass {
-  background: #0C2C5A;
-  color: #FFF;
-  font-size: 20px;
-  padding-top:25px;
-  padding-bottom:25px;
-  padding-right:25px;
-  padding-left:25px;
-  margin-top:30px;
-  margin-bottom:30px;
-  margin-left:25px;
-
-  &:hover {
-  color: #FFF;
   }
 }
 
