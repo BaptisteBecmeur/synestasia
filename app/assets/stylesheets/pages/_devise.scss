@@ -54,12 +54,15 @@
     padding-bottom: 7px;
     background-color: #3C579E;
     color: white;
+    font-weight: 300;
 
     &:hover {
       color: white;
       background: #162F5B;
       border-color: darken(#162F5B, 10%);
     }
+
+
   }
 
 .login-btn {
