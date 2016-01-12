@@ -130,6 +130,7 @@
   padding-bottom: 80px;
 }
 
+
 // css page contact + about
 
 .container-page {
@@ -167,4 +168,39 @@
 // Page en cours de réalisation
 .page-progress {
   padding-top:230px;
+}
+
+// Bootstrap
+
+.popover {
+  text-align: center;
+  width: 150px;
+  padding: 10px 30px;
+}
+
+// css page Start
+
+.coverstart {
+  background-image: url("http://res.cloudinary.com/dzr44aeiu/image/upload/v1452088480/background-japon.png");
+  background-size: cover;
+  position:relative;
+  height: 800px;
+  width: 100%;
+  background-repeat: repeat;
+  background-position: 50% 43%;
+  margin-top:0;
+  text-align:center;
+
+  .coverhome-filter {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+    background: rgba(0,0,0,0.7);
+  }
+}
+
+.hiranaga {
+  border-radius: 10px;
 }
