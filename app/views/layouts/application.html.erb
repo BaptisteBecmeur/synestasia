@@ -8,28 +8,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
   <body>
-
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
+
     <%= yield %>
+
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
-
-  <script >
-    $(document).ready(function(){
-      $(".img-popover").popover({
-      html: true,
-      trigger: "hover",
-      placement: "top"
-      });
-    })
-  </script>
-
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
-
   </body>
 </html>
+
+  <!-- js popover -->
+  <script >
+        $(document).ready(function(){
+          $(".img-popover").popover({
+          html: true,
+          trigger: "hover",
+          placement: "top"
+          });
+        })
+      </script>
+
+  <!-- js tooltip -->
+      <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
