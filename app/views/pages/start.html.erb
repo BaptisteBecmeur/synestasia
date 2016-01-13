@@ -5,7 +5,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
 
 
-              <%= cl_image_tag("hiragana-o_jz1fgz.png", class: 'hiranaga')%>
+
+              <%= cl_image_tag("hiragana-o_jz1fgz.png", id: 'hiranaga') do %>
+
+              <%end %>
+
+
+              <img src="http://res.cloudinary.com/dzr44aeiu/image/upload/v1452609806/hiragana-o_jz1fgz.png" alt="Japanese" id="hiranaga" class="img-popover" data-content="<h4>0</h4><p class='text-muted'>Text Here</p>">
 
 
           </div>

@@ -111,7 +111,7 @@
     text-shadow: 2px 2px #000;
   }
 
-.coverhome-filter-one {
+  .coverhome-filter-one {
     top:0;
     bottom:0;
     left:0;
@@ -200,7 +200,26 @@
   }
 }
 
-.hiranaga {
-  margin: 20px;
+#hiranaga {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
   border-radius: 10px;
+  height: 220px;
+  width: 150px;
+  background: url("http://res.cloudinary.com/dzr44aeiu/image/upload/v1452609899/hiragana-o-1_qfizhm.png");
+
+&:hover {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 10px;
+  height: 220px;
+  width: 150px;
+  background: url("http://res.cloudinary.com/dzr44aeiu/image/upload/v1452609899/hiragana-o-1_qfizhm.png");
+  }
 }
+
+
