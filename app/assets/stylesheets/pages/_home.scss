@@ -178,7 +178,7 @@
   padding: 10px 30px;
 }
 
-// css page Start
+// css page Start - hiranaga cards
 
 .coverstart {
   background-image: url("http://res.cloudinary.com/dzr44aeiu/image/upload/v1452088480/background-japon.png");
@@ -200,22 +200,30 @@
   }
 }
 
-// hiranaga cards
-
 #start-cards {
   margin-bottom: 50px;
 
   h1 {
-    text-align: center;
+    margin:40px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-heigth: 35px;
+    font-weight:400;
+    font-size: 27px;
+    color: #fff;
+    text-shadow: 2px 2px #000;
   }
 
   .container-cards {
     position: relative;
+    border-radius: 6px;
+    margin: 20px;
     padding: 20px 0;
-    height: 240px;
-    width: 150px;
+    height: 290px;
+    width: 210px;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
 
     .card-post-author {
       color: black;
