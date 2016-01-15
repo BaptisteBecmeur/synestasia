@@ -198,10 +198,8 @@
     position:absolute;
     background: rgba(0,0,0,0.7);
   }
-}
 
-#start-cards {
-  margin-bottom: 50px;
+  #start-cards { margin-bottom: 30px; }
 
   h1 {
     margin:40px;
@@ -218,12 +216,25 @@
   .container-cards {
     position: relative;
     border-radius: 6px;
-    margin: 20px;
-    padding: 20px 0;
-    height: 290px;
-    width: 210px;
+    margin-left: 20px;
+    margin: 30px;
+    padding: 20px;
+    height: 240px;
+    width: 170px;
     overflow: hidden;
     background-color: white;
+
+
+     ul {
+    list-style: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+
+    li { position: relative; }
+  }
 
     .card-post-author {
       color: black;
@@ -288,7 +299,7 @@
 
       h3 {
         text-transform: uppcase;
-        color: #fff;
+        color: #000;
         font-size: 19px;
       }
     }
