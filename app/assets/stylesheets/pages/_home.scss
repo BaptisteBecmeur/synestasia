@@ -130,11 +130,10 @@
   padding-bottom: 80px;
 }
 
-
 // css page contact + about
 
 .container-page {
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
   padding: 0;
   position: relative;
 
@@ -176,30 +175,10 @@
   text-align: center;
   width: 150px;
   padding: 10px 30px;
+  position: absolute;
 }
 
 // css page Start - hiranaga cards
-
-// .coverstart {
-//   background-image: url("http://res.cloudinary.com/dzr44aeiu/image/upload/v1452088480/background-japon.png");
-//   background-size: cover;
-//   position:relative;
-//   height: 800px;
-//   width: 100%;
-//   background-repeat: repeat;
-//   background-position: 50% 43%;
-//   margin-top:0;
-
-//   .coverhome-filter {
-//     top:0;
-//     bottom:0;
-//     left:0;
-//     right:0;
-//     position:absolute;
-//     background: rgba(0,0,0,0.7);
-//   }
-
-// }
 
   #start-cards {
     margin-bottom: 30px;
@@ -227,7 +206,6 @@
     overflow: hidden;
     background-color: white;
 
-
      ul {
     list-style: none;
     -webkit-margin-before: 0em;
@@ -238,6 +216,19 @@
 
     li { position: relative; }
   }
+
+    .card-question {
+      color:white;
+      text-transform: uppercase;
+      top: 10px;
+      right: 20px;
+      background: #E22;
+      display: inline-block;
+      padding: 0 4px;
+      color: white;
+      font-family: Open Sans;
+      border-radius: 50px;
+    }
 
     .card-post-author {
       color: black;
@@ -250,18 +241,7 @@
       left: 40px;
       font-size: 12px;
     }
-    .card-post-cat {
-      color:white;
-      text-transform: uppercase;
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      background: #E22;
-      display: inline-block;
-      padding: 0 4px;
-      color: white;
-      font-family: Oswald;
-    }
+
 
     a { text-decoration: none; }
 
