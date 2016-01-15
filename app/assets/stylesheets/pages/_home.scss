@@ -171,12 +171,10 @@
 
 // Bootstrap
 
-.popover {
-  text-align: center;
-  width: 150px;
-  padding: 10px 30px;
-  position: absolute;
-}
+// .img-popover {
+//   text-align: center;
+//   position: absolute;
+// }
 
 // css page Start - hiranaga cards
 
@@ -198,12 +196,11 @@
   .container-cards {
     position: relative;
     border-radius: 6px;
-    margin-left: 20px;
     margin: 20px;
     padding: 20px;
-    height: 240px;
-    width: 170px;
-    overflow: hidden;
+    height: 260px;
+    width: 190px;
+    overflow: visible;
     background-color: white;
 
      ul {
@@ -227,21 +224,28 @@
       padding: 0 4px;
       color: white;
       font-family: Open Sans;
-      border-radius: 50px;
     }
 
-    .card-post-author {
+    .card-katakana {
       color: black;
-      font-style: italic;
     }
-    .card-post-date {
-      color: white;
-      position: absolute;
+
+    .card-latin {
+      color: black;
       bottom: 20px;
       left: 40px;
       font-size: 12px;
     }
 
+    .card-hiragana {
+      margin-top: 5px;
+      font-size: 100px;
+
+    p:hover {
+      color: grey;
+    }
+
+    }
 
     a { text-decoration: none; }
 
