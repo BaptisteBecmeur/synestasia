@@ -10,8 +10,29 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
+
     <%= yield %>
+
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
   </body>
 </html>
+
+  <!-- js popover -->
+  <script >
+    $(document).ready(function(){
+    $(".img-popover").popover({
+    html: true,
+    trigger: "hover",
+    placement: "top"
+    });
+    })
+  </script>
+
+  <!-- js tooltip -->
+      <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+
