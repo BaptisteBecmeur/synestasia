@@ -222,10 +222,12 @@ Bootstrap
       border-radius: 60px;
       color: white;
       font-family: Open Sans;
+      font-weight:bold;
+      position: absolute;
     }
 
      .card-hiragana {
-      margin-top: 5px;
+      margin-top: 10px;
       font-size: 100px;
 
     p:hover {
