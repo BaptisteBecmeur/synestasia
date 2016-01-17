@@ -13,7 +13,7 @@
             <ul class="list-unstyled">
               <% @course.chapters.each do |chapter| %>
               <li>
-                <%= link_to Hiragana, chapter.title, [@course, chapter] %>
+                <%= link_to chapter.title, [@course, chapter] %>
               </li>
               <% end %>
             </ul>
