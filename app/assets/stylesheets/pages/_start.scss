@@ -46,6 +46,8 @@
       font-family: Open Sans;
       font-weight:bold;
       position: absolute;
+      text-shadow: 2px 2px #000;
+      cursor: pointer;
     }
 
     .card-hiragana {
@@ -62,6 +64,7 @@
 
     p:hover {
       color: $green;
+      cursor: default;
     }
   }
 // hiragana I couleur orange
@@ -70,6 +73,7 @@
 
     p:hover {
       color: $orange;
+      cursor: default;
     }
   }
 
@@ -79,6 +83,7 @@
 
     p:hover {
       color: $purple;
+      cursor: default;
     }
   }
 // hiragana E couleur rouge
@@ -87,6 +92,7 @@
 
     p:hover {
       color: $red;
+      cursor: default;
     }
   }
 
@@ -96,6 +102,7 @@
 
     p:hover {
       color: $blue;
+      cursor: default;
     }
   }
 
@@ -156,6 +163,16 @@
       }
     }
   }
+}
+
+.text-pop {
+  color: black;
+  font-size: 16px;
+}
+
+.letter-uppercase {
+  font-weigth: 400px;
+  font-size: 30px;
 }
 
 

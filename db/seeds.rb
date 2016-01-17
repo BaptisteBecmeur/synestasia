@@ -6,12 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-rails = Course.create(title: "Ruby On Rails")
+rails = Course.create(title: "Hiragana")
 
-models = rails.chapters.create(title: "Models")
+models = rails.chapters.create(title: "Introduction")
 
 # first item is a lesson
-models.items << Lesson.create(title: "What is Active Record?", content: "Lesson content here")
+models.items << Lesson.create(title: "Qu'est ce qu'un hiragana ?", content: "Contenu du cours ici")
 
 # then 2 exos
 models.items << Exercice.create(title: "The Active Record pattern", content: "Exo about active record pattern")
