@@ -1,17 +1,28 @@
+<div class="container-page">
+  <div class="padding-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="page-progress">
+            <h2>
+              <%= @chapter.title %>
+            </h2>
 
-<h2>
-  <%= @chapter.title %>
-</h2>
+            <ul class="list-unstyled">
+            <% @chapter.items.each do |item| %>
+              <li>
+                <h3>
+                  <%= link_to item.title, [@course, @chapter, item] %>
+                  <small>(<%= item.actable_type %>)</small>
+                </h3>
+              </li>
+            <% end %>
+            </ul>
 
-<ul class="list-unstyled">
-<% @chapter.items.each do |item| %>
-  <li>
-    <h3>
-      <%= link_to item.title, [@course, @chapter, item] %>
-      <small>(<%= item.actable_type %>)</small>
-    </h3>
-  </li>
-<% end %>
-</ul>
-
-<%= link_to "< back", @chapter.course %>
+            <%= link_to "< back", @chapter.course %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

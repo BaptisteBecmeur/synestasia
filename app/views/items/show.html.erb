@@ -1,7 +1,21 @@
-<h2><%= @item.title %></h2>
+<div class="container-page">
+  <div class="padding-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="page-progress">
 
-<div>
-  <%= @item.specific.content %>
+            <h2><%= @item.title %></h2>
+
+            <div>
+              <%= @item.specific.content %>
+            </div>
+
+            <%= link_to "< back", [@chapter.course, @chapter] %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<%= link_to "< back", [@chapter.course, @chapter] %>
