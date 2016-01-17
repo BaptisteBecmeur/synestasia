@@ -1,0 +1,163 @@
+// css page Start - hiranaga cards
+
+  #start-cards {
+    margin-bottom: 30px;
+
+  h1 {
+    margin:30px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    line-heigth: 35px;
+    font-size: 35px;
+    color: #000;
+  }
+
+  .container-cards {
+    position: relative;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    overflow: visible;
+    background-color: white;
+
+     ul {
+    list-style: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+
+    li { position: relative; }
+  }
+
+    .card-question {
+      color:white;
+      text-transform: uppercase;
+      top: 10px;
+      right: 15px;
+      background: #E22;
+      display: inline-block;
+      padding: 4px 11px 4px 11px;
+      border-radius: 60px;
+      color: white;
+      font-family: Open Sans;
+      font-weight:bold;
+      position: absolute;
+    }
+
+    .card-hiragana {
+      margin-top: 35px;
+      font-size: 120px;
+
+    p:hover {
+      color: grey;
+    }
+  }
+// hiragana A couleur verte
+    .hiragana-a {
+      color: black;
+
+    p:hover {
+      color: $green;
+    }
+  }
+// hiragana I couleur orange
+    .hiragana-i {
+      color: black;
+
+    p:hover {
+      color: $orange;
+    }
+  }
+
+  // hiragana U couleur violette
+    .hiragana-u {
+      color: black;
+
+    p:hover {
+      color: $purple;
+    }
+  }
+// hiragana E couleur rouge
+    .hiragana-e {
+      color: black;
+
+    p:hover {
+      color: $red;
+    }
+  }
+
+  // hiragana O couleur bleue
+    .hiragana-o {
+      color: black;
+
+    p:hover {
+      color: $blue;
+    }
+  }
+
+    .card-katakana {
+      color: black;
+      font-size: 40px
+    }
+
+    .card-latin {
+      color: black;
+      bottom: 10px;
+      left: 40px;
+      font-size: 12px;
+    }
+
+    a { text-decoration: none; }
+
+    .card-filter-home {
+      position: relative;
+      height: 220px;
+      margin: 0 10px;
+      overflow: hidden;
+      border-radius: 5px;
+
+      a {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.4);
+      }
+    }
+
+    .card-details {
+      position: absolute;
+      padding: 20px 40px;
+      top: 0;
+      padding: 20px 40px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+
+      h3 {
+        text-transform: uppcase;
+        color: #000;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+
+
+
