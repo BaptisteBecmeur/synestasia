@@ -7,7 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-rails = Course.create(title: "Ruby On Rails")
+rails = Course.find(1)
+if rails.present?
+  rails.update(id: 1,title: "Ruby On Rails 2015")
+else
+  rails.create(id: 1, title: "Ruby On Rails 2015")
+end
 models = rails.chapters.create(title: "Models")
 
 # first item is a lesson
@@ -39,3 +44,4 @@ models.items << Exam.create(title: "Rails Models exam", content: "Exam content h
 
 # You can go to next course with : next_item = Course.first.chapters.first.items.first.lower_item
 # Then go to next chapter with: next_item.chapter.lower_item
+
