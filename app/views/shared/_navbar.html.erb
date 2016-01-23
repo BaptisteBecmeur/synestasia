@@ -10,11 +10,13 @@
     <div class="navbar-wagon-pusher"></div>
     <% if user_signed_in? %>
 
-    <%= link_to t(".top_call_to_action", default: "Mes cours"), start_path, class: "separator-navbar" %>
+    <%= link_to t(".top_call_to_action", default: "Mes cours"), courses_path, class: "separator-navbar" %>
 
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= image_tag current_user.picture, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <%= image_tag current_user.picture, class: "avatar dropdown-toggle ", id: "navbar-wagon-menu", "data-toggle" => "dropdown"  %>
+          <!-- <i class="fa fa-caret-down"></i>
+ -->
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
               <%= link_to edit_user_registration_path do %>

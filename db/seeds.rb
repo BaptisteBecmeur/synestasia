@@ -6,42 +6,75 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+startjapan = Course.create(title: "Démarrez le japonais")
 
-rails = Course.find(1)
-if rails.present?
-  rails.update(id: 1,title: "Ruby On Rails 2015")
-else
-  rails.create(id: 1, title: "Ruby On Rails 2015")
-end
-models = rails.chapters.create(title: "Models")
+firstpart = startjapan.chapters.create(title: "À la découvert de la langue japonaise")
 
 # first item is a lesson
 
-models.items << Lesson.create(title: "What is Active Record?", content: "Lesson content here")
-
-# then 2 exos
-
-models.items << Exercise.create(title: "The Active Record pattern", content: "Exo about active record pattern")
-models.items << Exercise.create(title: "Object Relational Mapping", content: "Exo about ORM")
-models.items << Exercise.create(title: "Active Record as an ORM Framework", content: "Exo about ORM")
+firstpart.items << Lesson.create(title: "Le japonnais, c'est facile", content: "Lesson content here")
 
 # a second lesson
 
-models.items << Lesson.create(title: "Convention over Configuration in Active Record", content: "Lesson content here")
+firstpart.items << Lesson.create(title: "L'alphabet japonnais", content: "Lesson content here")
 
-# 3 exos
+# a third lesson
 
-models.items << Exercise.create(title: "Naming Conventions", content: "Exo about naming convention")
-models.items << Exercise.create(title: "Schema Conventions", content: "Exo about schema convention")
+firstpart.items << Lesson.create(title: "La phrase japonnaise", content: "Lesson content here")
 
-# a summary lesson
 
-models.items << Lesson.create(title: "Model summary", content: "Lesson content here")
+# then 1st exo
 
-# an exam
+firstpart.items << Exercise.create(title: "Reconstituer les phrases", content: "Exo about the third lessons")
 
-models.items << Exam.create(title: "Rails Models exam", content: "Exam content here")
 
-# You can go to next course with : next_item = Course.first.chapters.first.items.first.lower_item
-# Then go to next chapter with: next_item.chapter.lower_item
+# a fourth lesson
 
+firstpart.items << Lesson.create(title: "Première approche des Hiraganas", content: "Lesson content here")
+
+
+# a fifth lesson
+
+firstpart.items << Lesson.create(title: "Première approche des Katakanas", content: "Lesson content here")
+
+
+# an entract lesson / Create an Entract Act_As
+
+firstpart.items << Lesson.create(title: "La petite histoire de la tasse de thé qui allait déborder", content: "Lesson content here")
+
+
+# a sixth lesson
+
+firstpart.items << Lesson.create(title: "Première approche des Kanjis", content: "Lesson content here")
+
+
+# then 2nd exo
+
+firstpart.items << Exercise.create(title: "Distinguer les Hiraganas, les Katakanas et les Kanjis", content: "Exo about the third lessons")
+
+
+# a seventh lesson
+
+firstpart.items << Lesson.create(title: "Les particules", content: "Lesson content here")
+
+
+# a eighth lesson
+
+firstpart.items << Lesson.create(title: "Les temps", content: "Lesson content here")
+
+
+# a ninth lesson
+
+firstpart.items << Lesson.create(title: "Les genres", content: "Lesson content here")
+
+
+# then Revision = Résumé
+
+firstpart.items << Exercise.create(title: "Révisions", content: "Exo about the third lessons")
+
+# an Exam
+
+firstpart.items << Exam.create(title: "Petit Quiz", content: "Exam content here")
+
+
+puts "done"
