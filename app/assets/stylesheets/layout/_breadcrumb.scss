@@ -3,50 +3,19 @@
 .breadcrumb {
  background-size: cover;
  background-color: #F2F2F2;
- text-align: center;
+ padding-left: 80px;
  font-color: #000;
 
- .breadcrumb-style{
-
-  font-weight: 300;
+ .breadcrumb-style {
+  font-size: 15px;
+  font-weight: 400;
  }
 }
 
-.bread a {
-  font-color: #000;
-  &:hover {
-    color:#C7C9C7;
-  }
+p {
+  font-color: black;
 }
 
-
-
-
-// // Your footer style
-// .footer{
-//     background-color: rgba(0,0,0,0.99);
-//     min-height: 90px;
-//     padding: 15px;
-//     font-size: 14px;
-//     color: #838689;
-//     font-weight: 300;
-//     padding-bottom: 5px;
-
-//     .list-title p {
-//     font-size:16px;
-//     color: white;
-//     font-weight:400;
-//   }
-// }
-
-// .footer a {
-//   color:whitesmoke;
-//   &:hover {
-//     color:#C7C9C7;
-//   }
-// }
-
-
-
-
-
+.breadfont {
+  font-color: black;
+}

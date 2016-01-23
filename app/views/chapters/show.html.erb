@@ -3,17 +3,17 @@
     <div class="container-fluid">
       <div class="row">
         <%= render 'shared/breadcrumb' %>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <h2>
+        <div class="col-xs-12 col-sm-12 col-md-12 chapter-title-padding">
+          <h1>
             <%= @chapter.title %>
-          </h2>
+          </h1>
           <ul class="list-unstyled">
             <% @chapter.items.each do |item| %>
-            <li>
-              <h3>
-                <%= link_to item.title, [@course, @chapter, item] %>
+            <li class="chapter-padding">
+              <h4>
+                <span class="inset"><%= link_to item.title, [@course, @chapter, item] %></span>
                 <small>(<%= item.actable_type %>)</small>
-              </h3>
+              </h4>
             </li>
             <% end %>
           </ul>

@@ -8,7 +8,7 @@
 
 startjapan = Course.create(title: "Démarrez le japonais")
 
-firstpart = startjapan.chapters.create(title: "À la découvert de la langue japonaise")
+firstpart = startjapan.chapters.create(title: "À la découverte de la langue japonaise")
 
 # first item is a lesson
 
