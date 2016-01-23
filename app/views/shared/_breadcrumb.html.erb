@@ -1,17 +1,23 @@
-<ol class="breadcrumb">
-    <% if @course %>
-      <li>
-        <%= link_to @course.title, @course %>
-      </li>
-    <% if @chapter %>
-      <li>
-        <%= link_to @chapter.title, [@course, @chapter] %>
-      </li>
-    <% if @item %>
-      <li>
-        <%= link_to @item.title, [@course, @chapter, @item] %>
-      </li>
-      <% end %>
-    <% end %>
+<div class="breadcrumb">
+<ol class="list-unstyled list-inline" >
+  <% if @course %>
+    <li class="breadcrumb-style">
+      <%= link_to @course.title, @course %>
+    </li>
+
+  <% if @chapter %>
+  <i class="fa fa-caret-right"></i>
+    <li class="breadcrumb-style">
+      <p><%= link_to @chapter.title, [@course, @chapter] %> </p>
+    </li>
+
+  <% if @item %>
+  <i class="fa fa-caret-right"></i>
+    <li class="breadcrumb-style">
+     <p><%= link_to @item.title, [@course, @chapter, @item] %> </p>
+    </li>
+  <% end %>
+  <% end %>
   <% end %>
 </ol>
+</diV>
