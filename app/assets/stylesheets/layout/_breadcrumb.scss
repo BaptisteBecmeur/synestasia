@@ -12,10 +12,10 @@
  }
 }
 
-p {
-  font-color: black;
+.fontbreadcrumb {
+  color: #000;
+    &:hover {
+      color: #004882;
+    }
 }
 
-.breadfont {
-  font-color: black;
-}

@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <%= render 'shared/breadcrumb' %>
-        <div class="col-xs-12 col-sm-12 col-md-12 chapter-title-padding">
+        <div class="col-xs-12 col-sm-6 col-md-12 chapter-title-padding">
           <h1>
             <%= @chapter.title %>
           </h1>
@@ -11,15 +11,17 @@
             <% @chapter.items.each do |item| %>
             <li class="chapter-padding">
               <h4>
-                <span class="inset"><%= link_to item.title, [@course, @chapter, item] %></span>
+                <span class="inset-lesson">
+                  <%= link_to item.title, [@course, @chapter, item], :class => "fontchapter" %>
+                </span>
                 <small>(<%= item.actable_type %>)</small>
               </h4>
             </li>
-            <% end %>
-          </ul>
-          <%= link_to "< back", @chapter.course %>
+              <% end %>
+            </ul>
+              <%= link_to "< retour", @chapter.course, class:"btn btn-default" %>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
