@@ -9,6 +9,8 @@ gem 'devise'
 gem 'active_record-acts_as'
 gem 'acts_as_list'
 
+gem "rails_admin"
+
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
 gem 'uglifier'
