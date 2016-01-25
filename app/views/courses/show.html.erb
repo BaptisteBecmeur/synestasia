@@ -5,13 +5,10 @@
         <%= render 'shared/breadcrumb' %>
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="page-progress">
-
-            <h1><%= @course.title %></h1>
-
             <ul class="list-unstyled">
               <% @course.chapters.each do |chapter| %>
-              <li>
-               <h3><%= link_to chapter.title, [@course, chapter] %></h3>
+              <li >
+               <h1><%= link_to chapter.title, [@course, chapter], :class => "fontcolorcourse" %></h1>
               </li>
               <% end %>
             </ul>
