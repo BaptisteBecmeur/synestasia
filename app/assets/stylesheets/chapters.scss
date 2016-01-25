@@ -2,7 +2,7 @@
 
 .inset-lesson {
     font-size: 25px;
-    box-shadow: inset 0 -12px 0 rgba(255, 242, 0, 1);
+    box-shadow: inset 0 -6px 0 rgba(255, 242, 0, 1);
 }
 
 .inset-exercise {
@@ -11,11 +11,11 @@
 }
 
 .chapter-padding {
-  padding-left: 25px;
+  padding-left: 60px;
 }
 
 .chapter-title-padding {
-  padding-left: 20px;
+  padding-left: 80px;
 }
 
 h1 {
@@ -23,13 +23,12 @@ h1 {
 }
 
 h4 {
-  color:$green;
   font-weight: 300;
 }
 
-.fontchapter {
+.fontcolorchapter {
   color: #000;
       &:hover {
          color: #004882;
-       }
+  }
 }
