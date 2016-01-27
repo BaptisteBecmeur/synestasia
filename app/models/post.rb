@@ -1,0 +1,14 @@
+class Post < ActiveRecord::Base
+  belongs_to :user
+
+  CATEGORIES = ["Design", "Mode", "Tendance", "Tradition", "Gastronomie", "Insolite", "Technologie"]
+
+  validates :category, inclusion: { in: Post::CATEGORIES, allow_nil: false }
+
+  validates :user_id, presence: true
+  validates :title, presence: true, uniqueness: true
+  validates :content, presence: true
+
+  mount_uploader :cover, ImageUploader
+
+end
