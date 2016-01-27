@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
   end
 
-  def about
+  def synestesie
   end
 
   def start
@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   end
 
   def legal
+  end
+
+  def about
   end
 
 end
