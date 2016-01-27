@@ -1,2 +1,12 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="container" id="home-articles">
+  <div class="row">
+    <h2>Derniers articles postés</h2>
+    <ul>
+      <% @posts.each do |post| %>
+        <li class="col-xs-6 col-md-4 container-cards">
+          <%= render 'postuser', post: post %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
