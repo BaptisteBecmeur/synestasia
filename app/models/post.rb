@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
   belongs_to :user
 
-  CATEGORIES = ["Design", "Mode", "Tendance", "Tradition", "Gastronomie", "Insolite", "Technologie"]
+  CATEGORIES = ["Design", "Mode", "Tendance", "Life-Style", "Tradition", "Gastronomie", "Insolite", "Technologie"]
 
   validates :category, inclusion: { in: Post::CATEGORIES, allow_nil: false }
 
