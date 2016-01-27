@@ -12,8 +12,8 @@
       <%= f.input :category, collection: Post::CATEGORIES, selected: Post::CATEGORIES.first %>
       <%= f.submit "Publier votre article", class: "btn btn-success text-center" %>
       <% end %>
-      <h4>
-          <%= link_to "< Retour", :back,  class: "btn btn-default text-center"  %>
+      <h4 class="text-center">
+          <%= link_to "< Retour", :back,  class: "btn btn-default"  %>
         </h4>
     </div>
 
