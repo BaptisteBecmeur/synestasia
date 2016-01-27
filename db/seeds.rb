@@ -60,7 +60,7 @@ firstpart.items << Lesson.where(title: "Les particules").first_or_create(title: 
 
 # a eighth lesson
 
-firstpart.items << Lesson.where(title: "Les temps").fist_or_create(title: "Les temps", content: "Lesson content here")
+firstpart.items << Lesson.where(title: "Les temps").first_or_create(title: "Les temps", content: "Lesson content here")
 
 
 # a ninth lesson
