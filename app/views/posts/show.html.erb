@@ -9,11 +9,11 @@
               <h1 class="article-headline"><%= @post.title %></h1>
               <p class="article-meta">Publié le <%= @post.created_at.strftime("%d %b, %Y") %> </p>
 
-              <div class="container-fluid synopsis">
+              <!-- <div class="container-fluid synopsis">
                 <p class="article-excerpt">
                   <%= @post.introduction %>
                 </p>
-              </div>
+              </div> -->
 
               <% if user_signed_in?  %>
                 <p><%= markdown @post.content %></p>
