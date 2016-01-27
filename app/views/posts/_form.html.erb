@@ -4,14 +4,19 @@
       <%= simple_form_for @post do |f| %>
       <%= f.error_notification %>
       <%= f.input :title, label: 'Title', input_html: { class: "input-lg"} %>
-      <%= f.input :introduction, label: 'Intro' %>
+    <div class="row">
+      <div class="col-sm-6">
+        <%= f.input :cover %>
+        <%= cl_image_tag @post.cover, transformation: :t_media_lib_thumb %>
+      </div>
+      <div class="col-sm-6">
+        <%= f.input :category, collection: Post::CATEGORIES, selected: Post::CATEGORIES.first %>
+      </div>
+    </div>
+
       <%= f.input :content, label: 'Body', input_html: { rows: 5} %>
 
-      <%= f.input :cover %>
-      <%= cl_image_tag @post.cover, transformation: :t_media_lib_thumb, angle: 340, overlay: "logo-mini-s", effect: "mask", opacity: "50" %>
-      <%= f.input :category, collection: Post::CATEGORIES, selected: Post::CATEGORIES.first %>
-
-      <%= f.submit "Publier votre article", class: "btn btn-success text-center" %>
+      <%= f.submit "Publier votre article", class: "btn btn-success" %>
       <% end %>
       <h4 class="text-center">
           <%= link_to "< Retour", :back,  class: "btn btn-default"  %>
