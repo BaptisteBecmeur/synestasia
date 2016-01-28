@@ -1,18 +1,16 @@
 <div class="row">
-
     <div class= "col-md-8 col-md-offset-2 form-post">
       <%= simple_form_for @post do |f| %>
       <%= f.error_notification %>
       <%= f.input :title, label: 'Title', input_html: { class: "input-lg"} %>
-    <div class="row">
-      <div class="col-sm-6">
-        <%= f.input :cover %>
-        <%= cl_image_tag @post.cover, transformation: :t_media_lib_thumb %>
+      <div class="row">
+        <div class="col-sm-6">
+          <%= f.input :cover %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.input :category, collection: Post::CATEGORIES, selected: Post::CATEGORIES.first %>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <%= f.input :category, collection: Post::CATEGORIES, selected: Post::CATEGORIES.first %>
-      </div>
-    </div>
 
       <%= f.input :content, label: 'Body', input_html: { rows: 5} %>
 
@@ -22,6 +20,5 @@
           <%= link_to "< Retour", :back,  class: "btn btn-default"  %>
         </h4>
     </div>
-
   </div>
 </div>

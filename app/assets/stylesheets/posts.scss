@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.container-post {
+.container-formpost {
   background-color: #f2f2f2;
   padding-top: 30px;
   position: relative;
@@ -21,7 +21,8 @@
 
 #show-post {
   .container-post {
-    padding: 0;
+    padding-top: 17px;
+    background-color: #f2f2f2;
 
     .img-post-header {
       width: 100%;
@@ -59,7 +60,6 @@
     display:block;
     z-index:1;
     padding: 22px;
-
   }
 
   .carding h1 {
@@ -72,7 +72,7 @@
     color: darkgray;
   }
 
-  .synopsis {
+  .introduction {
     background-color: #F2F2F2;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -80,7 +80,6 @@
 
     h5 { text-transform: uppercase;
     }
-
   }
 
   .contenu{
@@ -115,17 +114,14 @@
   border-radius: 50%;
   }
 
-
   .container_new_post {
    background-color: #F9F9F9;
    padding-top: 18px;
+
     h2  {
-    font-family: sans-serif;
     color:black;
      }
-
   }
-
 
   body {
     background-color: white;
@@ -135,10 +131,11 @@
     width: 100%;
     height: 400px;
     position: relative;
-    background-size:cover;
     background-position: center center;
+    margin-top: 20px;
     &-filter {
       position: absolute;
+      background-size:cover;
       top: 0;
       left: 0;
       bottom: 0;
@@ -149,38 +146,43 @@
 
   .article {
     background: white;
-    margin: 0 10% 0 10%;
-    padding: 30px;
-    margin-top: -100px;
+    // margin: 0 10% 0 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 35px;
+    padding-left: 35px;
+    // margin-top: -150px;
+    margin-bottom: 17px;
     z-index: 10;
     position: relative;
-    font-family: Lora;
     font-size: 16px;
     line-height: 27px;
 
     &-headline {
-      font-family: Oswald;
       margin: 0;
       font-size: 42px;
       margin-bottom: 15px;
-
     }
+
     &-meta {
       color: #777;
       margin-bottom: 25px;
       font-weight: 300;
-      font-family: Lato;
     }
+
     &-excerpt {
       font-weight: bold;
       font-size:18px;
     }
+
     h2 {
       font-size: 26px;
     }
+
     blockquote {
       margin: 0 20px;
     }
+
     .tags {
       position: absolute;
       top: -10px;
@@ -189,13 +191,12 @@
       display: inline-block;
       padding: 0 4px;
       color: white;
-      font-family: Oswald;
+
       p {
         display: inline-block;
         background: #E22;
         padding: 0 4px;
         color: white;
-        font-family: Oswald;
       }
     }
   }

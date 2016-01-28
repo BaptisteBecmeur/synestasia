@@ -1,27 +1,29 @@
 <div id="show-post">
-  <div class="container-fluid container-post">
-    <div class="row">
-      <div class="col-xs-12">
-          <%= cl_image_tag @post.cover, :height => 550, :crop => :fill, class: "img-post-header" %>
-        <div class="cover-filter"></div>
-          <div class="article">
-            <div class="tags"> <%= @post.category %></div>
-              <h1 class="article-headline"><%= @post.title %></h1>
-              <p class="article-meta">Publié le <%= @post.created_at.strftime("%d %b, %Y") %> </p>
+  <div class="container-post">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <%= cl_image_tag @post.cover, :crop => :fill, class: "img-post-header" %>
+          <div class="cover-filter"></div>
+            <div class="article">
+              <div class="tags"> <%= @post.category %></div>
+                <h1 class="article-headline text-center"><%= @post.title %></h1>
+                <p class="article-meta text-center">Publié le <%= @post.created_at.strftime("%d %b, %Y") %> </p>
 
-              <% if user_signed_in?  %>
-                <p><%= markdown @post.content %></p>
-              <% end %>
+                  <% if user_signed_in?  %>
+                    <p><%= markdown @post.content %></p>
+                  <% end %>
 
-              <div class="text-center buttons-view-post">
-                <% if @post.user == current_user %>
-                <%= link_to "Modifier l'article", edit_post_path(@post), class: "btn btn-success btn-md" %>
-                <% else %>
+                <div class="text-center buttons-view-post">
+                  <% if @post.user == current_user %>
+                  <%= link_to "Modifier l'article", edit_post_path(@post), class: "btn btn-default btn-md" %>
+                  <% else %>
 
-                <% end %>
+                  <% end %>
 
-                <%= link_to "Voir tous les articles", posts_path, class: "btn btn-default btn-md" %>
-              </div>
+                  <%= link_to "Voir tous les articles", posts_path, class: "btn btn-default btn-md" %>
+                </div>
+          </div>
         </div>
       </div>
     </div>
