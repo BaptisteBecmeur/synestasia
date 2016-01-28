@@ -161,6 +161,7 @@
       margin: 0;
       font-size: 42px;
       margin-bottom: 15px;
+      font-weight: 400;
     }
 
     &-meta {
@@ -185,7 +186,7 @@
     .tags {
       position: absolute;
       top: -10px;
-      right: 30px;
+      right: 120px;
       background: #E22;
       display: inline-block;
       padding: 0 4px;

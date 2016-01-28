@@ -10,9 +10,11 @@
                 <h1 class="article-headline text-center"><%= @post.title %></h1>
                 <p class="article-meta text-center">Publié le <%= @post.created_at.strftime("%d %b, %Y") %> </p>
 
+                <div class="content-part">
                   <% if user_signed_in?  %>
                     <p><%= markdown @post.content %></p>
                   <% end %>
+                </div>
 
                 <div class="text-center buttons-view-post">
                   <% if @post.user == current_user %>
