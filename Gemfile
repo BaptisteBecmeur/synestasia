@@ -19,9 +19,14 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'omniauth-facebook'
+gem 'redcarpet'
 
 gem 'carrierwave'
 gem 'cloudinary'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-simplemde'
+end
 
 group :development, :test do
   gem 'binding_of_caller'

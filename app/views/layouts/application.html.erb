@@ -2,10 +2,17 @@
 <html>
   <head>
     <title>SynestasiA</title>
+
     <%= stylesheet_link_tag 'application', media: 'all' %>
+
     <%= csrf_meta_tags %>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="og:site_name" content="SynestasiA" />
+    <meta property="og:title" content="Qui Quoi Pourquoi Où Quand Comment" />
+    <meta property="og:image" content="http://res.cloudinary.com/dzr44aeiu/image/upload/v1453889854/synestasia-homepage_sygboc.png" />
+
   </head>
   <body>
     <%= render 'shared/navbar' %>
@@ -14,11 +21,13 @@
     <%= yield %>
 
     <%= render 'shared/footer' %>
-    <%= javascript_include_tag 'application' %>
-  </body>
-</html>
 
-  <!-- js popover -->
+    <%= javascript_include_tag 'application' %>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+   <!-- js popover -->
   <script >
     $(document).ready(function(){
     $(".img-popover").popover({
@@ -35,4 +44,9 @@
           $('[data-toggle="tooltip"]').tooltip()
         })
       </script>
+
+  </body>
+</html>
+
+
 

@@ -1,6 +1,21 @@
 Rails.application.routes.draw do
 
+  # get 'posts/index'
+
+  # get 'posts/show'
+
+  # get 'posts/new'
+
+  # get 'posts/create'
+
+  # get 'posts/edit'
+
+  # get 'posts/update'
+
+  # get 'posts/destroy'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  get 'synestesie', to: 'pages#synestesie'
   get 'about', to: 'pages#about'
   get 'start', to: 'pages#start'
   get 'contact', to: 'pages#contact'
@@ -14,6 +29,8 @@ Rails.application.routes.draw do
       resources :items, only: [:show]
     end
   end
+
+  resources :posts
 
 
   # resources :courses do

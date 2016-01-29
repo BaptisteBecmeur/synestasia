@@ -1,0 +1,431 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container-formpost {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+  .form-post {
+    background-color: #fff;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+#show-post {
+  .container-post {
+    padding: 0px;
+
+    .img-post-header {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  .card {
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.4);
+    border:1px solid grey;
+    border-radius:3px;
+    padding: 15px;
+    margin: 15px auto;
+    height:250px;
+    position: relative;
+    display:block;
+    padding-bottom: 200px;
+    margin-bottom: 40px;
+    color:white;
+    padding: 185px 10px 74px 73px;
+  }
+
+  .card h2 {
+    font-size:20px;
+    text-transform:uppercase;
+  }
+
+  .card-filter-home span {
+    font-size:18px;
+    text-decoration:none;
+    color:white;
+    position:absolute;
+    display:block;
+    z-index:1;
+    padding: 22px;
+
+  }
+
+  .carding h1 {
+    text-align: center;
+    font-weight : strong;
+  }
+
+  .carding h5 {
+    text-align: right;
+    color: darkgray;
+  }
+
+  .synops h5 {
+    text-align: left;
+    color: darkgray;
+
+  }
+
+  .contenu{
+    text-align: justify;
+  }
+
+  .card-filter {
+    color: #7FB8C8;
+    padding: 15px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0.1, 0.1, 0.1, 0.6);
+    a {
+    color:white;
+    }
+  }
+
+  .diving {
+    background-color: white;
+  }
+
+  // .img-circle {
+  // border-radius: 1%;
+  // height: 180px;
+  // }
+
+  .user-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  }
+
+  .avatar {
+  width: 40px;
+  border-radius: 50%;
+  }
+
+  .container_new_post {
+   background-color: #F9F9F9;
+   padding-top: 18px;
+
+    h2  {
+    font-family: sans-serif;
+    color:black;
+     }
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .cover {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-size:cover;
+    background-position: center center;
+
+    &-filter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      //background: rgba(#000,0.1);
+    }
+  }
+
+  .article {
+    background: white;
+    padding-top: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: -70px;
+    z-index: 10;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+
+    &-headline {
+      margin: 0;
+      font-size: 40px;
+      padding-bottom: 10px;
+      font-weight: 400;
+    }
+
+    &-meta {
+      color: #777;
+      margin-bottom: 25px;
+      font-weight: 300;
+    }
+
+    &-excerpt {
+      font-weight: bold;
+      font-size:20px;
+      font-family:Lato;
+      padding:5px;
+    }
+
+    blockquote {
+      margin: 0 20px;
+    }
+
+    .tags {
+      position: absolute;
+      top: -10px;
+      right: 30px;
+      background: #E22;
+      display: inline-block;
+      padding: 0 4px;
+      color: white;
+
+      p {
+        display: inline-block;
+        background: #E22;
+        padding: 0 4px;
+        color: white;
+      }
+    }
+  }
+
+  .intro-part {
+    padding-top: 10px;
+
+    h2 {
+     text-transform:uppercase;
+    }
+  }
+
+  .extra-info {
+     background-color: #F2F2F2;
+     margin-bottom: 40px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+  }
+
+  .buttons-view-post{
+    margin-top: 40px;
+    margin-bottom:30px;
+  }
+
+
+  .article:after {
+    content: "";
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:30px;
+    background: linear-gradient(to top,
+       rgba(255,255,255, 1) 20%,
+       rgba(255,255,255, 0) 80%
+    );
+  }
+
+  .picture-post {
+    text-align: -webkit-center;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  h5{
+    font-size: 22px;
+    padding-top: 22px;
+  }
+
+  p {
+    font-weight: 100;
+    font-size: 18px;
+    margin: 0 0 11px;
+    line-height:29px;
+  }
+
+  h1, h2, h3, h4, h5, h6, p .h1, .h2, .h3, .h4, .h5, .h6 .p {
+    font-family: "Avenir", "Helvetica", "sans-serif";
+    line-height: 1.1;
+  }
+
+  .card-filter-home {
+
+    // background: #abbaab; /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .card-filter-home a:hover {
+    text-decoration:none;
+  }
+}
+
+// Blog Index Articles
+
+#home-articles {
+  margin-bottom: 50px;
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0 10px 20px;
+    display: flex;
+    align-items: center;
+
+    &:after {
+      margin: 0 20px;
+      content: "";
+      border-bottom: solid #000 1px;
+      flex: 1;
+    }
+  }
+
+  ul {
+    list-style: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+
+    li { position: relative; }
+  }
+
+  .container-cards {
+    position: relative;
+    padding: 20px 0;
+    height: 240px;
+    overflow: hidden;
+
+    .card-fav {
+      position: absolute;
+      right: 40px;
+      bottom: 25px;
+    }
+
+    .card-post-author {
+      color: white;
+      font-style: italic;
+    }
+
+    .card-post-date {
+      color: white;
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      font-size: 12px;
+    }
+
+    .card-post-tag {
+      color:white;
+      text-transform: capitalise;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: #E22;
+      display: inline-block;
+      padding: 0 4px;
+      color: white;
+    }
+
+    .card-post-card {
+      color:white;
+      text-transform: uppercase;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: #E22;
+      display: inline-block;
+      padding: 0 4px;
+      color: white;
+    }
+
+    a { text-decoration: none; }
+
+    .card-filter-home {
+      position: relative;
+      height: 220px;
+      margin: 0 10px;
+      overflow: hidden;
+      border-radius: 5px;
+      a {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.4);
+        // transform: translateY(-100%);
+
+        // transition-property: all;
+        // transition-duration: .5s;
+        // transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+      }
+    }
+
+    .card-details {
+      position: absolute;
+      padding: 20px 40px;
+      top: 0;
+      padding: 20px 40px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+
+      // transform: translateY(100%);
+      // transition-property: all;
+      // transition-duration: .5s;
+      // transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+      h3 {
+        text-transform: uppcase;
+        color: #fff;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+.trash-article {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+
+
+  img {
+    width:20px;
+    height:20px;
+  }
+}
+
