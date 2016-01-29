@@ -159,7 +159,7 @@
     margin-top: -70px;
     z-index: 10;
     position: relative;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
 
     &-headline {
@@ -188,7 +188,7 @@
     .category-tab{
       position: absolute;
       // text-transform: uppercase;
-      top: -21px;
+      top: -22px;
       right: -13px;
       background: #FE28A2;
       display: inline-block;
@@ -198,7 +198,7 @@
 
     .tags {
       position: absolute;
-      top: 6px;
+      top: 7px;
       right: -13px;
       background: #E22;
       display: inline-block;
@@ -275,7 +275,6 @@
 
   p {
     font-weight: 100;
-    font-size: 18px;
     margin: 0 0 11px;
     line-height:29px;
   }
