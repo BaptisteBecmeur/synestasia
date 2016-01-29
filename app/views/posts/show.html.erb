@@ -6,9 +6,15 @@
             <%= cl_image_tag @post.cover, :crop => :fill, class: "img-post-header" %>
           <div class="cover-filter"></div>
             <div class="article">
-              <div class="tags"> <%= @post.category %></div>
+              <div class="category-post"> <%= @post.category %></div>
                 <h1 class="article-headline text-center"><%= @post.title %></h1>
                 <p class="article-meta text-center">Publié le <%= @post.created_at.strftime("%d %b, %Y") %> </p>
+
+                <div class="content-part">
+                  <% if user_signed_in?  %>
+                    <h4><%= @post.introduction %></h4>
+                  <% end %>
+                </div>
 
                 <div class="content-part">
                   <% if user_signed_in?  %>

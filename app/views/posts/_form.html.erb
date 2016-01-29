@@ -11,7 +11,7 @@
           <%= f.input :category, collection: Post::CATEGORIES, selected: Post::CATEGORIES.first %>
         </div>
       </div>
-
+      <%= f.input :introduction, label: 'Introduction', input_html: { rows: 5} %>
       <%= f.input :content, label: 'Body', input_html: { rows: 5} %>
       <div class="text-center">
       <%= f.submit "Publier l'article maintenant", class: "btn btn-danger btn-lg" %>
