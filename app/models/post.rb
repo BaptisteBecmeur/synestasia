@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
   validates :tag, inclusion: { in: Post::TAGS, allow_nil: false }
   validates :category, inclusion: { in: Post::CATEGORIES, allow_nil: false }
   validates :user_id, presence: true
-  validates :title, presence: true, uniqueness: true
+  validates :title, presence: true
   validates :content, presence: true
 
 

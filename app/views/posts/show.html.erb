@@ -2,17 +2,17 @@
   <div class="container-post">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
+
             <%= cl_image_tag @post.cover, :crop => :fill, class: "img-post-header" %>
           <div class="cover-filter"></div>
+          <div class=" col-md-8 col-md-offset-2">
             <div class="article">
               <div class="tags"> <%= @post.tag %></div>
                 <h1 class="article-headline text-center"><%= @post.title %></h1>
-                <p class="article-meta text-center">le <%= @post.created_at.strftime("%d %b, %Y") %> </p>
 
                 <div class="intro-part">
                   <% if user_signed_in?  %>
-                    <h4><strong><%= @post.introduction %></strong></h4>
+                    <h5><strong><%= @post.introduction %></strong></h5>
                   <% end %>
                 </div>
 

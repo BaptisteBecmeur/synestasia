@@ -22,7 +22,7 @@
 
 #show-post {
   .container-post {
-    padding-top: 15px;
+    padding: 0px;
 
     .img-post-header {
       width: 100%;
@@ -120,7 +120,6 @@
   border-radius: 50%;
   }
 
-
   .container_new_post {
    background-color: #F9F9F9;
    padding-top: 18px;
@@ -130,7 +129,6 @@
     color:black;
      }
   }
-
 
   body {
     background-color: white;
@@ -155,9 +153,10 @@
 
   .article {
     background: white;
-    margin: 0 7% 0 7%;
-    padding: 20px;
-    margin-top: -100px;
+    padding-top: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: -70px;
     z-index: 10;
     position: relative;
     font-size: 16px;
@@ -165,8 +164,9 @@
 
     &-headline {
       margin: 0;
-      font-size: 38px;
-      margin-bottom: 15px;
+      font-size: 40px;
+      padding-bottom: 10px;
+      font-weight: 400;
     }
 
     &-meta {
@@ -180,10 +180,6 @@
       font-size:20px;
       font-family:Lato;
       padding:5px;
-    }
-
-    h2 {
-      font-size: 26px;
     }
 
     blockquote {
@@ -208,12 +204,8 @@
     }
   }
 
-  .synopsis {
-    background-color: #F2F2F2;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .intro-part {
+    padding-top: 10px;
 
     h2 {
      text-transform:uppercase;
@@ -229,6 +221,7 @@
   }
 
   .buttons-view-post{
+    margin-top: 40px;
     margin-bottom:30px;
   }
 
@@ -249,21 +242,32 @@
     text-align: -webkit-center;
   }
 
-  h4, .h4 {
-      font-size: 20px;
-      margin-top: 18px;
-      font-weight: 300;
-    }
+  h2 {
+    font-size: 26px;
+  }
 
-  h5, .h5 {
-    font-size: 16px;
+  h3 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  h5{
+    font-size: 22px;
     padding-top: 22px;
   }
 
   p {
-      margin: 0 0 11px;
-      line-height:29px;
-    }
+    font-weight: 100;
+    font-size: 18px;
+    margin: 0 0 11px;
+    line-height:29px;
+  }
+
+  h1, h2, h3, h4, h5, h6, p .h1, .h2, .h3, .h4, .h5, .h6 .p {
+    font-family: "Avenir", "Helvetica", "sans-serif";
+    line-height: 1.1;
+  }
 
   .card-filter-home {
 
@@ -333,7 +337,19 @@
       font-size: 12px;
     }
 
-    .card-post-cat {
+    .card-post-tag {
+      color:white;
+      text-transform: capitalise;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: #E22;
+      display: inline-block;
+      padding: 0 4px;
+      color: white;
+    }
+
+    .card-post-card {
       color:white;
       text-transform: uppercase;
       position: absolute;
