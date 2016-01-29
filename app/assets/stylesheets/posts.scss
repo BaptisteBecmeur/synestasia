@@ -22,128 +22,15 @@
 
 #show-post {
   .container-post {
-    padding-top: 17px;
-    background-color: #f2f2f2;
+    padding-top: 15px;
 
     .img-post-header {
       width: 100%;
+      background-size: cover;
     }
   }
 
-  .introduction {
-    background-color: #F2F2F2;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 20px;
-
-    h5 { text-transform: uppercase;
-    }
-  }
-
-  .contenu{
-    text-align: justify;
-  }
-
-  .diving {
-    background-color: white;
-  }
-
-  .img-circle {
-    border-radius: 1%;
-    height: 180px;
-  }
-
-  .avatar {
-  width: 40px;
-  border-radius: 50%;
-  }
-
-  .container_new_post {
-   background-color: #FFF;
-   padding-top: 18px;
-
-    h2  {
-    color:black;
-     }
-  }
-
-  body {
-    background-color: white;
-  }
-
-  .cover {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    background-position: center center;
-    margin-top: 20px;
-
-    &-filter {
-      position: absolute;
-      background-size:cover;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      //background: rgba(#000,0.1);
-    }
-  }
-
-  .article {
-    background: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 35px;
-    padding-left: 35px;
-    margin-bottom: 17px;
-    z-index: 10;
-    position: relative;
-    font-size: 16px;
-    line-height: 27px;
-
-    &-headline {
-      margin: 0;
-      font-size: 42px;
-      margin-bottom: 15px;
-      font-weight: 400;
-    }
-
-    &-meta {
-      color: #777;
-      margin-bottom: 25px;
-      font-weight: 300;
-    }
-
-    &-excerpt {
-      font-weight: bold;
-      font-size:18px;
-    }
-
-    h2 {
-      font-size: 26px;
-    }
-
-    blockquote {
-      margin: 0 20px;
-    }
-
-    .tags {
-      position: absolute;
-      top: -10px;
-      right: 120px;
-      background: #E22;
-      display: inline-block;
-      padding: 0 4px;
-      color: white;
-
-      p {
-        display: inline-block;
-        background: #E22;
-        padding: 0 4px;
-        color: white;
-      }
-
-    .card {
+  .card {
     top:0;
     left:0;
     right:0;
@@ -162,12 +49,12 @@
     padding: 185px 10px 74px 73px;
   }
 
-    .card h2 {
+  .card h2 {
     font-size:20px;
     text-transform:uppercase;
   }
 
-    .card-filter-home span {
+  .card-filter-home span {
     font-size:18px;
     text-decoration:none;
     color:white;
@@ -175,6 +62,7 @@
     display:block;
     z-index:1;
     padding: 22px;
+
   }
 
   .carding h1 {
@@ -187,7 +75,17 @@
     color: darkgray;
   }
 
-    .card-filter {
+  .synops h5 {
+    text-align: left;
+    color: darkgray;
+
+  }
+
+  .contenu{
+    text-align: justify;
+  }
+
+  .card-filter {
     color: #7FB8C8;
     padding: 15px;
     position: absolute;
@@ -196,24 +94,157 @@
     left:0;
     right:0;
     background: rgba(0.1, 0.1, 0.1, 0.6);
+    a {
+    color:white;
+    }
+  }
 
-      a {
-      color:white;
+  .diving {
+    background-color: white;
+  }
+
+  // .img-circle {
+  // border-radius: 1%;
+  // height: 180px;
+  // }
+
+  .user-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  }
+
+  .avatar {
+  width: 40px;
+  border-radius: 50%;
+  }
+
+
+  .container_new_post {
+   background-color: #F9F9F9;
+   padding-top: 18px;
+
+    h2  {
+    font-family: sans-serif;
+    color:black;
+     }
+  }
+
+
+  body {
+    background-color: white;
+  }
+
+  .cover {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-size:cover;
+    background-position: center center;
+
+    &-filter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(#000,0.1);
+    }
+  }
+
+  .article {
+    background: white;
+    margin: 0 7% 0 7%;
+    padding: 30px;
+    margin-top: -100px;
+    z-index: 10;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+
+    &-headline {
+      margin: 0;
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    &-meta {
+      color: #777;
+      margin-bottom: 25px;
+      font-weight: 300;
+    }
+
+    &-excerpt {
+      font-weight: bold;
+      font-size:20px;
+      font-family:Lato;
+      padding:5px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    blockquote {
+      margin: 0 20px;
+    }
+
+    .tags {
+      position: absolute;
+      top: -10px;
+      right: 30px;
+      background: #E22;
+      display: inline-block;
+      padding: 0 4px;
+      color: white;
+
+      p {
+        display: inline-block;
+        background: #E22;
+        padding: 0 4px;
+        color: white;
       }
     }
   }
-}
+
+
+  .synopsis {
+     background-color: #F2F2F2;
+     margin-bottom: 20px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+
+     h2 {
+      text-transform:uppercase;
+     }
+  }
+
+  .extra-info {
+     background-color: #F2F2F2;
+     margin-bottom: 40px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+
+  }
+
+  .buttons-view-post{
+    margin-bottom:30px;
+  }
+
 
   .article:after {
     content: "";
     position:absolute;
     bottom:0;
     left:0;
-    width:100%;
     height:30px;
     background: linear-gradient(to top,
-    rgba(255,255,255, 1) 20%,
-    rgba(255,255,255, 0) 80%);
+       rgba(255,255,255, 1) 20%,
+       rgba(255,255,255, 0) 80%
+    );
   }
 
   .picture-post {
@@ -223,23 +254,17 @@
   h4, .h4 {
       font-size: 20px;
       margin-top: 18px;
-      line-height: 27px;
     }
 
   h5, .h5 {
-      font-size: 25px;
-      font-weight: bold;
+    font-size: 16px;
+    padding-top: 22px;
   }
 
   p {
       margin: 0 0 11px;
-      margin-top: 30px;
+      line-height:29px;
     }
-
-  .article h2 {
-  padding-top: 18px;
-  font-size: 26px;
-  }
 
   .card-filter-home {
 
@@ -253,17 +278,24 @@
   }
 }
 
-
-// Blog index
+// Blog Index Articles
 
 #home-articles {
   margin-bottom: 50px;
 
   h2 {
     text-transform: uppercase;
+    text-align: center;
     padding: 40px 0 10px 20px;
     display: flex;
     align-items: center;
+
+    &:after {
+      margin: 0 20px;
+      content: "";
+      border-bottom: solid #000 1px;
+      flex: 1;
+    }
   }
 
   ul {
@@ -322,7 +354,6 @@
       margin: 0 10px;
       overflow: hidden;
       border-radius: 5px;
-
       a {
         display: block;
         position: absolute;
@@ -357,15 +388,15 @@
       right: 0;
       left: 0;
 
-      transform: translateY(100%);
-      transition-property: all;
-      transition-duration: .5s;
-      transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+      // transform: translateY(100%);
+      // transition-property: all;
+      // transition-duration: .5s;
+      // transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
       h3 {
-        text-transform: uppercase;
+        text-transform: uppcase;
         color: #fff;
-        font-size: 22px;
+        font-size: 19px;
       }
     }
   }

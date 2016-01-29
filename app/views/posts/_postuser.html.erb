@@ -12,8 +12,13 @@
 
       <%= link_to post_path(post) do %>
 
-        <span class="card-post-cat"><%= post.tag %></span>
+        <span class="card-post-cat"><%= post.category %></span>
         <h3><%= post.title %></h3>
+
+        <p class="card-post-author">
+          Publié par <%= post.user.first_name %>
+          <%= post.user.last_name[0] %>.
+        </p>
 
         <p class="card-post-date">
           <%= l post.user.created_at, format: :short %>

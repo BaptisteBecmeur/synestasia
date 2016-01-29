@@ -10,7 +10,7 @@
                 <h1 class="article-headline text-center"><%= @post.title %></h1>
                 <p class="article-meta text-center">le <%= @post.created_at.strftime("%d %b, %Y") %> </p>
 
-                <div class="content-part">
+                <div class="intro-part">
                   <% if user_signed_in?  %>
                     <h4><%= @post.introduction %></h4>
                   <% end %>
