@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="text-center buttons-view-post">
-                  <% if @post.user == current_user %>
+                  <% if current_user.try(:admin?) %>
                   <%= link_to "Modifier l'article", edit_post_path(@post), class: "btn btn-default btn-md" %>
                   <% else %>
 
