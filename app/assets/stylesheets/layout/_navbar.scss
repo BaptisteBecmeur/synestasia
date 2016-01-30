@@ -10,6 +10,45 @@
   //   border-left: 4px solid transparent;
   // }
 
+// LINKS NAVBAR links login + signup + Blog
+
+.sign-navbar {
+  margin-right:10px;
+  color: #1174BA;
+  font-weight: 300;
+  padding: 8px;
+
+  &:hover {
+    color: #559EFF;
+  }
+}
+
+.signup-navbar {
+  color: #1174BA;
+
+  &:hover {
+    color: #559EFF;
+  }
+}
+
+.blog-navbar {
+  color: #1174BA;
+  font-size:18px;
+  font-weight: 300;
+  padding-top: 11px;
+  padding-left: 20px;
+
+  &:hover {
+    color: #559EFF;
+  }
+}
+
+a:link a:visited a:hover a:focus {
+  text-decoration: none;
+}
+
+// Navbar
+
 .header-logo img {
   width: 90px;
 }

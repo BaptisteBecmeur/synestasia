@@ -151,6 +151,9 @@
     }
   }
 
+
+// View Article
+
   .article {
     background: white;
     padding-top: 35px;
@@ -187,9 +190,8 @@
 
     .category-tab{
       position: absolute;
-      // text-transform: uppercase;
-      top: -10px;
-      // right: -13px;
+      top: -14px;
+      left: 15px;
       background: #FE28A2;
       display: inline-block;
       padding: 0 4px;
@@ -198,8 +200,8 @@
 
     .tags {
       position: absolute;
-      top: -10px;
-      left: 67px;
+      top: -14px;
+      left: 72px;
       background: #E22;
       display: inline-block;
       padding: 0 4px;
@@ -269,7 +271,8 @@
 
   h6 {
     padding-top: 40px;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    font-weight: 300;
 
   }
 
@@ -284,19 +287,12 @@
     line-height: 1.1;
   }
 
-  .card-filter-home {
-
-    // background: #abbaab; /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-
   .card-filter-home a:hover {
     text-decoration:none;
   }
 }
 
-// Blog Index Articles
+// Blog Index Posts
 
 #home-articles {
   margin-bottom: 50px;
@@ -344,33 +340,25 @@
       font-style: italic;
     }
 
-    .card-post-date {
-      color: white;
-      position: absolute;
-      bottom: 20px;
-      left: 40px;
-      font-size: 12px;
-    }
-
     .card-post-tag {
       color:white;
       text-transform: capitalise;
       position: absolute;
       top: 10px;
-      right: 20px;
+      left: 77px;
       background: #E22;
       display: inline-block;
       padding: 0 4px;
       color: white;
     }
 
-    .card-post-card {
+    .card-post-category {
       color:white;
-      text-transform: uppercase;
+      text-transform: capitalise;
       position: absolute;
       top: 10px;
-      right: 20px;
-      background: #E22;
+      left: 26px;
+      background: #FE28A2;
       display: inline-block;
       padding: 0 4px;
       color: white;
@@ -401,11 +389,6 @@
         left: 0;
         right: 0;
         background-color: rgba(0,0,0,0.4);
-        // transform: translateY(-100%);
-
-        // transition-property: all;
-        // transition-duration: .5s;
-        // transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
       }
     }
 
@@ -417,11 +400,6 @@
       bottom: 0;
       right: 0;
       left: 0;
-
-      // transform: translateY(100%);
-      // transition-property: all;
-      // transition-duration: .5s;
-      // transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
       h3 {
         text-transform: uppcase;
@@ -435,8 +413,7 @@
 .trash-article {
   position: absolute;
   top: 7px;
-  left: 20px;
-
+  left: 0px;
 
   img {
     width:20px;

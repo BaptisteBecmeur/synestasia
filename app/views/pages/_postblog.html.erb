@@ -1,4 +1,3 @@
-
 <div class="card-filter-home" style="background: url(<%= cloudinary_url post.cover %>); background-size:cover">
   </div>
 
@@ -12,12 +11,12 @@
 
     <%= link_to post_path(post) do %>
 
+    <span class="card-post-category"><%= post.category %></span>
     <span class="card-post-tag"><%= post.tag %></span>
     <h4><%= post.title %></h4>
 
     <h6 class="card-post-author">
-      Publié par <%= post.user.first_name %>
-      <%= post.user.last_name[0] %>.
+      Publié par Aurélie B.
     </h6>
 
     <% end %>
