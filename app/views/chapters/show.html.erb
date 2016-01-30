@@ -10,12 +10,12 @@
           <ul class="list-unstyled">
             <% @chapter.items.each do |item| %>
             <li class="chapter-padding">
-              <h4>
+              <h5>
                 <span class="inset-lesson">
                   <%= link_to item.title, [@course, @chapter, item], :class => "fontcolorchapter" %>
                 </span>
                 <small>(<%= item.actable_type %>)</small>
-              </h4>
+              </h5>
             </li>
             <% end %>
           </ul>
