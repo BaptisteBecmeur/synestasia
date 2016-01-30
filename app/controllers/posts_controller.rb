@@ -11,6 +11,8 @@ class PostsController < ApplicationController
     @alert_message = "Vous lisez #{@post.title}"
   end
 
+private
+
   def new
     @post = Post.new
   end
@@ -39,8 +41,6 @@ class PostsController < ApplicationController
     @post.destroy
     redirect_to :back
   end
-
-  private
 
   def find_post
     @post = Post.find(params[:id])
