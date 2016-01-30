@@ -1,13 +1,19 @@
-<div class="container-page">
-  <div class="padding-page">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="page-progress">
-          Text
-          </div>
+<div class="container-page" id="home-articles">
+  <div class="container-fluid">
+    <div class="row">
+      <div class= "col-md-8 col-md-offset-2 form-page">
+        <div class="form-bgpage text-center">
+          <h1 class="text-center">Lisez nos derniers articles</h1>
+          <ul>
+            <% @posts.each do |post| %>
+            <li class=" container-cards">
+              <%= render 'postblog', post: post %>
+            </li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+

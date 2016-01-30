@@ -7,13 +7,14 @@
      </div>
   <% end %>
 
-    <%= link_to blog_path do  %>
+   <%= link_to blog_path do  %>
      <div class= "blog-style blog-navbar">
         <p>Blog</p>
      </div>
-  <% end %>
+    <% end %>
 
     <div class="navbar-wagon-pusher"></div>
+
     <% if user_signed_in? %>
 
     <%= link_to t(".top_call_to_action", default: "Mes cours"), courses_path, class: "separator-navbar" %>

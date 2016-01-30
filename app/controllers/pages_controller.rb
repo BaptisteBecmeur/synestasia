@@ -20,6 +20,7 @@ class PagesController < ApplicationController
   end
 
   def blog
+   @posts = Post.order('created_at DESC').limit(9)
   end
 
 end
