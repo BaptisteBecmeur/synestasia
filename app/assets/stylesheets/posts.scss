@@ -75,12 +75,6 @@
     color: darkgray;
   }
 
-  .synops h5 {
-    text-align: left;
-    color: darkgray;
-
-  }
-
   .contenu{
     text-align: justify;
   }
@@ -405,6 +399,13 @@
         text-transform: uppcase;
         color: #fff;
         font-size: 19px;
+      }
+
+      h4 {
+        color: white;
+        padding-top: 40px;
+        font-family: "Avenir", "Helvetica", "sans-serif";
+        font-size: 30px;
       }
     }
   }
