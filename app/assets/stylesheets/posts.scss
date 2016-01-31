@@ -75,12 +75,6 @@
     color: darkgray;
   }
 
-  .synops h5 {
-    text-align: left;
-    color: darkgray;
-
-  }
-
   .contenu{
     text-align: justify;
   }
@@ -265,6 +259,7 @@
   }
 
   h5 {
+    text-align: justify;
     font-size: 20px;
     padding-top: 30px;
   }
@@ -277,6 +272,7 @@
   }
 
   p {
+    text-align: justify;
     font-weight: 100;
     margin: 0 0 11px;
     line-height:29px;
@@ -405,6 +401,13 @@
         text-transform: uppcase;
         color: #fff;
         font-size: 19px;
+      }
+
+      h4 {
+        color: white;
+        padding-top: 40px;
+        font-family: "Avenir", "Helvetica", "sans-serif";
+        font-size: 30px;
       }
     }
   }
