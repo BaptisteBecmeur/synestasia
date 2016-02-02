@@ -23,4 +23,7 @@ class PagesController < ApplicationController
    @posts = Post.order('created_at DESC').limit(9)
   end
 
+  def hiragana
+  end
+
 end

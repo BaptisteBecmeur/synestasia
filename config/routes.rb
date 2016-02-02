@@ -1,19 +1,5 @@
 Rails.application.routes.draw do
 
-  # get 'posts/index'
-
-  # get 'posts/show'
-
-  # get 'posts/new'
-
-  # get 'posts/create'
-
-  # get 'posts/edit'
-
-  # get 'posts/update'
-
-  # get 'posts/destroy'
-
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'synestesie', to: 'pages#synestesie'
   get 'about', to: 'pages#about'
@@ -21,6 +7,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'legal', to: 'pages#legal'
   get 'blog', to: 'pages#blog'
+  get 'hiragana', to: 'pages#hiragana'
 
   root to: 'pages#home'
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }

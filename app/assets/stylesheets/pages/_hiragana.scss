@@ -1,0 +1,73 @@
+.container-page {
+  background-color: #f2f2f2;
+  position: relative;
+
+  .padding-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+  }
+}
+
+// Flip card
+
+#card {
+position: relative;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
+height: 320px;
+width: 200px;
+background-color: white;
+border-radius: 6px;
+
+.front{
+
+h1 {
+     font-size: 35px;
+  }
+
+    .prononciation {
+      top: 10px;
+      right: 65px;
+      display: inline-block;
+      color: red;
+      position: absolute;
+      text-shadow: 2px 2px #000;
+      cursor: pointer;
+    }
+
+    .audioclick {
+      top: 10px;
+      right: 43px;
+      display: inline-block;
+      color: red;
+      position: absolute;
+      text-shadow: 2px 2px #000;
+      cursor: pointer;
+    }
+
+    .card-question {
+      top: 10px;
+      right: 10px;
+      display: inline-block;
+      color: red;
+      position: absolute;
+      text-shadow: 2px 2px #000;
+      cursor: pointer;
+    }
+  }
+
+
+
+
+
+      .back {
+
+
+
+
+      }
+}
