@@ -4,17 +4,18 @@
 
   .padding-page {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     padding-right: 30px;
     padding-left: 30px;
 
   }
 }
 
-// Flip card
+// Flip card #card = container / .front = recto / .back = verso
 
 #card {
 position: relative;
+overflow: visible;
 text-align: center;
 margin-top: 30px;
 margin-bottom: 30px;
@@ -23,11 +24,11 @@ width: 200px;
 background-color: white;
 border-radius: 6px;
 
+// Front section
+
 .front{
 
-h1 {
-     font-size: 35px;
-  }
+// Features top FRONT card
 
     .prononciation {
       top: 10px;
@@ -60,14 +61,133 @@ h1 {
     }
   }
 
+// Card hiragana FRONT
 
+     .card-hiragana h1 {
+        padding-top:40px;
+        padding-bottom:10px;
+        font-size: 150px;
 
+    h1:hover {
+      color: grey;
+    }
+  }
 
+// hiragana A couleur verte
+    .hiragana-a {
+      color: black;
 
-      .back {
+    h1:hover {
+      color: $green;
+      cursor: default;
+    }
+  }
 
+// hiragana I couleur orange
+    .hiragana-i {
+      color: black;
 
+    h1:hover {
+      color: $orange;
+      cursor: default;
+    }
+  }
 
+  // hiragana U couleur violet
+    .hiragana-u {
+      color: black;
 
+    h1:hover {
+      color: $purple;
+      cursor: default;
+    }
+  }
+
+// hiragana E couleur rouge
+    .hiragana-e {
+      color: black;
+
+    h1:hover {
+      color: $red;
+      cursor: default;
+    }
+  }
+
+// hiragana O couleur bleu
+    .hiragana-o {
+      color: black;
+
+    h1:hover {
+      color: $blue;
+      cursor: default;
+    }
+  }
+
+// card katakana FRONT
+
+  .card-katakana {
+      color: black;
+      font-size: 40px
+    }
+
+// BACK card
+
+  .back {
+
+    .backcard-hiragana h1 {
+      padding-top:40px;
+      padding-bottom:10px;
+      font-size: 150px;
+      color: white;
+    }
+
+// background A couleur verte
+  .containerbackcards-a {
+    border-radius: 6px;
+    height: 320px;
+    width: 200px;
+    overflow: visible;
+    background-color: $green;
+  }
+
+// background I couleur orange
+    .containerbackcards-i {
+      position: relative;
+      border-radius: 6px;
+      height: 320px;
+      width: 200px;
+      overflow: visible;
+      background-color: $orange;
+    }
+
+// background U couleur violette
+    .containerbackcards-u {
+      position: relative;
+      border-radius: 6px;
+      height: 320px;
+      width: 200px;
+      overflow: visible;
+      background-color: $purple;
+    }
+
+// background E couleur rouge
+      .containerbackcards-e {
+        position: relative;
+        border-radius: 6px;
+        height: 320px;
+        width: 200px;
+        overflow: visible;
+        background-color: $red;
       }
+
+// background O couleur bleue
+      .containerbackcards-o {
+      position: relative;
+      border-radius: 6px;
+      height: 320px;
+      width: 200px;
+      overflow: visible;
+      background-color: $blue;
+    }
+  }
 }
