@@ -14,19 +14,20 @@
 // Flip card #card = container / .front = recto / .back = verso
 
 #card {
-position: relative;
-overflow: visible;
-text-align: center;
-margin-top: 30px;
-margin-bottom: 30px;
-height: 320px;
-width: 200px;
-background-color: white;
-border-radius: 6px;
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 320px;
+  width: 200px;
+
 
 // Front section
 
 .front{
+  border-radius: 6px;
+  background-color: white;
 
 // Features top FRONT card
 
@@ -171,17 +172,17 @@ border-radius: 6px;
     }
 
 // background E couleur rouge
-      .containerbackcards-e {
-        position: relative;
-        border-radius: 6px;
-        height: 320px;
-        width: 200px;
-        overflow: visible;
-        background-color: $red;
-      }
+    .containerbackcards-e {
+      position: relative;
+      border-radius: 6px;
+      height: 320px;
+      width: 200px;
+      overflow: visible;
+      background-color: $red;
+    }
 
 // background O couleur bleue
-      .containerbackcards-o {
+    .containerbackcards-o {
       position: relative;
       border-radius: 6px;
       height: 320px;
