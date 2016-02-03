@@ -1,103 +1,293 @@
 <div class="container-page">
   <div class="padding-page">
-    <div class="container-fluid" id="start-cards">
+    <div class="container-fluid">
       <div class="row">
-          <h1 class="text-center">Commençons maintenant en <br/>découvrant les hiraganas</h1>
+        <div class="text-start text-center">
+          <h1>Commençons dès maintenant avec les hiraganas !</h1>
+          <!-- <h3>Les hiraganas sont</h3>
+
+          <p>Nous présenterons ainsi un modèle de carte avec :
+          - un caractère en gros au centre,
+          - son équivalent hiragana/katakana en-dessous,
+          - la possibilité d'intervertir les deux, ou de n'en afficher qu'un et une série de petites icônes dans le coin en haut à droite :
+          - une oreille (pour écouter en audio la caractère prononcé, mini piste de lecture mp3) ;
+          - une main (pour voir le sens de l'écriture, grâce à un gif animé par exemple) ;
+          - une bouche (pour voir comment le prononcer, explication textuelle comme "A comme dans Attention" par exemple)
+          - une ampoule "idée" (pour montrer un dessin qui détourne le caractère afin de mieux le mémoriser)
+          - pourquoi pas un jour : la possibilité de s'enregistrer, pour valider si on le prononce bien soi-même...</p>
+          <h4>Comment ça marche ?</h4>
+
+          <p>les flashcards</p> -->
+        <!-- TEST <UL> <LI> avec 2 Card + 2 code Js indépendants -->
+        </div>
+
         <ul class="list-inline text-center">
-          <li>
-            <div class="col-sm-3 col-xs-4 col-md-3 container-cards">
-              <div class="card-details">
-                <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>A</h4><p class='text-muted text-center text-pop'><b>a</b> comme dans <b><u>a</u></b>ttention</p>">?</span>
+
+            <li>
+              <div id="card1">
+
+                <div class="front">
+
+                  <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
+
+                  <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
+
+                  <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>A</h4><p class='text-center'><em>a</em> comme dans attention</p>">
+                    <i class="fa fa-eye fa-lg"></i>
+                  </span>
+
+                  <div class="audioclick">
+                    <p>
+                      <i class="fa fa-volume-up fa-lg"></i>
+                    </p>
+                  </div>
+
+                  <!--  <div class="prononciation">
+                    <i class="fa fa-comment"></i>
+                  </div> -->
+
                 <div class="card-hiragana hiragana-a">
-                  <p>あ</p>
+                  <h1><b>あ</b></h1>
                 </div>
 
-                 <div class="card-katakana">
-                 <p>ア</p>
-                </div>
-                <div class="card-latin">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="col-sm-3 col-xs-4 col-md-3 container-cards">
-              <div class="card-details">
-                 <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>E</h4><p class='text-muted text-center text-pop'><b>é</b> comme dans karat<b><u>é</u></b></p>">?</span>
-                <div class="card-hiragana hiragana-e">
-                  <p>え</p>
-                </div>
                 <div class="card-katakana">
-                 <p>エ</p>
+                  <p>ア</p>
                 </div>
-                <div class="card-latin">
-                  <p></p>
-                </div>
+
+                <!-- </div> -->
               </div>
+
+              <div class="back">
+
+                <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-a">
+                  <div class="backcard-hiragana">
+                    <h1><b>あ</b></h1>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
+
           </li>
 
           <li>
-            <div class="col-sm-3 col-xs-4 col-md-3 container-cards">
-              <div class="card-details">
-                 <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>I</h4><p class='text-muted text-center text-pop'><b>i</b> comme dans <b><u>i</u></b>déogramme</p>">?</span>
-                <div class="card-hiragana hiragana-i">
-                  <p>い</p>
-                </div>
-                 <div class="card-katakana">
-                 <p>イ</p>
-                </div>
-                <div class="card-latin">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </li>
+            <div id="card2">
 
-          <li>
-            <div class="col-sm-3 col-xs-4 col-md-3 container-cards">
-              <div class="card-details">
-                 <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>O</h4><p class='text-muted text-center text-pop'><b>o</b> comme dans <b><u>o</u></b>range</p>">?</span>
-                <div class="card-hiragana hiragana-o">
-                  <p>お</p>
-                </div>
-                 <div class="card-katakana">
-                 <p>オ</p>
-                </div>
-                <div class="card-latin">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </li>
+                <div class="front">
 
-          <li>
-            <div class="col-sm-3 col-xs-4 col-md-3 container-cards">
-              <div class="card-details">
-                 <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>U</h4><p class='text-muted text-center text-pop'><b>ou</b> comme dans <b><u>ou</u></b>rson</p>">?</span>
-                <div class="card-hiragana hiragana-u">
-                  <p>う</p>
+                <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
+
+                <!--  <div class="col-sm- col-xs-4 col-md-3"> -->
+
+                  <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>E</h4><p class='text-center'><em>é</em> comme dans karaté</p>">
+                    <i class="fa fa-eye fa-lg"></i>
+                  </span>
+
+                  <div class="audioclick">
+                    <p>
+                      <i class="fa fa-volume-up fa-lg"></i>
+                    </p>
+                  </div>
+
+                      <!-- <div class="prononciation">
+                        <i class="fa fa-comment"></i>
+                      </div> -->
+
+                    <div class="card-hiragana hiragana-e">
+                      <h1><b>え</b></h1>
+                    </div>
+
+
+                    <div class="card-katakana">
+                      <p>エ</p>
+                    </div>
+
+
+                    <!-- </div> -->
+
+                  </div>
+
+
+
+                  <div class="back">
+
+                    <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-e">
+                      <div class="backcard-hiragana">
+                        <h1><b>え</b></h1>
+                      </div>
+                    </div>
+
+                  </div>
+
                 </div>
-                 <div class="card-katakana">
-                 <p>ウ</p>
+            </li>
+
+
+              <li>
+
+                <div id="card3">
+
+                  <div class="front">
+
+                    <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
+
+                    <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
+
+                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>I</h4><p class='text-center'><em>i</em> comme dans idéogramme</p>">
+                      <i class="fa fa-eye fa-lg"></i>
+                    </span>
+
+                    <div class="audioclick">
+                      <p>
+                        <i class="fa fa-volume-up fa-lg"></i>
+                      </p>
+                    </div>
+
+                     <!-- <div class="prononciation">
+                      <i class="fa fa-comment"></i>
+                    </div> -->
+
+                    <div class="card-hiragana hiragana-i">
+                      <h1><b>い</b></h1>
+                    </div>
+
+
+                    <div class="card-katakana">
+                      <p>イ</p>
+                    </div>
+
+                    <!-- </div> -->
+                  </div>
+
+
+
+                  <div class="back">
+
+                    <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-i">
+                      <div class="backcard-hiragana">
+                        <h1><b>い</b></h1>
+                      </div>
+                    </div>
+
+                  </div>
+
                 </div>
-                <div class="card-latin">
-                  <p></p>
+              </li>
+
+
+              <li>
+
+                <div id="card4">
+
+                  <div class="front">
+
+                    <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
+
+                    <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
+
+                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>O</h4><p class='text-center'><em>o</em> comme dans orange</p>">
+                      <i class="fa fa-eye fa-lg"></i>
+                    </span>
+
+                    <div class="audioclick">
+                      <p>
+                        <i class="fa fa-volume-up fa-lg"></i>
+                      </p>
+                    </div>
+
+                    <!-- <div class="prononciation">
+                      <i class="fa fa-comment"></i>
+                    </div> -->
+
+                    <div class="card-hiragana hiragana-o">
+                      <h1><b>お</b></h1>
+                    </div>
+
+                    <div class="card-katakana">
+                      <p>オ</p>
+                    </div>
+
+                    <!-- </div> -->
+                  </div>
+
+
+
+                  <div class="back">
+
+                    <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-o">
+                      <div class="backcard-hiragana">
+                        <h1><b>お</b></h1>
+                      </div>
+                    </div>
+
+                  </div>
+
                 </div>
-              </div>
-            </div>
+              </li>
+
+
+              <li>
+
+                <div id="card5">
+
+                  <div class="front">
+
+                    <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
+
+                    <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
+
+                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>U</h4><p class='text-center'><em>ou</em> comme dans ourson</p>">
+                      <i class="fa fa-eye fa-lg"></i>
+                    </span>
+
+                    <div class="audioclick">
+                      <p>
+                        <i class="fa fa-volume-up fa-lg"></i>
+                      </p>
+                    </div>
+
+                    <!-- <div class="prononciation">
+                      <i class="fa fa-comment"></i>
+                    </div> -->
+
+                    <div class="card-hiragana hiragana-u">
+                      <h1><b>う</b></h1>
+                    </div>
+
+
+                    <div class="card-katakana">
+                      <p>ウ</p>
+                    </div>
+
+                    <!-- </div> -->
+                  </div>
+
+
+
+                  <div class="back">
+
+                    <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-u">
+                      <div class="backcard-hiragana">
+                        <h1><b>う</b></h1>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+        </ul>
+
+        <ul class="list-unstyled list-inline text-center">
+          <li class="contactbutton-section">
+            <%= link_to "Je continue", start_path, class:'subscribe-button startpage-button style-start-button', target: '_blank' %>
           </li>
         </ul>
+
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-
 

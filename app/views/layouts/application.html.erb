@@ -25,20 +25,28 @@
     <%= javascript_include_tag 'application' %>
 
     <!-- simple markdown -->
-
     <link rel="stylesheet" href="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+    <!-- jquery flip card -->
+    <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"></script>
+
+    <!-- js Flip -->
+    <script >
+      $("#card1, #card2, #card3, #card4, #card5").flip({axis: 'y'});
+    </script>
 
 
    <!-- js popover -->
-  <script >
-    $(document).ready(function(){
-    $(".img-popover").popover({
-    html: true,
-    trigger: "hover",
-    placement: "top"
-    });
-    })
-  </script>
+    <script >
+      $(document).ready(function(){
+      $(".img-popover").popover({
+      html: true,
+      trigger: "hover",
+      placement: "top"
+      });
+      })
+    </script>
 
   <%= yield(:after_js) %>
 

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_filter :authenticate_user!, only: [:start]
+  # before_filter :authenticate_user!, only: [:start]
 
   def home
   end
@@ -21,6 +21,9 @@ class PagesController < ApplicationController
 
   def blog
    @posts = Post.order('created_at DESC').limit(9)
+  end
+
+  def hiragana
   end
 
 end

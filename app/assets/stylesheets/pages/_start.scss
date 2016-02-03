@@ -1,203 +1,207 @@
 .container-page {
   background-color: #f2f2f2;
-  padding: 0;
-  position: relative;
 
-  .form-page {
-    background-color: #fff;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+  .padding-page {
+    padding-top: 40px;
+    padding-bottom: 80px;
+
   }
 }
 
-.form-bgpage {
-  position: relative;
-  border:1px solid #fff;
-  margin-bottom: 0px;
-  width: 100%;
+.text-start {
+  h4 {
+    font-weight: 400;
+  }
 }
 
+// Flip card #card = container / .front = recto / .back = verso
 
-// hiranaga cards
+#card1, #card2, #card3, #card4, #card5 {
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 320px;
+  width: 200px;
 
-  #start-cards {
-    margin-bottom: 30px;
 
-  h1 {
-    margin:30px;
-    padding-top: 10px;
-    letter-spacing: 2px;
-    line-heigth: 35px;
-    font-size: 35px;
-    color: #000;
-  }
+// Front section
 
-  .container-cards {
-    position: relative;
-    border-radius: 6px;
-    margin: 20px;
-    padding: 10px;
-    height: 300px;
-    width: 200px;
-    overflow: visible;
-    background-color: white;
+.front{
+  border-radius: 6px;
+  background-color: white;
 
-     ul {
-    list-style: none;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
+// Features top FRONT card
 
-    li { position: relative; }
-  }
-
+     // oeil
     .card-question {
-      color:white;
-      text-transform: uppercase;
       top: 10px;
-      right: 15px;
-      background: #E22;
+      right: 10px;
       display: inline-block;
-      padding: 4px 11px 4px 11px;
-      border-radius: 60px;
-      color: white;
-      font-weight:bold;
+      color: red;
       position: absolute;
-      text-shadow: 2px 2px #000;
+      // text-shadow: 2px 1px #686868;
       cursor: pointer;
     }
 
-    .card-hiragana {
-      margin-top: 35px;
-      font-size: 120px;
+     // volume on
+    .audioclick {
+      top: 10px;
+      right: 43px;
+      display: inline-block;
+      color: red;
+      position: absolute;
+      // text-shadow: 2px 1px #686868;
+      cursor: pointer;
+    }
 
-    p:hover {
+    // // bubble
+    // .prononciation {
+    //   top: 10px;
+    //   right: 70px;
+    //   display: inline-block;
+    //   color: red;
+    //   position: absolute;
+    //   text-shadow: 2px 2px #686868;
+    //   cursor: pointer;
+    // }
+  }
+
+  // Ajouter un coeur pour favori ??
+
+
+
+// Card hiragana FRONT
+
+     .card-hiragana h1 {
+        padding-top:40px;
+        padding-bottom:10px;
+        font-size: 150px;
+
+    h1:hover {
       color: grey;
     }
   }
+
 // hiragana A couleur verte
     .hiragana-a {
       color: black;
 
-    p:hover {
+    h1:hover {
       color: $green;
       cursor: default;
     }
   }
+
 // hiragana I couleur orange
     .hiragana-i {
       color: black;
 
-    p:hover {
-      color: $orange;
+    h1:hover {
+      color: $pink;
       cursor: default;
     }
   }
 
-  // hiragana U couleur violette
+  // hiragana U couleur violet
     .hiragana-u {
       color: black;
 
-    p:hover {
+    h1:hover {
       color: $purple;
       cursor: default;
     }
   }
+
 // hiragana E couleur rouge
     .hiragana-e {
       color: black;
 
-    p:hover {
+    h1:hover {
       color: $red;
       cursor: default;
     }
   }
 
-  // hiragana O couleur bleue
+// hiragana O couleur bleu
     .hiragana-o {
       color: black;
 
-    p:hover {
+    h1:hover {
       color: $blue;
       cursor: default;
     }
   }
 
-    .card-katakana {
+// card katakana FRONT
+
+  .card-katakana {
       color: black;
       font-size: 40px
     }
 
-    .card-latin {
-      color: black;
-      bottom: 10px;
-      left: 40px;
-      font-size: 12px;
+// BACK card
+
+  .back {
+
+    .backcard-hiragana h1 {
+      padding-top:40px;
+      padding-bottom:10px;
+      font-size: 150px;
+      color: white;
     }
 
-    a { text-decoration: none; }
+// background A couleur verte
+  .containerbackcards-a {
+    border-radius: 6px;
+    height: 320px;
+    width: 200px;
+    overflow: visible;
+    background-color: $green;
+  }
 
-    .card-filter-home {
+// background I couleur orange
+    .containerbackcards-i {
       position: relative;
-      height: 220px;
-      margin: 0 10px;
-      overflow: hidden;
-      border-radius: 5px;
-
-      a {
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0,0,0,0.4);
-      }
+      border-radius: 6px;
+      height: 320px;
+      width: 200px;
+      overflow: visible;
+      background-color: $pink;
     }
 
-    .card-details {
-      position: absolute;
-      padding: 20px 40px;
-      top: 0;
-      padding: 20px 40px;
-      bottom: 0;
-      right: 0;
-      left: 0;
+// background U couleur violette
+    .containerbackcards-u {
+      position: relative;
+      border-radius: 6px;
+      height: 320px;
+      width: 200px;
+      overflow: visible;
+      background-color: $purple;
+    }
 
-      h3 {
-        text-transform: uppcase;
-        color: #000;
-        font-size: 19px;
-      }
+// background E couleur rouge
+    .containerbackcards-e {
+      position: relative;
+      border-radius: 6px;
+      height: 320px;
+      width: 200px;
+      overflow: visible;
+      background-color: $red;
+    }
+
+// background O couleur bleue
+    .containerbackcards-o {
+      position: relative;
+      border-radius: 6px;
+      height: 320px;
+      width: 200px;
+      overflow: visible;
+      background-color: $blue;
     }
   }
 }
-
-.text-pop {
-  color: black;
-  font-size: 16px;
-}
-
-.letter-uppercase {
-  font-weigth: 400px;
-  font-size: 30px;
-}
-
-
-
-
