@@ -51,7 +51,18 @@
      // volume on
     .audioclick {
       top: 10px;
-      right: 43px;
+      right: 41px;
+      display: inline-block;
+      color: red;
+      position: absolute;
+      // text-shadow: 2px 1px #686868;
+      cursor: pointer;
+    }
+
+   // lightbulb
+   .idea {
+      top: 10px;
+      right: 71px;
       display: inline-block;
       color: red;
       position: absolute;
@@ -72,7 +83,6 @@
   }
 
   // Ajouter un coeur pour favori ??
-
 
 
 // Card hiragana FRONT
