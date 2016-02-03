@@ -1,201 +1,201 @@
-.container-page {
-  background-color: #f2f2f2;
-  position: relative;
+// .container-page {
+//   background-color: #f2f2f2;
+//   position: relative;
 
-  .padding-page {
-    padding-top: 60px;
-    padding-bottom: 80px;
+//   .padding-page {
+//     padding-top: 60px;
+//     padding-bottom: 80px;
 
-  }
-}
+//   }
+// }
 
-// Flip card #card = container / .front = recto / .back = verso
+// // Flip card #card = container / .front = recto / .back = verso
 
-#card1, #card2, #card3, #card4, #card5 {
-  position: relative;
-  overflow: visible;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 320px;
-  width: 200px;
-
-
-// Front section
-
-.front{
-  border-radius: 6px;
-  background-color: white;
-
-// Features top FRONT card
-
-     // oeil
-    .card-question {
-      top: 10px;
-      right: 10px;
-      display: inline-block;
-      color: red;
-      position: absolute;
-      // text-shadow: 2px 1px #686868;
-      cursor: pointer;
-    }
-
-     // volume on
-    .audioclick {
-      top: 10px;
-      right: 43px;
-      display: inline-block;
-      color: red;
-      position: absolute;
-      // text-shadow: 2px 1px #686868;
-      cursor: pointer;
-    }
-
-    // // bubble
-    // .prononciation {
-    //   top: 10px;
-    //   right: 70px;
-    //   display: inline-block;
-    //   color: red;
-    //   position: absolute;
-    //   text-shadow: 2px 2px #686868;
-    //   cursor: pointer;
-    // }
-  }
-
-  // Ajouter un coeur pour favori ??
+// #card1, #card2, #card3, #card4, #card5 {
+//   position: relative;
+//   overflow: visible;
+//   text-align: center;
+//   margin-top: 40px;
+//   margin-bottom: 20px;
+//   margin-left: 10px;
+//   margin-right: 10px;
+//   height: 320px;
+//   width: 200px;
 
 
+// // Front section
 
-// Card hiragana FRONT
+// .front{
+//   border-radius: 6px;
+//   background-color: white;
 
-     .card-hiragana h1 {
-        padding-top:40px;
-        padding-bottom:10px;
-        font-size: 150px;
+// // Features top FRONT card
 
-    h1:hover {
-      color: grey;
-    }
-  }
+//      // oeil
+//     .card-question {
+//       top: 10px;
+//       right: 10px;
+//       display: inline-block;
+//       color: red;
+//       position: absolute;
+//       // text-shadow: 2px 1px #686868;
+//       cursor: pointer;
+//     }
 
-// hiragana A couleur verte
-    .hiragana-a {
-      color: black;
+//      // volume on
+//     .audioclick {
+//       top: 10px;
+//       right: 43px;
+//       display: inline-block;
+//       color: red;
+//       position: absolute;
+//       // text-shadow: 2px 1px #686868;
+//       cursor: pointer;
+//     }
 
-    h1:hover {
-      color: $green;
-      cursor: default;
-    }
-  }
+//     // // bubble
+//     // .prononciation {
+//     //   top: 10px;
+//     //   right: 70px;
+//     //   display: inline-block;
+//     //   color: red;
+//     //   position: absolute;
+//     //   text-shadow: 2px 2px #686868;
+//     //   cursor: pointer;
+//     // }
+//   }
 
-// hiragana I couleur orange
-    .hiragana-i {
-      color: black;
+//   // Ajouter un coeur pour favori ??
 
-    h1:hover {
-      color: $orange;
-      cursor: default;
-    }
-  }
 
-  // hiragana U couleur violet
-    .hiragana-u {
-      color: black;
 
-    h1:hover {
-      color: $purple;
-      cursor: default;
-    }
-  }
+// // Card hiragana FRONT
 
-// hiragana E couleur rouge
-    .hiragana-e {
-      color: black;
+//      .card-hiragana h1 {
+//         padding-top:40px;
+//         padding-bottom:10px;
+//         font-size: 150px;
 
-    h1:hover {
-      color: $red;
-      cursor: default;
-    }
-  }
+//     h1:hover {
+//       color: grey;
+//     }
+//   }
 
-// hiragana O couleur bleu
-    .hiragana-o {
-      color: black;
+// // hiragana A couleur verte
+//     .hiragana-a {
+//       color: black;
 
-    h1:hover {
-      color: $blue;
-      cursor: default;
-    }
-  }
+//     h1:hover {
+//       color: $green;
+//       cursor: default;
+//     }
+//   }
 
-// card katakana FRONT
+// // hiragana I couleur orange
+//     .hiragana-i {
+//       color: black;
 
-  .card-katakana {
-      color: black;
-      font-size: 40px
-    }
+//     h1:hover {
+//       color: $pink;
+//       cursor: default;
+//     }
+//   }
 
-// BACK card
+//   // hiragana U couleur violet
+//     .hiragana-u {
+//       color: black;
 
-  .back {
+//     h1:hover {
+//       color: $purple;
+//       cursor: default;
+//     }
+//   }
 
-    .backcard-hiragana h1 {
-      padding-top:40px;
-      padding-bottom:10px;
-      font-size: 150px;
-      color: white;
-    }
+// // hiragana E couleur rouge
+//     .hiragana-e {
+//       color: black;
 
-// background A couleur verte
-  .containerbackcards-a {
-    border-radius: 6px;
-    height: 320px;
-    width: 200px;
-    overflow: visible;
-    background-color: $green;
-  }
+//     h1:hover {
+//       color: $red;
+//       cursor: default;
+//     }
+//   }
 
-// background I couleur orange
-    .containerbackcards-i {
-      position: relative;
-      border-radius: 6px;
-      height: 320px;
-      width: 200px;
-      overflow: visible;
-      background-color: $orange;
-    }
+// // hiragana O couleur bleu
+//     .hiragana-o {
+//       color: black;
 
-// background U couleur violette
-    .containerbackcards-u {
-      position: relative;
-      border-radius: 6px;
-      height: 320px;
-      width: 200px;
-      overflow: visible;
-      background-color: $purple;
-    }
+//     h1:hover {
+//       color: $blue;
+//       cursor: default;
+//     }
+//   }
 
-// background E couleur rouge
-    .containerbackcards-e {
-      position: relative;
-      border-radius: 6px;
-      height: 320px;
-      width: 200px;
-      overflow: visible;
-      background-color: $red;
-    }
+// // card katakana FRONT
 
-// background O couleur bleue
-    .containerbackcards-o {
-      position: relative;
-      border-radius: 6px;
-      height: 320px;
-      width: 200px;
-      overflow: visible;
-      background-color: $blue;
-    }
-  }
-}
+//   .card-katakana {
+//       color: black;
+//       font-size: 40px
+//     }
+
+// // BACK card
+
+//   .back {
+
+//     .backcard-hiragana h1 {
+//       padding-top:40px;
+//       padding-bottom:10px;
+//       font-size: 150px;
+//       color: white;
+//     }
+
+// // background A couleur verte
+//   .containerbackcards-a {
+//     border-radius: 6px;
+//     height: 320px;
+//     width: 200px;
+//     overflow: visible;
+//     background-color: $green;
+//   }
+
+// // background I couleur orange
+//     .containerbackcards-i {
+//       position: relative;
+//       border-radius: 6px;
+//       height: 320px;
+//       width: 200px;
+//       overflow: visible;
+//       background-color: $pink;
+//     }
+
+// // background U couleur violette
+//     .containerbackcards-u {
+//       position: relative;
+//       border-radius: 6px;
+//       height: 320px;
+//       width: 200px;
+//       overflow: visible;
+//       background-color: $purple;
+//     }
+
+// // background E couleur rouge
+//     .containerbackcards-e {
+//       position: relative;
+//       border-radius: 6px;
+//       height: 320px;
+//       width: 200px;
+//       overflow: visible;
+//       background-color: $red;
+//     }
+
+// // background O couleur bleue
+//     .containerbackcards-o {
+//       position: relative;
+//       border-radius: 6px;
+//       height: 320px;
+//       width: 200px;
+//       overflow: visible;
+//       background-color: $blue;
+//     }
+//   }
+// }
