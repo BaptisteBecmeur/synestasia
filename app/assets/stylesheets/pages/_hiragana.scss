@@ -11,12 +11,14 @@
 
 // Flip card #card = container / .front = recto / .back = verso
 
-#card, #card1 {
+#card1, #card2, #card3, #card4, #card5 {
   position: relative;
   overflow: visible;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   height: 320px;
   width: 200px;
 
