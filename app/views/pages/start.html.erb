@@ -2,29 +2,33 @@
   <div class="padding-page">
     <div class="container-fluid">
       <div class="row">
-        <div class="text-start text-center">
-          <h1>Commençons dès maintenant avec les hiraganas !</h1>
-          <!-- <h3>Les hiraganas sont</h3>
 
-          <p>Nous présenterons ainsi un modèle de carte avec :
-          - un caractère en gros au centre,
-          - son équivalent hiragana/katakana en-dessous,
-          - la possibilité d'intervertir les deux, ou de n'en afficher qu'un et une série de petites icônes dans le coin en haut à droite :
-          - une oreille (pour écouter en audio la caractère prononcé, mini piste de lecture mp3) ;
-          - une main (pour voir le sens de l'écriture, grâce à un gif animé par exemple) ;
-          - une bouche (pour voir comment le prononcer, explication textuelle comme "A comme dans Attention" par exemple)
-          - une ampoule "idée" (pour montrer un dessin qui détourne le caractère afin de mieux le mémoriser)
-          - pourquoi pas un jour : la possibilité de s'enregistrer, pour valider si on le prononce bien soi-même...</p>
-          <h4>Comment ça marche ?</h4>
+          <div class= "col-xs-12 col-sm-12 col-md-12">
 
-          <p>les flashcards</p> -->
-        <!-- TEST <UL> <LI> avec 2 Card + 2 code Js indépendants -->
-        </div>
+            <h1 class="text-center"><span class="inset-start">Les hiraganas l'une des 3 écritures du japonais</span></h1>
+
+            <div class="row demo-frame-first">
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <p class="text-center">C'est un syllabaire, qui permet de transcrire la langue japonaise sans ambiguïté.
+              Chaque hiragana représente en effet une syllabe - qui peut être une voyelle seule (A, E, I, O ou U) ou une consonne suivie de l'une de ces 5 voyelles.
+              Il y a également le "n" syllabique, ん, dont la prononciation varie en fonction de la syllabe qui le suit.</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <p class="text-center">Ici, on associe respectivement les sons A, E, I, O, U aux couleurs Vert, Rouge, Rose, Bleu, Violet. La perception d'une couleur permet ainsi de découvrir de façon intuitive le son final représenté par tel ou tel caractère ou combinaison de caractères.</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <p class="text-center">Les hiraganas sont traditionnellement présentés sous forme de tableau, les regroupant en colonne en fonction de leur "voyelle" commune. L'approche synesthésique, inspirée en partie de la "lecture en couleur" du pédagogue Caleb Gattegno, consiste à associer à chaque phénomène une coloration particulière.</p>
+            </div>
+
+          </div>
 
         <ul class="list-inline text-center">
 
             <li>
-              <div id="card1">
+              <div class="card">
 
                 <div class="front">
 
@@ -32,7 +36,7 @@
 
                   <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
 
-                  <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>A</h4><p class='text-center'><em>a</em> comme dans attention</p>">
+                  <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>A</h4><p class='text-center'><b>a</b> comme dans attention</p>">
                     <i class="fa fa-eye fa-lg"></i>
                   </span>
 
@@ -42,17 +46,21 @@
                     </p>
                   </div>
 
-                  <!--  <div class="prononciation">
-                    <i class="fa fa-comment"></i>
-                  </div> -->
+                  <!-- <div class="prononciation">
+                        <i class="fa fa-comment"></i>
+                      </div> -->
 
-                <div class="card-hiragana hiragana-a">
-                  <h1><b>あ</b></h1>
-                </div>
+                  <div class="idea">
+                    <i class="fa fa-lightbulb-o fa-lg"></i>
+                  </div>
 
-                <div class="card-katakana">
-                  <p>ア</p>
-                </div>
+                  <div class="card-hiragana hiragana-a">
+                    <h1><b>あ</b></h1>
+                  </div>
+
+                  <div class="card-katakana">
+                    <p>ア</p>
+                  </div>
 
                 <!-- </div> -->
               </div>
@@ -72,15 +80,15 @@
           </li>
 
           <li>
-            <div id="card2">
+            <div class="card">
 
                 <div class="front">
 
                 <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
 
-                <!--  <div class="col-sm- col-xs-4 col-md-3"> -->
+                <!--  <div class="col-sm-12 col-xs-4 col-md-3"> -->
 
-                  <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>E</h4><p class='text-center'><em>é</em> comme dans karaté</p>">
+                  <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>E</h4><p class='text-center'><b>é</b> comme dans karaté</p>">
                     <i class="fa fa-eye fa-lg"></i>
                   </span>
 
@@ -93,6 +101,10 @@
                       <!-- <div class="prononciation">
                         <i class="fa fa-comment"></i>
                       </div> -->
+
+                  <div class="idea">
+                    <i class="fa fa-lightbulb-o fa-lg"></i>
+                  </div>
 
                     <div class="card-hiragana hiragana-e">
                       <h1><b>え</b></h1>
@@ -124,9 +136,8 @@
             </li>
 
 
-              <li>
-
-                <div id="card3">
+            <li>
+              <div class="card">
 
                   <div class="front">
 
@@ -134,7 +145,7 @@
 
                     <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
 
-                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>I</h4><p class='text-center'><em>i</em> comme dans idéogramme</p>">
+                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>I</h4><p class='text-center'><b>i</b> comme dans idéogramme</p>">
                       <i class="fa fa-eye fa-lg"></i>
                     </span>
 
@@ -144,23 +155,24 @@
                       </p>
                     </div>
 
-                     <!-- <div class="prononciation">
-                      <i class="fa fa-comment"></i>
-                    </div> -->
+                       <!-- <div class="prononciation">
+                        <i class="fa fa-comment"></i>
+                      </div> -->
+
+                    <div class="idea">
+                      <i class="fa fa-lightbulb-o fa-lg"></i>
+                    </div>
 
                     <div class="card-hiragana hiragana-i">
                       <h1><b>い</b></h1>
                     </div>
 
-
                     <div class="card-katakana">
                       <p>イ</p>
                     </div>
 
-                    <!-- </div> -->
+                      <!-- </div> -->
                   </div>
-
-
 
                   <div class="back">
 
@@ -178,7 +190,7 @@
 
               <li>
 
-                <div id="card4">
+                <div class="card">
 
                   <div class="front">
 
@@ -186,7 +198,7 @@
 
                     <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
 
-                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>O</h4><p class='text-center'><em>o</em> comme dans orange</p>">
+                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>O</h4><p class='text-center'><b>o</b> comme dans orange</p>">
                       <i class="fa fa-eye fa-lg"></i>
                     </span>
 
@@ -200,6 +212,10 @@
                       <i class="fa fa-comment"></i>
                     </div> -->
 
+                    <div class="idea">
+                      <i class="fa fa-lightbulb-o fa-lg"></i>
+                    </div>
+
                     <div class="card-hiragana hiragana-o">
                       <h1><b>お</b></h1>
                     </div>
@@ -210,8 +226,6 @@
 
                     <!-- </div> -->
                   </div>
-
-
 
                   <div class="back">
 
@@ -228,8 +242,7 @@
 
 
               <li>
-
-                <div id="card5">
+                <div class="card">
 
                   <div class="front">
 
@@ -237,7 +250,7 @@
 
                     <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
 
-                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>U</h4><p class='text-center'><em>ou</em> comme dans ourson</p>">
+                    <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'>U</h4><p class='text-center'><b>ou</b> comme dans ourson</p>">
                       <i class="fa fa-eye fa-lg"></i>
                     </span>
 
@@ -251,6 +264,10 @@
                       <i class="fa fa-comment"></i>
                     </div> -->
 
+                    <div class="idea">
+                      <i class="fa fa-lightbulb-o fa-lg"></i>
+                    </div>
+
                     <div class="card-hiragana hiragana-u">
                       <h1><b>う</b></h1>
                     </div>
@@ -263,8 +280,6 @@
                     <!-- </div> -->
                   </div>
 
-
-
                   <div class="back">
 
                     <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-u">
@@ -274,17 +289,39 @@
                     </div>
 
                   </div>
-
                 </div>
               </li>
+            </ul>
 
-        </ul>
 
-        <ul class="list-unstyled list-inline text-center">
-          <li class="contactbutton-section">
-            <%= link_to "Je continue", start_path, class:'subscribe-button startpage-button style-start-button', target: '_blank' %>
-          </li>
-        </ul>
+            <h3 class="text-center"><span class="inset-start">Comment utiliser les flashcards</span></h3>
+
+            <div class="row demo-frame">
+
+              <div class= "col-xs-12 col-sm-3 col-md-3">
+                <p class="text-center">Le principe est le suivant : vous faites défiler les cartes en cherchant à chaque fois à retrouver quel est le son associé au caractère présenté (ici, le hiragana en gros au centre).
+              </div>
+
+              <div class= "col-xs-12 col-sm-3 col-md-3">
+                <p class="text-center">Si vous avez besoin d'un indice, survolez la carte avec la souris : la couleur vous donnera alors une indication.</p>
+              </div>
+
+              <div class= "col-xs-12 col-sm-3 col-md-3">
+                <p class="text-center">Pour en savoir plus, cliquez sur les icones en haut à droite : prononciation, écriture ou prononciation, vous trouverez là toutes les informations pour décoder et reproduire le caractère.</p>
+              </div>
+
+              <div class= "col-xs-12 col-sm-3 col-md-3">
+                <p class="text-center">Cliquez sur la carte pour la retourner ! Le caractère se détache alors en blanc sur le fond de couleur correspondant, favorisant sa mémorisation.</p>
+              </div>
+
+            </div>
+
+            <h4 class="text-center start-gap">A de jouer !</h4>
+
+
+          <div class="contactbutton-section text-center">
+            <%= link_to "Voir tous les hiraganas", start_path, class:'subscribe-button startpage-button style-start-button', target: '_blank' %>
+          </div>
 
       </div>
     </div>
