@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'hiraganas/index'
+
+  get 'hiraganas/show'
+
+  get 'hiraganas/new'
+
+  get 'hiraganas/create'
+
+  get 'hiraganas/edit'
+
+  get 'hiraganas/update'
+
+  get 'hiraganas/destroy'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'synestesie', to: 'pages#synestesie'
   get 'about', to: 'pages#about'
