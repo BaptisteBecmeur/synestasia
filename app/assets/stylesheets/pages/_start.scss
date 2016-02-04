@@ -1,23 +1,34 @@
 .container-page {
   background-color: #f2f2f2;
 
-
   .padding-page {
     padding-top: 40px;
     padding-bottom: 80px;
-
   }
-}
 
-.text-start {
-  h4 {
+   h2 {
+      line-height: 100%;
+      padding-bottom: 15px;
+      font-family: "Avenir", "Helvetica", "sans-serif";
+      font-size: 23px;
+      font-weight: 400;
+    }
+
+  p {
+    font-family: 'Open Sans';
+    //
     font-weight: 400;
+    font-size: 16px;
   }
 }
+
+
 
 // Flip card #card = container / .front = recto / .back = verso
 
-#card1, #card2, #card3, #card4, #card5 {
+// , #card2, #card3, #card4, #card5
+
+.card {
   position: relative;
   overflow: visible;
   text-align: center;
