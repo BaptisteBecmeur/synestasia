@@ -1,19 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'hiraganas/index'
-
-  get 'hiraganas/show'
-
-  get 'hiraganas/new'
-
-  get 'hiraganas/create'
-
-  get 'hiraganas/edit'
-
-  get 'hiraganas/update'
-
-  get 'hiraganas/destroy'
-
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'synestesie', to: 'pages#synestesie'
   get 'about', to: 'pages#about'
@@ -31,7 +17,21 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :posts
+    resources :posts
+
+    resources :hiraganas
+
+
+
+
+
+  get 'courses', to: 'courses#index'
+
+
+end
+
+
+
 
 
   # resources :courses do
@@ -41,23 +41,9 @@ Rails.application.routes.draw do
   #   end
 
 
-  get 'courses', to: 'courses#index'
-
-  # get 'courses/:id' => 'courses#show', as: :courses_show
+ # get 'courses/:id' => 'courses#show', as: :courses_show
   #   get 'chapters/show'
   #     get 'items/show'
-
-
-end
-
-
-
-
-
-
-
-
-
 
 
   # resources: :courses, only: [:show], path: "" do
