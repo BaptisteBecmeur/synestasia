@@ -6,6 +6,18 @@
         <h1>Tous les hiraganas</h1>
       </div>
 
+      <div class="col-md-8 col-md-offset-2">
+        <ul class="list-unstyled list-inline text-center">
+          <li>
+            <%= link_to hiraganas_shuffle_path do %>
+              <div class="about-button">
+                <h5>mélangés les hiraganas</h5>
+              </div>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+
       <ul class="list-inline text-center">
         <% @hiraganas.each do |hiragana| %>
           <li>

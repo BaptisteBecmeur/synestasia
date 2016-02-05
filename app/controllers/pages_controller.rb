@@ -20,7 +20,7 @@ class PagesController < ApplicationController
   end
 
   def blog
-   @posts = Post.order('created_at DESC').limit(9)
+   @posts = Post.order('created_at DESC').limit(12)
   end
 
   def hiraganas_shuffle
