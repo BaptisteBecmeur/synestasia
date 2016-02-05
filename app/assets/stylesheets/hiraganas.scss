@@ -118,6 +118,16 @@
     }
   }
 
+  // hiragana E couleur rouge
+    .hiragana-e {
+      color: black;
+
+    h1:hover {
+      color: $red;
+      cursor: default;
+    }
+  }
+
 // hiragana I couleur orange
     .hiragana-i {
       color: black;
@@ -134,16 +144,6 @@
 
     h1:hover {
       color: $purple;
-      cursor: default;
-    }
-  }
-
-// hiragana E couleur rouge
-    .hiragana-e {
-      color: black;
-
-    h1:hover {
-      color: $red;
       cursor: default;
     }
   }
@@ -189,6 +189,16 @@
     background-color: $green;
   }
 
+// background E couleur rouge
+  .containerbackcards-e {
+    position: relative;
+    border-radius: 6px;
+    height: 320px;
+    width: 200px;
+    overflow: visible;
+    background-color: $red;
+  }
+
 // background I couleur orange
     .containerbackcards-i {
       position: relative;
@@ -207,16 +217,6 @@
       width: 200px;
       overflow: visible;
       background-color: $purple;
-    }
-
-// background E couleur rouge
-    .containerbackcards-e {
-      position: relative;
-      border-radius: 6px;
-      height: 320px;
-      width: 200px;
-      overflow: visible;
-      background-color: $red;
     }
 
 // background O couleur bleue
