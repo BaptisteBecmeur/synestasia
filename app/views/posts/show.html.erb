@@ -3,30 +3,31 @@
     <div class="container-fluid">
       <div class="row">
         <%= cl_image_tag @post.cover, :crop => :fill, class: "img-post-header" %>
-          <div class=" col-md-8 col-md-offset-2">
-            <div class="article">
-              <div class="tags"> <%= @post.tag %></div>
-                <div class="category-tab"> <%= @post.category %></div>
-                <h1 class="article-headline text-center"><%= @post.title %></h1>
+        <div class=" col-md-8 col-md-offset-2">
+          <div class="article">
+            <div class="tags"> <%= @post.tag %></div>
 
-                <div class="intro-part">
+            <div class="category-tab"> <%= @post.category %></div>
 
-                <h5><strong><%= @post.introduction %></strong></h5>
+            <h1 class="article-headline text-center"><%= @post.title %></h1>
 
-                <div class="content-part">
-                  <p><%= markdown @post.content %></p>
-                </div>
+            <div class="intro-part">
+              <h5><strong><%= @post.introduction %></strong></h5>
 
-                <div class="text-center buttons-view-post">
-                  <% if current_user.try(:admin?) %>
-                  <%= link_to "Modifier l'article", edit_post_path(@post), class: "btn btn-default btn-md" %>
-                  <% else %>
+              <div class="content-part">
+                <p><%= markdown @post.content %></p>
+              </div>
+
+              <div class="text-center buttons-view-post">
+                <% if current_user.try(:admin?) %>
+                <%= link_to "Modifier l'article", edit_post_path(@post), class: "btn btn-default btn-md" %>
                 <% end %>
-                <%= link_to "Voir tous les articles", blog_path, class: "btn btn-default btn-md" %>
+              <%= link_to "Voir tous les articles", blog_path, class: "btn btn-default btn-md" %>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-

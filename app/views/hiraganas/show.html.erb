@@ -4,61 +4,60 @@
       <div class="row">
 
         <ul class="list-inline text-center card-frame">
-               <li>
-                  <div class="card">
+          <li>
+            <div class="card">
+              <div class="front">
+                <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
+                  <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
 
-                        <div class="front">
+                <span class="card-question img-popover" data-content="<h3 class='text-center letter-uppercase'><b><%= @hiragana.bigletter.upcase %></b></h3><p class='text-center'><b><%= @hiragana.midletter %></b> comme dans <b><%= @hiragana.transcription %></b></p>">
+                  <i class="fa fa-eye fa-lg"></i>
+                </span>
 
-                          <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
-
-                          <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
-
-                          <span class="card-question img-popover" data-content="<h3 class='text-center letter-uppercase'><b><%= @hiragana.bigletter %></b></h3><p class='text-center'><b><%= @hiragana.midletter %></b> <%= @hiragana.transcription %></p>">
-                            <i class="fa fa-eye fa-lg"></i>
-                          </span>
-
-                          <div class="audioclick">
-                            <p>
-                              <i class="fa fa-volume-up fa-lg"></i>
-                            </p>
-                          </div>
-
-                          <!-- <div class="prononciation">
-                                <i class="fa fa-comment"></i>
-                              </div> -->
-
-                          <div class="idea">
-                            <i class="fa fa-lightbulb-o fa-lg"></i>
-                          </div>
-
-                          <div class="card-hiragana hiragana-<%=@hiragana.bigletter.downcase.last%>">
-                            <h1><b><%= @hiragana.ideo1 %></b></h1>
-                          </div>
-
-                          <div class="card-katakana">
-                            <p><%= @hiragana.ideo2 %></p>
-                          </div>
-
-                        <!-- </div> -->
-                      </div>
-
-                      <div class="back">
-
-                        <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-<%=@hiragana.bigletter.downcase.last%>">
-                          <div class="backcard-hiragana">
-                            <h1><b><%= @hiragana.ideo1 %></b></h1>
-                          </div>
-
-                          <div class="card-bigletter">
-                            <p><%= @hiragana.bigletter %></p>
-                          </div>
-                        </div>
-
-                      </div>
-
+                <div class="audioclick">
+                  <p>
+                    <i class="fa fa-volume-up fa-lg"></i>
+                  </p>
                 </div>
+
+                <!-- <div class="prononciation">
+                  <i class="fa fa-comment"></i>
+                </div> -->
+
+                <div class="idea">
+                  <i class="fa fa-lightbulb-o fa-lg"></i>
+                </div>
+
+                <div class="card-hiragana hiragana-<%=@hiragana.bigletter.downcase.last%>">
+                  <h1><b><%= @hiragana.ideo1 %></b></h1>
+                </div>
+
+                <div class="card-katakana">
+                  <p><%= @hiragana.ideo2 %></p>
+                </div>
+                        <!-- </div> -->
+              </div>
+
+              <div class="back">
+                <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-<%=@hiragana.bigletter.downcase.last%>">
+                    <div class="backcard-hiragana">
+                      <h1><b><%= @hiragana.ideo1 %></b></h1>
+                    </div>
+                    <div class="card-bigletter">
+                      <p><%= @hiragana.bigletter.upcase %></p>
+                    </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
+
+        <div class="text-center buttons-view-post">
+          <% if current_user.try(:admin?) %>
+            <%= link_to "Modifier l'hiragana", edit_hiragana_path(@hiragana), class: "btn btn-default btn-md" %>
+            <% end %>
+          <%= link_to "Voir tous les hiragana", hiraganas_path, class: "btn btn-default btn-md" %>
+        </div>
       </div>
     </div>
   </div>

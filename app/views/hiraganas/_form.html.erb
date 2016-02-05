@@ -2,8 +2,8 @@
     <div class= "col-md-8 col-md-offset-2 form-post">
       <%= simple_form_for @hiragana do |f| %>
       <%= f.error_notification %>
-      <%= f.input :ideo1, label: 'Hiragana', input_html: { rows: 1} %>
-      <%= f.input :ideo2, label: 'Katakana', input_html: { class: "input-lg"} %>
+      <%= f.input :ideo1, label: 'Hiragana', input_html: { class: "input-lg"} %>
+      <%= f.input :ideo2, label: 'Katakana', input_html: { rows: 1} %>
 
        <div class="row">
         <div class="col-sm-6">
@@ -24,7 +24,7 @@
       </div>
       <%= f.input :transcription, label: 'Traduction en langue latine', placeholder: "a comme dans attention", input_html: { rows: 1} %>
       <div class="text-center">
-       <%= f.submit "Publier l'article maintenant", class: "btn btn-danger btn-lg" %>
+       <%= f.submit "Publier la flashcard maintenant", class: "btn btn-danger btn-lg" %>
       </div>
       <% end %>
     </div>
