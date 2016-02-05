@@ -16,7 +16,7 @@ class HiraganasController < ApplicationController
   end
 
   def create
-    @hiragana = current_user.hiragana.new(post_params)
+    @hiragana = Hiragana.new(hiragana_params)
     if @hiragana.save
       redirect_to @hiragana
     else
