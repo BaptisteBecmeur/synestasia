@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'legal', to: 'pages#legal'
   get 'blog', to: 'pages#blog'
-  get 'hiragana', to: 'pages#hiragana'
+  get  'hiraganas-shuffle', to: 'pages#hiraganas_shuffle'
 
   root to: 'pages#home'
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
@@ -18,7 +18,21 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :posts
+    resources :posts
+
+    resources :hiraganas
+
+
+
+
+
+  get 'courses', to: 'courses#index'
+
+
+end
+
+
+
 
 
   # resources :courses do
@@ -28,23 +42,9 @@ Rails.application.routes.draw do
   #   end
 
 
-  get 'courses', to: 'courses#index'
-
-  # get 'courses/:id' => 'courses#show', as: :courses_show
+ # get 'courses/:id' => 'courses#show', as: :courses_show
   #   get 'chapters/show'
   #     get 'items/show'
-
-
-end
-
-
-
-
-
-
-
-
-
 
 
   # resources: :courses, only: [:show], path: "" do

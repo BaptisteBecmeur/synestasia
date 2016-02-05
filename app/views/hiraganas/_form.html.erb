@@ -1,0 +1,35 @@
+<div class="row">
+    <div class= "col-md-8 col-md-offset-2 form-post">
+      <div class="text-center">
+       <h3>Création d'une flascard</h3>
+      </div>
+      <%= simple_form_for @hiragana do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :ideo1, label: 'Hiragana', input_html: { class: "input-lg"} %>
+      <%= f.input :ideo2, label: 'Katakana', input_html: { rows: 1} %>
+
+       <div class="row">
+        <div class="col-sm-6">
+          <%= f.input :bigletter, label: 'Lettre capitale', placeholder: "A, E, I, O, U"  %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.input :midletter, label: 'Lettre minuscule', placeholder: "a, e, i, o, u"  %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <%= f.input :upload %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.input :audioclick %>
+        </div>
+      </div>
+      <%= f.input :transcription, label: 'transcription', placeholder: "attention, nana, karaté,...", input_html: { rows: 1} %>
+      <div class="text-center">
+       <%= f.submit "Publier la flashcard maintenant", class: "btn btn-danger btn-lg" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
