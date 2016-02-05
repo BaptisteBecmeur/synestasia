@@ -1,31 +1,27 @@
 <div class="container-formpost">
   <div class="container">
     <div class="row">
-
       <div class="text-center">
         <h1>Hiraganas mélangés !</h1>
-
         <div class="col-md-8 col-md-offset-2">
           <ul class="list-unstyled list-inline text-center">
             <li>
-              <%= link_to hiraganas_shuffle_path do %>
-                <div class="about-button">
-                  <h5>mélangés les hiraganas</h5>
+              <%= link_to hiraganas_mix_path do %>
+                <div class="mix-button">
+                  <h5>Remélanger les hiraganas</h5>
                 </div>
               <% end %>
             </li>
           </ul>
         </div>
       </div>
-
       <ul class="list-inline text-center">
         <% @hiraganas.shuffle.each do |hiragana| %>
           <li>
-            <%= render 'hiraganasshuffle', hiragana: hiragana %>
+            <%= render 'hiraganasmix', hiragana: hiragana %>
           </li>
-          <% end %>
+        <% end %>
       </ul>
-
     </div>
   </div>
 </div>

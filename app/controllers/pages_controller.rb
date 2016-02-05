@@ -23,7 +23,7 @@ class PagesController < ApplicationController
    @posts = Post.order('created_at DESC').limit(12)
   end
 
-  def hiraganas_shuffle
+  def hiraganas_mix
     @hiraganas = Hiragana.all
   end
 

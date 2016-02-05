@@ -285,9 +285,15 @@
           </div>
         </div>
 
-        <div class="contactbutton-section text-center">
-          <%= link_to "Voir tous les hiraganas", start_path, class:'subscribe-button startpage-button style-start-button', target: '_blank' %>
-        </div>
+        <ul class="list-unstyled list-inline text-center">
+            <li>
+              <%= link_to hiraganas_path do %>
+                <div class="all-hiraganas">
+                  <h5>Accéder aux hiraganas</h5>
+                </div>
+              <% end %>
+            </li>
+          </ul>
 
       </div>
     </div>
