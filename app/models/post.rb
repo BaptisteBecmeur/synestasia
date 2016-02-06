@@ -10,8 +10,5 @@ class Post < ActiveRecord::Base
   validates :title, presence: true
   validates :content, presence: true
 
-
-
   mount_uploader :cover, ImageUploader
-
 end

@@ -2,8 +2,6 @@
   <div class="container-fluid ">
     <% if current_user.try(:admin?) %>
       <%= render 'form' %>
-    <% else %>
-
     <% end %>
   </div>
 </div>

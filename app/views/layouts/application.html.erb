@@ -15,12 +15,13 @@
     <meta property="og:site_name" content="SynestasiA" />
     <meta property="og:title" content="Qui Quoi Pourquoi Où Quand Comment" />
     <meta property="og:image" content="http://res.cloudinary.com/dzr44aeiu/image/upload/v1453889854/synestasia-homepage_sygboc.png" />
-
   </head>
   <body>
     <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
 
+    <div class="flashes">
+      <%= render 'shared/flashes' %>
+    </div>
     <%= yield %>
 
     <%= render 'shared/footer' %>
@@ -28,7 +29,6 @@
     <%= javascript_include_tag 'application' %>
 
     <!-- simple markdown -->
-
     <script src="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 
     <!-- jquery flip card -->
@@ -38,7 +38,6 @@
     <script >
       $(".card").flip({axis: 'y'});
     </script>
-
 
    <!-- js popover -->
     <script >
