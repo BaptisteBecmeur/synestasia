@@ -1,8 +1,9 @@
 <div class="container-formpost">
   <div class="container-fluid ">
-
-    <div class="container">
+    <% if current_user.try(:admin?) %>
       <%= render 'form' %>
-    </div>
+    <% else %>
+
+    <% end %>
   </div>
 </div>
