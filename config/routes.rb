@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'favs/index'
+
+  get 'favs/create'
+
+  get 'favs/destroy'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'synestesie', to: 'pages#synestesie'
   get 'about', to: 'pages#about'
