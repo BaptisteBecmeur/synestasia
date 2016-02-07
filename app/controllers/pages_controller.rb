@@ -24,7 +24,7 @@ class PagesController < ApplicationController
   end
 
   def hiraganas_mix
-    flash[:notice] = "Hiraganas mélangés ! A vous de jouer !"
+    flash[:notice] = "Hiraganas mélangés. À vous de jouer !"
     @hiraganas = Hiragana.all
   end
 
