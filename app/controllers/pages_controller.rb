@@ -20,10 +20,11 @@ class PagesController < ApplicationController
   end
 
   def blog
-   @posts = Post.order('created_at DESC').limit(9)
+   @posts = Post.order('created_at DESC').limit(12)
   end
 
-  def hiraganas_shuffle
+  def hiraganas_mix
+    flash[:notice] = "Hiraganas mélangés. À vous de jouer !"
     @hiraganas = Hiragana.all
   end
 

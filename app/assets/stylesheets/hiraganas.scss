@@ -8,6 +8,8 @@
   padding-bottom: 20px;
   position: relative;
 
+
+
    .form-post {
     background-color: #fff;
     padding-right: 30px;
@@ -33,12 +35,17 @@
   height: 320px;
   width: 200px;
 
-
 // Front section
 
 .front{
   border-radius: 6px;
   background-color: white;
+
+   .hiragana-fav {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+    }
 
 // H4 font-size in popover
 
@@ -98,10 +105,10 @@
 
 // Card hiragana FRONT
 
-     .card-hiragana h1 {
-        padding-top:40px;
-        padding-bottom:10px;
-        font-size: 150px;
+  .card-hiragana h1 {
+    padding-top:40px;
+    padding-bottom:10px;
+    font-size: 150px;
 
     h1:hover {
       color: grey;
@@ -233,6 +240,17 @@
       color: white;
       font-size: 30px
     }
+  }
+}
+
+.trash-hiragana {
+  position: absolute;
+  top: -8px;
+  left: -6px;
+
+  img {
+    width:20px;
+    height:20px;
   }
 }
 

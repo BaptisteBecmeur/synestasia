@@ -7,21 +7,17 @@
      </div>
   <% end %>
 
-   <%= link_to blog_path do  %>
-     <div class= "blog-style blog-navbar">
-        <p>Blog</p>
-     </div>
-    <% end %>
-
     <div class="navbar-wagon-pusher"></div>
+
+    <%= link_to t(".top_call_to_action", default: "BLOG"), blog_path, class: " blog-style separator-navbar" %>
+
+    <hr/>
 
     <% if user_signed_in? %>
 
-    <%= link_to t(".top_call_to_action", default: "Mes cours"), courses_path, class: "separator-navbar" %>
-
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= image_tag current_user.picture, class: "avatar dropdown-toggle ", id: "navbar-wagon-menu", "data-toggle" => "dropdown"  %>
+          <%= image_tag current_user.picture || "http://api.adorable.io/avatars/300/#{current_user.email}", class: "avatar dropdown-toggle ", id: "navbar-wagon-menu", "data-toggle" => "dropdown"  %>
           <!-- <i class="fa fa-caret-down"></i>
  -->
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
@@ -30,19 +26,14 @@
                 <i class="fa fa-pencil-square-o"></i> <%= t ".profile", default: "Editer mon profil" %>
               <% end %>
             </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t ".profile", default: "Profile" %>
-              <% end %>
-            </li>
              <li>
-              <%= link_to start_path do %>
-                <i class="fa fa-pencil"></i>  <%= t ".profile", default: "Mes cours" %>
+              <%= link_to favs_path do %>
+                <i class="fa fa-heart"></i> <%= t ".profile", default: "Mes cartes" %>
               <% end %>
             </li>
             <li>
-              <%= link_to root_path do %>
-                <i class="fa fa-home"></i>  <%= t ".profile", default: "Home" %>
+              <%= link_to hiraganas_path do %>
+                <i class="fa fa-language"></i>  <%= t ".profile", default: "Training" %>
               <% end %>
             </li>
             <li>
@@ -54,8 +45,8 @@
         </div>
       </div>
     <% else %>
-      <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "sign-navbar" %>
-      <%= link_to t(".sign_up", default: "S'inscrire"), new_user_registration_path, class: "sign-navbar signup-navbar" %>
+      <%= link_to t(".sign_in", default: "Connexion"), new_user_session_path, class: "sign-navbar" %>
+      <%= link_to t(".sign_up", default: "Inscription"), new_user_registration_path, class: "sign-navbar signup-navbar" %>
     <% end %>
   </div>
 </nav>

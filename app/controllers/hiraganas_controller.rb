@@ -1,6 +1,6 @@
 class HiraganasController < ApplicationController
 
-  before_filter :authenticate_user!, except: [:index, :show]
+  before_filter :authenticate_user!, except: [:show]
   before_action :find_hiragana, only: [:show, :edit, :update, :destroy]
 
   def index
