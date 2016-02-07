@@ -7,17 +7,11 @@
      </div>
   <% end %>
 
-   <%= link_to blog_path do  %>
-     <div class= "blog-style blog-navbar">
-        <p>Blog</p>
-     </div>
-    <% end %>
-
     <div class="navbar-wagon-pusher"></div>
 
-    <% if user_signed_in? %>
+    <%= link_to t(".top_call_to_action", default: "BLOG"), blog_path, class: " blog-style separator-navbar" %>
 
-    <%= link_to t(".top_call_to_action", default: "Mes cours"), courses_path, class: "separator-navbar" %>
+    <% if user_signed_in? %>
 
       <div class="navbar-wagon-item">
         <div class="dropdown">
@@ -30,19 +24,14 @@
                 <i class="fa fa-pencil-square-o"></i> <%= t ".profile", default: "Editer mon profil" %>
               <% end %>
             </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t ".profile", default: "Profile" %>
-              <% end %>
-            </li>
              <li>
               <%= link_to start_path do %>
-                <i class="fa fa-pencil"></i>  <%= t ".profile", default: "Mes cours" %>
+                <i class="fa fa-heart"></i> <%= t ".profile", default: "Mes cartes" %>
               <% end %>
             </li>
             <li>
-              <%= link_to root_path do %>
-                <i class="fa fa-home"></i>  <%= t ".profile", default: "Home" %>
+              <%= link_to courses_path do %>
+                <i class="fa fa-circle"></i>  <%= t ".profile", default: "Mes cours" %>
               <% end %>
             </li>
             <li>

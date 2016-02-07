@@ -2,29 +2,16 @@
  * Your CSS code for flash notices and alerts
 * ------------------------------------- */
 
-// .alert {
-//   margin: 0;
-//   text-align: center;
-//   color: white;
-// }
-// .alert-info {
-//   background: #066aad;
-// }
-// .alert-warning {
-//   background: #FC5F53;
-// }
-
 .alert {
   margin: 0;
   text-align: center;
   color: white;
   position: absolute;
   z-index: 1;
-  max-width: 700px;
   margin: auto;
   left: 50%;
   transform: translateX(-50%);
-  top: 70px;
+  top: 45px;
   border: none;
 }
 .alert-info {
@@ -33,7 +20,6 @@
 .alert-warning {
   background: #FC5F53;
 }
-
 
 .disapearUp {
   animation-name: disapearUp;
