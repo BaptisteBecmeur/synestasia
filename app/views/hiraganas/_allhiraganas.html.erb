@@ -19,11 +19,9 @@
               <i class="fa fa-volume-up fa-lg"></i>
             </p>
           </div>
-
           <!-- <div class="prononciation">
             <i class="fa fa-comment"></i>
           </div> -->
-
           <div class="idea">
             <i class="fa fa-lightbulb-o fa-lg"></i>
           </div>
@@ -35,7 +33,8 @@
           <div class="card-katakana">
             <p><%= hiragana.ideo2 %></p>
           </div>
-        <!-- </div> -->
+
+          <%= render 'pages/favorites', hiragana: hiragana %>
         </div>
         <div class="back">
           <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-<%=hiragana.bigletter.downcase.last%>">

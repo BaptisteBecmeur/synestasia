@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'favs/index'
-
-  get 'favs/create'
-
-  get 'favs/destroy'
-
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'synestesie', to: 'pages#synestesie'
   get 'about', to: 'pages#about'
@@ -24,21 +18,16 @@ Rails.application.routes.draw do
     end
   end
 
-    resources :posts
+  resources :posts
 
-    resources :hiraganas
-
-
-
-
+  resources :hiraganas do
+    resources :favs, only: [:create]
+  end
+  resources :favs, only: [:index, :destroy]
 
   get 'courses', to: 'courses#index'
 
-
 end
-
-
-
 
 
   # resources :courses do

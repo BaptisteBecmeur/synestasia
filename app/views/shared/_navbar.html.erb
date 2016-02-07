@@ -11,6 +11,8 @@
 
     <%= link_to t(".top_call_to_action", default: "BLOG"), blog_path, class: " blog-style separator-navbar" %>
 
+    <hr/>
+
     <% if user_signed_in? %>
 
       <div class="navbar-wagon-item">
@@ -25,7 +27,7 @@
               <% end %>
             </li>
              <li>
-              <%= link_to start_path do %>
+              <%= link_to favs_path do %>
                 <i class="fa fa-heart"></i> <%= t ".profile", default: "Mes cartes" %>
               <% end %>
             </li>
