@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160204154711) do
+ActiveRecord::Schema.define(version: 20160207154852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,16 @@ ActiveRecord::Schema.define(version: 20160204154711) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "favs", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "hiragana_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "favs", ["hiragana_id"], name: "index_favs_on_hiragana_id", using: :btree
+  add_index "favs", ["user_id"], name: "index_favs_on_user_id", using: :btree
 
   create_table "hiraganas", force: :cascade do |t|
     t.string   "ideo1"
@@ -138,6 +148,8 @@ ActiveRecord::Schema.define(version: 20160204154711) do
   add_foreign_key "accomplishments", "items"
   add_foreign_key "accomplishments", "users"
   add_foreign_key "chapters", "courses"
+  add_foreign_key "favs", "hiraganas"
+  add_foreign_key "favs", "users"
   add_foreign_key "hiraganas", "users"
   add_foreign_key "items", "chapters"
   add_foreign_key "posts", "users"
