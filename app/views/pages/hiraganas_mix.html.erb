@@ -1,6 +1,7 @@
 <div class="container-formpost">
   <div class="container">
     <div class="row">
+      <%= render 'breadcrumbtable' %>
       <div class="text-center">
         <div class="col-md-8 col-md-offset-2">
           <ul class="list-unstyled list-inline text-center">
@@ -17,11 +18,10 @@
       <ul class="list-inline text-center">
         <% @hiraganas.shuffle.each do |hiragana| %>
           <li>
-            <%= render 'hiraganas/allhiraganas', hiragana: hiragana %>
+            <%= render 'hiraganasmix', hiragana: hiragana %>
           </li>
         <% end %>
       </ul>
-
       <ul class="list-unstyled list-inline text-center">
         <li>
           <%= link_to hiraganas_mix_path do %>

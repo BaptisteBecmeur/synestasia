@@ -2,9 +2,7 @@
   <div class="padding-page">
     <div class="container-fluid">
       <div class="row">
-        <div class="start-gap">
-          <h1 class="text-center">Mes cartes à réviser</h1>
-        </div>
+        <h1 class="text-center">Cartes à réviser</h1>
         <% @favs.each do |fav| %>
          <ul class="list-inline text-center card-frame">
             <li>
@@ -43,9 +41,9 @@
                 </div>
               </div>
               <%= link_to "Supprimer des favoris", fav_path(fav), class:'btn btn-default', method: :delete %>
-              <% end %>
             </li>
           </ul>
+            <% end %>
         </div>
       </div>
     </div>
