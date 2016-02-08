@@ -17,7 +17,7 @@
       <ul class="list-inline text-center">
         <% @hiraganas.shuffle.each do |hiragana| %>
           <li>
-            <%= render 'hiraganasmix', hiragana: hiragana %>
+            <%= render 'hiraganas/allhiraganas', hiragana: hiragana %>
           </li>
         <% end %>
       </ul>
