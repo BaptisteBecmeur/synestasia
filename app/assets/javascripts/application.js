@@ -13,6 +13,7 @@ $(document).ready(function() {
     $.ajax({
       type: "POST",
       url: "/hiraganas",
+      dataType: "json",
         success: function(data) {
       console.log(data);
       },
