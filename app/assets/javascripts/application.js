@@ -4,22 +4,24 @@
 //= require simplemde
 //= require_tree .
 
+var simplemde = new SimpleMDE({ spellChecker: false, element: $("#post_content")[0] });
 
 
-$(document).ready(function() {
-   $('.faved-off').click(function() {
-    var fav = $('.faved-on')
+        $(document).ready(function() {
+        $('.faved-on').click(function() {
+        var fav = $('.faved-off')
 
-    $.ajax({
-      type: "POST",
-      url: "/hiraganas",
-      dataType: "json",
-        success: function(data) {
-      console.log(data);
-      },
-      error: function(jqXHR) {
-      console.error(jqXHR.responseText);
-      }
-    });
-  })
-})
+        $.ajax({
+          type: "POST",
+          url: "/hiraganas",
+          dataType: "json",
+            success: function(data) {
+          console.log(data);
+          },
+            error: function(jqXHR) {
+          console.error(jqXHR.responseText);
+          }
+        });
+      })
+    })
+
