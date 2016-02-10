@@ -4,15 +4,15 @@
 //= require simplemde
 //= require_tree .
 
-var simplemde = new SimpleMDE({ spellChecker: false, element: $("#post_content")[0] });
 
-$ (document).ready(function() {
-   $('.faved-on').click(function() {
-    var fav = $('.faved-off')
+
+$(document).ready(function() {
+   $('.faved-off').click(function() {
+    var fav = $('.faved-on')
 
     $.ajax({
-      type: "GET",
-      url: "https://synestasia.herokuapp.com/hiraganas",
+      type: "POST",
+      url: "/hiraganas",
         success: function(data) {
       console.log(data);
       },
