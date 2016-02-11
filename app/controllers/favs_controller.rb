@@ -10,8 +10,9 @@ class FavsController < ApplicationController
     if not @hiragana.favs.where(user: current_user).take
       @fav.save
     end
-    redirect_to :back
-    # render json: @fav
+    # redirect_to favs_path
+    # redirect_to :back
+    render json: @fav
   end
 
   def destroy
