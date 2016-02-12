@@ -12,15 +12,23 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    if current_user and current_user.admin?
+      @post = Post.new
+    else
+      render 'public/uploads/404.html'
+    end
   end
 
   def create
-    @post = current_user.posts.new(post_params)
-    if @post.save
-      redirect_to @post
-    else
-      render :new
+    if current_user and current_user.admin?
+      @post = current_user.posts.new(post_params)
+      if @post.save
+        redirect_to @post
+      else
+        render :new
+      end
+      else
+      render 'public/uploads/404.html'
     end
   end
 

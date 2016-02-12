@@ -20,12 +20,16 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  resources :hiraganas do
-    resources :favs, only: [:create]
-  end
+  resources :hiraganas #do
+    #resources :favs, only: [:create]
+  #end
   resources :favs, only: [:index, :destroy]
 
   get 'courses', to: 'courses#index'
+
+  post 'favs/:hiragana_id', to: 'favs#create', as: "hiragana_favs"
+  get 'favs', to: 'favs#index'
+  delete 'favs/:hiragana_id', to: 'favs#destroy'
 
 end
 

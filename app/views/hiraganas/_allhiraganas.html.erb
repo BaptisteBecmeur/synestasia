@@ -33,8 +33,9 @@
           <div class="card-katakana">
             <p><%= hiragana.ideo2 %></p>
           </div>
-
-          <%= render 'favs/favorites', hiragana: hiragana %>
+          <div id="favorite_<%=hiragana.id%>">
+            <%= render 'favs/favorites', hiragana: hiragana %>
+          </div>
         </div>
         <div class="back">
           <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-<%=hiragana.bigletter.downcase.last%>">
