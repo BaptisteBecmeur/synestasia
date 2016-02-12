@@ -28,17 +28,17 @@
             </li>
              <li>
               <%= link_to favs_path do %>
-                <i class="fa fa-heart"></i> <%= t ".profile", default: "Mes cartes" %>
+                <i class="fa fa-heart"></i> <%= t ".profile", default: "Cartes à réviser" %>
               <% end %>
             </li>
             <li>
-              <%= link_to hiraganas_path do %>
-                <i class="fa fa-language"></i>  <%= t ".profile", default: "Training" %>
+              <%= link_to hiraganas_mix_path do %>
+                <i class="fa fa-language"></i>  <%= t ".profile", default: "Mélanger les cartes" %>
               <% end %>
             </li>
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t ".sign_out", default: "Log out" %>
+                <i class="fa fa-sign-out"></i>  <%= t ".sign_out", default: "Déconnexion" %>
               <% end %>
             </li>
           </ul>

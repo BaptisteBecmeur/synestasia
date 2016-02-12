@@ -14,17 +14,17 @@
             <i class="fa fa-eye fa-lg"></i>
           </span>
 
-          <div class="audioclick">
-            <p>
-              <i class="fa fa-volume-up fa-lg"></i>
-            </p>
-          </div>
+          <!-- son de l'hiragana -->
+          <span class="audioclick img-popover" data-content="<p class='text-center'><b>le son arrive prochainement !</b></p>">
+            <i class="fa fa-volume-up fa-lg"></i>
+          </span>
+          <!-- image mnémotechnique -->
+          <span class="idea img-popover" data-content="<p class='text-center'><b>l'image est bientôt prête !</b></p>">
+            <i class="fa fa-lightbulb-o fa-lg"></i>
+          </span>
           <!-- <div class="prononciation">
             <i class="fa fa-comment"></i>
           </div> -->
-          <div class="idea">
-            <i class="fa fa-lightbulb-o fa-lg"></i>
-          </div>
 
           <div class="card-hiragana hiragana-<%=hiragana.bigletter.downcase.last%>">
             <h1><b><%= hiragana.ideo1 %></b></h1>
@@ -33,8 +33,9 @@
           <div class="card-katakana">
             <p><%= hiragana.ideo2 %></p>
           </div>
-
-          <%= render 'pages/favorites', hiragana: hiragana %>
+          <div id="favorite_<%=hiragana.id%>">
+            <%= render 'favs/favorites', hiragana: hiragana %>
+          </div>
         </div>
         <div class="back">
           <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-<%=hiragana.bigletter.downcase.last%>">
