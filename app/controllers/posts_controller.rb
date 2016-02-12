@@ -12,11 +12,11 @@ class PostsController < ApplicationController
   end
 
   def new
-    if current_user and current_user.admin?
+    # if current_user and current_user.admin?
       @post = Post.new
-    else
-      render 'public/uploads/404.html'
-    end
+    # else
+    #   render 'public/uploads/404.html'
+    # end
   end
 
   def create
