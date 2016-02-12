@@ -2,3 +2,4 @@
 // All this logic will automatically be available in application.js.
 
 
+var simplemde = new SimpleMDE({ spellChecker: false, element: $("#post_content")[0] });
