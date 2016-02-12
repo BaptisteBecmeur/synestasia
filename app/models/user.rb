@@ -23,4 +23,7 @@ class User < ActiveRecord::Base
       user.token_expiry = Time.at(auth.credentials.expires_at)
     end
   end
+  def admin?
+    self.email == "bat@synestasia.co"
+  end
 end
