@@ -5,19 +5,14 @@
       <div class="row">
         <%= cl_image_tag @post.cover, :crop => :fill, class: "img-post-header" %>
         <div class=" col-md-8 col-md-offset-2">
-
           <div class="article">
             <div class="tags"> <%= @post.tag %></div>
-
             <div class="category-tab"> <%= @post.category %></div>
-
             <div class="intro-part">
               <h5><strong><%= @post.introduction %></strong></h5>
-
               <div class="content-part">
                 <p><%= markdown @post.content %></p>
               </div>
-
               <div class="text-center buttons-view-post">
                 <% if current_user.try(:admin?) %>
                 <%= link_to "Modifier l'article", edit_post_path(@post), class: "btn btn-default btn-md" %>
