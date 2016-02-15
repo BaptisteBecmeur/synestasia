@@ -3,6 +3,9 @@
     <div class ="headline headline-<%= @post.tag.downcase %>">
       <%= @post.title %>
     </div>
+        <div class="subtitle">
+          <%= @post.subtitle %>
+        </div>
     <div class="container-fluid">
       <div class="row">
         <%= cl_image_tag @post.cover, :crop => :fill, class: "img-post-header" %>
