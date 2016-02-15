@@ -25,7 +25,6 @@
       // position: absolute;
       // // top: -180px;
       text-align: center;
-      left: 0;
       padding: 5px 10px;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -72,21 +71,17 @@
       }
     }
 
-    .subtitle {
-      text-align: center;
-      left: 0;
-      padding: 5px 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight:400;
-      font-size: 35px;
-      color: #fff;
-      text-shadow: 1px 1px #000;
-    }
-
     .img-post-header {
       width: 100%;
       background-size: cover;
+    }
+
+    .subtitle {
+      display: block;
+      position: absolute;
+      color: #fff;
+      text-shadow: 1px 1px #000;
+      font-size: 180px;
     }
   }
 

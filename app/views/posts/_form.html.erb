@@ -3,7 +3,7 @@
       <%= simple_form_for @post do |f| %>
       <%= f.error_notification %>
       <%= f.input :title, label: 'Title', input_html: { class: "input-lg"} %>
-      <%= f.input :subtitle, label: 'Title as Ideogram' %>
+      <%= f.input :subtitle, input_html: { rows: 1} %>
        <div class="row">
         <div class="col-sm-6">
           <%= f.input :tag, collection: Post::TAGS, selected: Post::TAGS.first %>
