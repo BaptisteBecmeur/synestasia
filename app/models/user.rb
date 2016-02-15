@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
   end
 
   def admin?
-    self.email == "bat@synestasia.co", "aurelie@synestasia.co"
+    self.email == "bat@synestasia.co"
   end
+
 end
