@@ -5,8 +5,13 @@
     </div>
     <div class="container-fluid">
       <div class="row">
+        <div class="text-center ">
+          <div class="col-xs-12 col-sm-12 col-md-12 subtitle">
+            <%= @post.subtitle %>
+          </div>
+        </div>
         <%= cl_image_tag @post.cover, :crop => :fill, class: "img-post-header" %>
-        <div class=" col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2">
           <div class="article">
             <div class="category-tab"><%= @post.category %></div>
             <div class="tags tags-<%= @post.tag.downcase %>"><%= @post.tag %></div>

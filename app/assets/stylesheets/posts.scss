@@ -25,7 +25,6 @@
       // position: absolute;
       // // top: -180px;
       text-align: center;
-      left: 0;
       padding: 5px 10px;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -76,15 +75,12 @@
       width: 100%;
       background-size: cover;
     }
-  }
 
-  .container_new_post {
-    background-color: #F9F9F9;
-    padding-top: 18px;
-  }
-
-  body {
-    background-color: white;
+    .subtitle {
+      position: absolute;
+      color: rgba(0,0,0,0.3);
+      font-size: 37.5vw;
+    }
   }
 
 // View Article
