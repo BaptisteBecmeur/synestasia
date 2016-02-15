@@ -8,7 +8,7 @@ class HiraganasController < ApplicationController
   end
 
   def show
-    @alert_message = "Vous avez créer la flascard #{@hiragana.ideo1}"
+    @alert_message = "Vous avez créer la flashcard #{@hiragana.ideo1}"
   end
 
   def new

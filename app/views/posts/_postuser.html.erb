@@ -12,7 +12,7 @@
     <%= link_to post_path(post) do %>
 
     <span class="card-post-category"><%= post.category %></span>
-    <span class="card-post-tag"><%= post.tag %></span>
+    <span class="card-post-tag card-post-tag-<%= post.tag.downcase %>"><%= post.tag %></span>
     <h4><%= post.title %></h4>
 
    <h6 class="card-post-author">

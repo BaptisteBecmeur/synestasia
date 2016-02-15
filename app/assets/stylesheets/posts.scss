@@ -1,7 +1,3 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .container-formpost {
   background-color: #f2f2f2;
   padding-top: 20px;
@@ -24,54 +20,67 @@
   .container-post {
     padding: 0px;
 
+    .headline {
+      background: rgba(0,0,0,0.3);
+      // position: absolute;
+      // // top: -180px;
+      text-align: center;
+      left: 0;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight:400;
+      font-size: 35px;
+      color: #fff;
+      text-shadow: 1px 1px #000;
+
+      // Color attribute to tag
+       &-design {
+        background-color: $green;
+      }
+
+       &-mode {
+        background-color: $blue;
+      }
+
+       &-life-style {
+        background-color: $orange;
+      }
+
+      &-mode {
+        background-color: $red;
+      }
+
+       &-tendance {
+        background-color: $yellow;
+      }
+
+       &-tradition {
+        background-color: $yellow;
+      }
+
+      &-gastronomie {
+        background-color: $yellow;
+      }
+
+      &-insolite {
+        background-color: $yellow;
+      }
+
+      &-technologie {
+        background-color: $yellow;
+      }
+    }
+
     .img-post-header {
       width: 100%;
       background-size: cover;
     }
   }
 
-  .contenu{
-    text-align: justify;
-  }
-
-  .card-filter {
-    color: #7FB8C8;
-    padding: 15px;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background: rgba(0.1, 0.1, 0.1, 0.6);
-    a {
-    color:white;
-    }
-  }
-
-  .diving {
-    background-color: white;
-  }
-
-  .user-picture {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  }
-
-  .avatar {
-  width: 40px;
-  border-radius: 50%;
-  }
-
   .container_new_post {
-   background-color: #F9F9F9;
-   padding-top: 18px;
-
-    h2  {
-    font-family: sans-serif;
-    color:black;
-     }
+    background-color: #F9F9F9;
+    padding-top: 18px;
   }
 
   body {
@@ -82,40 +91,17 @@
 
   .article {
     background: white;
-    padding-top: 35px;
+    padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
-    margin-top: -70px;
+    // margin-top: -70px;
     z-index: 10;
     position: relative;
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
 
-    &-headline {
-      margin: 0;
-      font-size: 40px;
-      font-weight: 400;
-    }
-
-    &-meta {
-      color: #777;
-      margin-bottom: 25px;
-      font-weight: 300;
-    }
-
-    &-excerpt {
-      font-weight: bold;
-      font-size:20px;
-      font-family:Lato;
-      padding:5px;
-    }
-
-    blockquote {
-      margin: 0 20px;
-    }
-
-    .category-tab{
+    .category-tab {
       position: absolute;
       top: -14px;
       left: 15px;
@@ -134,47 +120,48 @@
       padding: 0 4px;
       color: white;
 
-      p {
-        display: inline-block;
-        background: #E22;
-        padding: 0 4px;
-        color: white;
+     // Color attribute to tag
+       &-design {
+        background-color: $green;
+      }
+
+       &-mode {
+        background-color: $blue;
+      }
+
+       &-life-style {
+        background-color: $orange;
+      }
+
+      &-mode {
+        background-color: $red;
+      }
+
+       &-tendance {
+        background-color: $yellow;
+      }
+
+       &-tradition {
+        background-color: $yellow;
+      }
+
+      &-gastronomie {
+        background-color: $yellow;
+      }
+
+      &-insolite {
+        background-color: $yellow;
+      }
+
+      &-technologie {
+        background-color: $yellow;
       }
     }
-  }
-
-  .intro-part {
-    padding-top: 10px;
-
-    h2 {
-     text-transform:uppercase;
-    }
-  }
-
-  .extra-info {
-     background-color: #F2F2F2;
-     margin-bottom: 40px;
-     padding-bottom: 10px;
-     padding-left: 20px;
-     padding-right: 20px;
   }
 
   .buttons-view-post{
     margin-top: 40px;
     margin-bottom:30px;
-  }
-
-
-  .article:after {
-    content: "";
-    position:absolute;
-    bottom:0;
-    left:0;
-    height:30px;
-    background: linear-gradient(to top,
-       rgba(255,255,255, 1) 20%,
-       rgba(255,255,255, 0) 80%
-    );
   }
 
   .picture-post {
@@ -200,7 +187,6 @@
     padding-top: 40px;
     padding-bottom: 30px;
     font-weight: 300;
-
   }
 
   p {
@@ -224,21 +210,6 @@
 #home-articles {
   margin-bottom: 50px;
 
-  h2 {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 40px 0 10px 20px;
-    display: flex;
-    align-items: center;
-
-    &:after {
-      margin: 0 20px;
-      content: "";
-      border-bottom: solid #000 1px;
-      flex: 1;
-    }
-  }
-
   ul {
     list-style: none;
     -webkit-margin-before: 0em;
@@ -256,15 +227,16 @@
     height: 240px;
     overflow: hidden;
 
-    .card-fav {
-      position: absolute;
-      right: 40px;
-      bottom: 25px;
-    }
+    // .card-fav {
+    //   position: absolute;
+    //   right: 40px;
+    //   bottom: 25px;
+    // }
 
     .card-post-author {
       color: white;
       font-style: italic;
+      font-weight: 300;
     }
 
     .card-post-tag {
@@ -277,6 +249,43 @@
       display: inline-block;
       padding: 0 4px;
       color: white;
+
+      // Color attribute to tag
+       &-design {
+        background-color: $green;
+      }
+
+       &-mode {
+        background-color: $blue;
+      }
+
+       &-life-style {
+        background-color: $orange;
+      }
+
+      &-mode {
+        background-color: $red;
+      }
+
+       &-tendance {
+        background-color: $yellow;
+      }
+
+       &-tradition {
+        background-color: $yellow;
+      }
+
+      &-gastronomie {
+        background-color: $yellow;
+      }
+
+      &-insolite {
+        background-color: $yellow;
+      }
+
+      &-technologie {
+        background-color: $yellow;
+      }
     }
 
     .card-post-category {
@@ -299,6 +308,7 @@
       margin: 0 10px;
       overflow: hidden;
       border-radius: 5px;
+
       a {
         display: block;
         position: absolute;
@@ -327,12 +337,6 @@
       bottom: 0;
       right: 0;
       left: 0;
-
-      h3 {
-        text-transform: uppcase;
-        color: #fff;
-        font-size: 19px;
-      }
 
       h4 {
         color: white;
