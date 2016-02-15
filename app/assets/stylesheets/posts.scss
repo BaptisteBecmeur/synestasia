@@ -20,57 +20,63 @@
   .container-post {
     padding: 0px;
 
-  .headline {
-    background: rgba(0,0,0,0.3);
-    // position: absolute;
-    // // top: -180px;
-    text-align: center;
-    left: 0;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight:400;
-    font-size: 35px;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-  }
+    .headline {
+      background: rgba(0,0,0,0.3);
+      // position: absolute;
+      // // top: -180px;
+      text-align: center;
+      left: 0;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight:400;
+      font-size: 35px;
+      color: #fff;
+      text-shadow: 1px 1px #000;
+
+      // Color attribute to tag
+       &-design {
+        background-color: $green;
+      }
+
+       &-mode {
+        background-color: $blue;
+      }
+
+       &-life-style {
+        background-color: $orange;
+      }
+
+      &-mode {
+        background-color: $red;
+      }
+
+       &-tendance {
+        background-color: $yellow;
+      }
+
+       &-tradition {
+        background-color: $yellow;
+      }
+
+      &-gastronomie {
+        background-color: $yellow;
+      }
+
+      &-insolite {
+        background-color: $yellow;
+      }
+
+      &-technologie {
+        background-color: $yellow;
+      }
+    }
 
     .img-post-header {
       width: 100%;
       background-size: cover;
     }
   }
-
-  .card-filter {
-    color: #7FB8C8;
-    padding: 15px;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background: rgba(0.1, 0.1, 0.1, 0.6);
-
-    a {
-    color:white;
-    }
-  }
-
-  // .diving {
-  //   background-color: white;
-  // }
-
-  // .user-picture {
-  //   border-radius: 50%;
-  //   width: 100px;
-  //   height: 100px;
-  //   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  // }
-
-  // .avatar {
-  //   width: 40px;
-  //   border-radius: 50%;
-  // }
 
   .container_new_post {
     background-color: #F9F9F9;
@@ -114,11 +120,41 @@
       padding: 0 4px;
       color: white;
 
-      p {
-        display: inline-block;
-        background: #E22;
-        padding: 0 4px;
-        color: white;
+     // Color attribute to tag
+       &-design {
+        background-color: $green;
+      }
+
+       &-mode {
+        background-color: $blue;
+      }
+
+       &-life-style {
+        background-color: $orange;
+      }
+
+      &-mode {
+        background-color: $red;
+      }
+
+       &-tendance {
+        background-color: $yellow;
+      }
+
+       &-tradition {
+        background-color: $yellow;
+      }
+
+      &-gastronomie {
+        background-color: $yellow;
+      }
+
+      &-insolite {
+        background-color: $yellow;
+      }
+
+      &-technologie {
+        background-color: $yellow;
       }
     }
   }
@@ -174,21 +210,6 @@
 #home-articles {
   margin-bottom: 50px;
 
-  // h2 {
-  //   text-transform: uppercase;
-  //   text-align: center;
-  //   padding: 40px 0 10px 20px;
-  //   display: flex;
-  //   align-items: center;
-
-  //   &:after {
-  //     margin: 0 20px;
-  //     content: "";
-  //     border-bottom: solid #000 1px;
-  //     flex: 1;
-  //   }
-  // }
-
   ul {
     list-style: none;
     -webkit-margin-before: 0em;
@@ -228,6 +249,43 @@
       display: inline-block;
       padding: 0 4px;
       color: white;
+
+      // Color attribute to tag
+       &-design {
+        background-color: $green;
+      }
+
+       &-mode {
+        background-color: $blue;
+      }
+
+       &-life-style {
+        background-color: $orange;
+      }
+
+      &-mode {
+        background-color: $red;
+      }
+
+       &-tendance {
+        background-color: $yellow;
+      }
+
+       &-tradition {
+        background-color: $yellow;
+      }
+
+      &-gastronomie {
+        background-color: $yellow;
+      }
+
+      &-insolite {
+        background-color: $yellow;
+      }
+
+      &-technologie {
+        background-color: $yellow;
+      }
     }
 
     .card-post-category {
@@ -279,12 +337,6 @@
       bottom: 0;
       right: 0;
       left: 0;
-
-      // h3 {
-      //   text-transform: uppcase;
-      //   color: #fff;
-      //   font-size: 19px;
-      // }
 
       h4 {
         color: white;
