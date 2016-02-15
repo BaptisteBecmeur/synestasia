@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    if current_user and current_user.admin?
+    # if current_user and current_user.admin?
       @post = current_user.posts.new(post_params)
       if @post.save
         redirect_to @post
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
       end
       else
       render 'public/uploads/404.html'
-    end
+    # end
   end
 
   def edit
