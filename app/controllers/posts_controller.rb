@@ -15,17 +15,21 @@ class PostsController < ApplicationController
     # if current_user and current_user.admin?
       @post = Post.new
     # else
-    #   render 'public/uploads/404.html'
+    #   render "shared/404.html.erb"
     # end
   end
 
   def create
+    # if current_user and current_user.admin?
       @post = current_user.posts.new(post_params)
       if @post.save
         redirect_to @post
       else
         render :new
       end
+    # else
+    #   render 'shared/404.html.erb'
+    # end
   end
 
   def edit
