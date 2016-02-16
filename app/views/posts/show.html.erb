@@ -23,6 +23,7 @@
               <div class="text-center buttons-view-post">
                 <% if current_user.try(:admin?) %>
                 <%= link_to "Modifier l'article", edit_post_path(@post), class: "btn btn-default btn-md" %>
+                <%= link_to "Créer un article", new_post_path, class: "btn btn-default btn-md" %>
                 <% end %>
               <%= link_to "Voir tous les articles", blog_path, class: "btn btn-default btn-md" %>
               </div>

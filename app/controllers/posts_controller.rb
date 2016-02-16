@@ -12,24 +12,24 @@ class PostsController < ApplicationController
   end
 
   def new
-    # if current_user and current_user.admin?
+    if current_user and current_user.admin?
       @post = Post.new
-    # else
-    #   render 'public/uploads/404.html'
-    # end
+    else
+      redirect_to posts_path
+    end
   end
 
   def create
-    if current_user and current_user.admin?
+    # if current_user and current_user.admin?
       @post = current_user.posts.new(post_params)
       if @post.save
         redirect_to @post
       else
         render :new
       end
-      else
-      render 'public/uploads/404.html'
-    end
+    # else
+    #   render 'shared/404.html.erb'
+    # end
   end
 
   def edit

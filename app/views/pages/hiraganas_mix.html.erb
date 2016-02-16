@@ -12,7 +12,11 @@
               <% end %>
             </li>
           </ul>
-        </div>
+          <div class="text-center">
+            <%= link_to hiraganas_path do %>
+              <p class="color-link"><i class="fa fa-arrow-left"></i> Retourner vers le tableau</p>
+            <% end %>
+          </div>
       </div>
       <ul class="list-inline text-center">
         <% @hiraganas.shuffle.each do |hiragana| %>
@@ -30,10 +34,7 @@
           <% end %>
         </li>
       </ul>
-      <div class="text-center">
-        <%= link_to hiraganas_path do %>
-          <p class="color-link"><i class="fa fa-arrow-left"></i> Retourner vers le tableau</p>
-        <% end %>
+
       </div>
     </div>
   </div>

@@ -12,7 +12,11 @@ class HiraganasController < ApplicationController
   end
 
   def new
+    if current_user and current_user.admin?
     @hiragana = Hiragana.new
+    else
+      redirect_to hiraganas_path
+    end
   end
 
   def create

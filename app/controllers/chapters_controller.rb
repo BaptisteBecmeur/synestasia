@@ -5,4 +5,5 @@ class ChaptersController < ApplicationController
     @chapter = @course.chapters.find(params[:id])
   end
 
+
 end
