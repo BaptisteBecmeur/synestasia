@@ -265,4 +265,8 @@ Devise.setup do |config|
 
   # Facebook connection
   config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"], scope: 'email', info_fields: 'email, first_name,last_name', image_size: 'large'
+
+  # Google connection
+  config.omniauth :google_oauth2, ENV["GOOGLE_ID"], ENV["GOOGLE_SECRET"], scope: 'email', info_fields: 'email, first_name,last_name', image_size: 'large'
+
 end
