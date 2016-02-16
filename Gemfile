@@ -19,7 +19,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'omniauth-facebook'
-# gem 'omniauth-google-oauth2' #added
+gem 'omniauth-google-oauth2' #added
 gem 'redcarpet'
 
 gem 'carrierwave'
