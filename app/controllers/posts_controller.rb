@@ -12,11 +12,11 @@ class PostsController < ApplicationController
   end
 
   def new
-    if current_user and current_user.admin?
+    # if current_user and current_user.admin?
       @post = Post.new
-    else
-      redirect_to posts_path
-    end
+    # else
+    #   redirect_to posts_path
+    # end
   end
 
   def create
