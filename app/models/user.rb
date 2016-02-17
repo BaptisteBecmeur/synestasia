@@ -29,7 +29,7 @@ class User < ActiveRecord::Base
   end
 
   # #Google
-  #  def self.find_for_google_oauth(auth)
+  #  def self.find_for_google_oauth2(auth)
   #   where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
   #     user.provider = auth.provider
   #     user.uid = auth.uid
