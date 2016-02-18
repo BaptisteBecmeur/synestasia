@@ -18,13 +18,15 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :posts
+  resources :posts do
+   resources :generators
+  end
 
   resources :hiraganas
 
   resources :favs, only: [:index, :destroy]
 
-  resources :generators
+
 
   get 'courses', to: 'courses#index'
 

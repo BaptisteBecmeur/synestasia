@@ -1,3 +1,21 @@
 // Place all the styles related to the Generators controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container-generator {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+    .form-post {
+    background-color: #fff;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
