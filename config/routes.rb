@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'generators/index'
+
+  get 'generators/show'
+
+  get 'generators/new'
+
+  get 'generators/create'
+
+  get 'generators/edit'
+
+  get 'generators/update'
+
+  get 'generators/destroy'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'synestesie', to: 'pages#synestesie'
   get 'about', to: 'pages#about'
