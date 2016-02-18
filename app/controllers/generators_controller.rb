@@ -54,8 +54,8 @@ class GeneratorsController < ApplicationController
     @post = Post.find(params[:post_id])
   end
 
-  def upload_params
-    params.require(:upload).permit(:ideog1, :ideog2, :ideog3, :transcription1, :transcription1, :post_id)
+  def generator_params
+    params.require(:generator).permit(:ideog1, :ideog2, :ideog3, :transcription1, :transcription1, :post_id)
   end
 end
 
