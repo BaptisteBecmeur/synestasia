@@ -1,25 +1,19 @@
-    <div class="col-md-12">
-          <h2>Les photos associées</h2>
-
-          <% if @post.user == current_user %>
-          <%= link_to "Add photo", new_post_generator_path(@post), class: "btn btn-default" %>
-            <% else %>
-          <h5>Aucune photo associée à l'article</h5>
-        <% end %>
-          <% end %>
-
-
-          <ul class="list-unstyled">
-            <% @post.generators.each do |generator| %>
-            <li>
-
-
-
-              <%= link_to "supprimer la photo", post_generator_path(post_id: @post.id, id: generator.id),
-              data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-primary" %>
-
-
-            </li>
-            <% end %>
-          </ul>
-        </div>
+<div class="col-md-12">
+  <h2>Flashcard associée</h2>
+    <% if @post.user == current_user %>
+      <%= link_to "Add photo", new_post_generator_path(@post), class: "btn btn-default" %>
+      <% else %>
+        <h5>Aucune flashcard associée à l'article</h5>
+      <% end %>
+    <% end %>
+    <ul class="list-unstyled">
+      <% @post.generators.each do |generator| %>
+    <li>
+      <p><%= generator.ideog1 %></p>
+      <p><%= generator.ideog2 %></p>
+      <%= link_to "supprimer la flashcard", post_generator_path(post_id: @post.id, id: generator.id),
+          data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-primary" %>
+    </li>
+      <% end %>
+  </ul>
+</div>

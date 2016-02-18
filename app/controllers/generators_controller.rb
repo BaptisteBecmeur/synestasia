@@ -32,7 +32,7 @@ class GeneratorsController < ApplicationController
 
   def destroy
     @generator = Generator.find(params[:id])
-    @upload.destroy
+    @generator.destroy
     redirect_to post_path(@post)
   end
 
