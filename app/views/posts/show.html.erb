@@ -23,26 +23,43 @@
 
 <!-- Render generator/showgenerator à mettre ici -->
 
-<div class="col-md-12">
+              <div class="col-md-12">
   <h2 class="text-center">Test Flashcard</h2>
+  <% @post.generators.each do |generator| %>
+    <ul class="list-inline text-center card-frame">
+      <li>
+        <div class="card">
+          <div class="front">
 
-    <ul class="list-unstyled text-center">
-      <% @post.generators.each do |generator| %>
-    <li>
-      <h4>Hello<%= generator.ideog1 %></h4>
-      <h4><%= generator.ideog2 %></h4>
+            <div class="card-hiragana hiragana-a">
+              <h1><b><%= generator.ideog1 %></b></h1>
+            </div>
 
-      <% if current_user.try(:admin?) %>
-      <%= link_to "supprimer la flashcard", post_generator_path(post_id: @post.id, id: generator.id),
+          </div>
+
+          <div class="back">
+            <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-a">
+              <div class="backcard-hiragana">
+                <h1><b><%= generator.ideog1 %></b></h1>
+              </div>
+              <div class="card-bigletter">
+                <h4><%= generator.ideog2 %></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+              <% if current_user.try(:admin?) %>
+                <%= link_to "supprimer la flashcard", post_generator_path(post_id: @post.id, id: generator.id),
           data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-default" %>
+            <% end %>
+            </li>
         <% end %>
+        </ul>
+    </div>
 
-    </li>
-      <% end %>
-  </ul>
-</div>
-
-
+<!-- Render generator/showgenerator à mettre ici -->
 
 
               <div class="text-center buttons-view-post">

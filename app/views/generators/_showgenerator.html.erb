@@ -1,19 +1,61 @@
 <div class="col-md-12">
-  <h2>Flashcard associée</h2>
-    <% if @post.user == current_user %>
-      <%= link_to "Add photo", new_post_generator_path(@post), class: "btn btn-default" %>
-      <% else %>
-        <h5>Aucune flashcard associée à l'article</h5>
-      <% end %>
-    <% end %>
-    <ul class="list-unstyled">
-      <% @post.generators.each do |generator| %>
-    <li>
-      <p><%= generator.ideog1 %></p>
-      <p><%= generator.ideog2 %></p>
+  <h2 class="text-center">Test Flashcard</h2>
+  <% @post.generators.each do |generator| %>
+    <ul class="list-inline text-center card-frame">
+      <li>
+        <div class="card">
+          <div class="front">
+
+            <div class="card-hiragana hiragana-a">
+              <h1><b><%= generator.ideog1 %></b></h1>
+            </div>
+
+          </div>
+
+          <div class="back">
+            <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-a">
+              <div class="backcard-hiragana">
+                <h1><b><%= generator.ideog1 %></b></h1>
+              </div>
+              <div class="card-bigletter">
+                <h4><%= generator.ideog2 %></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+              <% if current_user.try(:admin?) %>
+                <%= link_to "supprimer la flashcard", post_generator_path(post_id: @post.id, id: generator.id),
+          data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-default" %>
+            <% end %>
+            </li>
+        <% end %>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1><%= generator.ideog1 %></h1>
+    <h3><%= generator.ideog2 %></h3>
+  <% if current_user.try(:admin?) %>
       <%= link_to "supprimer la flashcard", post_generator_path(post_id: @post.id, id: generator.id),
-          data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-primary" %>
+          data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-default" %>
+    <% end %>
     </li>
-      <% end %>
+    <% end %>
   </ul>
 </div>
