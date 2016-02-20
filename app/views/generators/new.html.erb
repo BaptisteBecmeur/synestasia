@@ -5,8 +5,8 @@
       <h3 class="text-center">Générateur de flashcards</h3>
       <%= simple_form_for [@post, @generator] do |f| %>
       <%= f.error_notification %>
-      <%= f.input :ideog1, label: 'Ideogramme 1', input_html: { class: "input-lg"} %>
-      <%= f.input :ideog2, label: 'Ideogramme 2', input_html: { rows: 1} %>
+      <%= f.input :ideog1, label: 'Ideogramme 1 = Hiragana', input_html: { class: "input-lg"} %>
+      <%= f.input :ideog2, label: 'Ideogramme 2 = Kanji', input_html: { rows: 1} %>
        <div class="row">
         <div class="col-sm-6">
           <%= f.input :ideog3, label: 'Ideogramme 3', placeholder: "a, e, i, o, u"  %>
@@ -20,7 +20,7 @@
 
       <div class="row">
         <div class="col-sm-6">
-          <%= f.input :transcription1 %>
+          <%= f.input :transcription1, label: 'Transcription 1 = Traduction en français' %>
         </div>
         <div class="col-sm-6">
           <%= f.input :transcription2 %>

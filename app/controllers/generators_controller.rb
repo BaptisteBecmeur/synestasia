@@ -55,7 +55,7 @@ class GeneratorsController < ApplicationController
   end
 
   def generator_params
-    params.require(:generator).permit(:ideog1, :ideog2, :ideog3, :transcription1, :transcription1, :post_id)
+    params.require(:generator).permit(:ideog1, :ideog2, :ideog3, :ideog4, :romanji, :transcription1, :transcription2, :post_id)
   end
 end
 
