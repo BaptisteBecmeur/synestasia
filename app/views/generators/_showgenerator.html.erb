@@ -1,0 +1,52 @@
+<div class="col-md-12">
+    <% @post.generators.each do |generator| %>
+  <ul class="list-inline text-center card-frame">
+      <li>
+        <div class="cardgenerator">
+          <div class="front">
+            <div class="card-generator hiragana-a">
+              <h1><b><%= generator.ideog1 %></b></h1>
+            </div>
+              <h4><%= generator.ideog2 %></h4>
+          </div>
+          <div class="back">
+            <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-a">
+              <div class="backcard-generator">
+                <h1><%= generator.romanji %></h1>
+              </div>
+              <div class="card-bigletter">
+                <h4><%= generator.transcription1 %></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% if current_user.try(:admin?) %>
+          <%= link_to post_generator_path(post_id: @post.id, id: generator.id), class:'trash-generator',
+          data: { confirm: 'Are you sure?' }, method: :delete do %>
+          <%= image_tag("delete-btn.png") %>
+          <% end %>
+        <% end %>
+      </li>
+      <% end %>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

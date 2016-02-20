@@ -1,0 +1,238 @@
+
+.container-generator {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+    .form-post {
+    background-color: #fff;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+// Flashcard on Post Show View
+
+.cardgenerator {
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  width: 620px;
+
+// Front section
+
+.front{
+  border-radius: 6px;
+  background-color: #f2f2f2;
+
+// Favorite as heart
+   .hiragana-fav {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+    }
+
+// H4 font-size in popover
+
+  h4 {
+    font-size: 30px;
+  }
+
+// Features top FRONT card
+
+     // oeil
+    .card-question {
+      top: 10px;
+      right: 10px;
+      display: inline-block;
+      color: red;
+      position: absolute;
+      // text-shadow: 2px 1px #686868;
+      cursor: pointer;
+    }
+
+     // volume on
+    .audioclick {
+      top: 10px;
+      right: 41px;
+      display: inline-block;
+      color: red;
+      position: absolute;
+      // text-shadow: 2px 1px #686868;
+      cursor: pointer;
+    }
+
+   // lightbulb
+   .idea {
+      top: 10px;
+      right: 71px;
+      display: inline-block;
+      color: red;
+      position: absolute;
+      // text-shadow: 2px 1px #686868;
+      cursor: pointer;
+    }
+  }
+
+// Card hiragana FRONT
+
+  .card-generator h1 {
+    padding-top: 20px;
+    font-size: 170px;
+
+    h1:hover {
+      color: grey;
+    }
+  }
+
+// hiragana A couleur verte
+    .hiragana-a {
+      color: black;
+
+    h1:hover {
+      color: $green;
+      cursor: default;
+    }
+  }
+
+  // hiragana E couleur rouge
+    .hiragana-e {
+      color: black;
+
+    h1:hover {
+      color: $red;
+      cursor: default;
+    }
+  }
+
+// hiragana I couleur orange
+    .hiragana-i {
+      color: black;
+
+    h1:hover {
+      color: $pink;
+      cursor: default;
+    }
+  }
+
+  // hiragana U couleur violet
+    .hiragana-u {
+      color: black;
+
+    h1:hover {
+      color: $purple;
+      cursor: default;
+    }
+  }
+
+// hiragana O couleur bleu
+    .hiragana-o {
+      color: black;
+
+    h1:hover {
+      color: $blue;
+      cursor: default;
+    }
+  }
+
+// card katakana FRONT
+
+  .card-katakana {
+      color: black;
+      font-size: 40px
+    }
+
+// BACK card
+
+  .back {
+
+    h4 {
+      padding-top: 10px;
+      color: white;
+      font-weight: 300;
+    }
+
+    .backcard-generator h1 {
+      padding-top: 25px;
+      font-size: 120px;
+      color: white;
+    }
+
+// background A couleur verte
+  .containerbackcards-a {
+    border-radius: 6px;
+    height: 300px;
+    width: 620px;
+    overflow: visible;
+    background-color: $green;
+  }
+
+// background E couleur rouge
+  .containerbackcards-e {
+    position: relative;
+    border-radius: 6px;
+    height: 300px;
+    width: 620px;
+    overflow: visible;
+    background-color: $red;
+  }
+
+// background I couleur orange
+    .containerbackcards-i {
+      position: relative;
+      border-radius: 6px;
+      height: 300px;
+      width: 620px;
+      overflow: visible;
+      background-color: $pink;
+    }
+
+// background U couleur violette
+    .containerbackcards-u {
+      position: relative;
+      border-radius: 6px;
+      height: 300px;
+      width: 620px;
+      overflow: visible;
+      background-color: $purple;
+    }
+
+// background O couleur bleue
+    .containerbackcards-o {
+      position: relative;
+      border-radius: 6px;
+      height: 300px;
+      width: 620px;
+      overflow: visible;
+      background-color: $blue;
+    }
+
+     .card-bigletter {
+      color: white;
+      font-size: 100px
+    }
+  }
+}
+
+.trash-generator {
+  position: absolute;
+  top: 25px;
+  left: 82px;
+
+  img {
+    width:20px;
+    height:20px;
+  }
+}
+

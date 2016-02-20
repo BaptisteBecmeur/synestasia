@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160214141556) do
+ActiveRecord::Schema.define(version: 20160218133153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,23 @@ ActiveRecord::Schema.define(version: 20160214141556) do
   add_index "favs", ["hiragana_id"], name: "index_favs_on_hiragana_id", using: :btree
   add_index "favs", ["user_id"], name: "index_favs_on_user_id", using: :btree
 
+  create_table "generators", force: :cascade do |t|
+    t.string   "ideog1"
+    t.string   "ideog2"
+    t.string   "ideog3"
+    t.string   "ideog4"
+    t.string   "romanji"
+    t.string   "transcription1"
+    t.string   "transcription2"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.integer  "user_id"
+    t.integer  "post_id"
+  end
+
+  add_index "generators", ["post_id"], name: "index_generators_on_post_id", using: :btree
+  add_index "generators", ["user_id"], name: "index_generators_on_user_id", using: :btree
+
   create_table "hiraganas", force: :cascade do |t|
     t.string   "ideo1"
     t.string   "ideo2"
@@ -106,9 +123,13 @@ ActiveRecord::Schema.define(version: 20160214141556) do
     t.string   "category"
     t.string   "tag"
     t.integer  "user_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.string   "subtitle"
+    t.string   "ideo3"
+    t.string   "ideo4"
+    t.string   "romanji"
+    t.string   "transcription1"
   end
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
@@ -151,6 +172,8 @@ ActiveRecord::Schema.define(version: 20160214141556) do
   add_foreign_key "chapters", "courses"
   add_foreign_key "favs", "hiraganas"
   add_foreign_key "favs", "users"
+  add_foreign_key "generators", "posts"
+  add_foreign_key "generators", "users"
   add_foreign_key "hiraganas", "users"
   add_foreign_key "items", "chapters"
   add_foreign_key "posts", "users"

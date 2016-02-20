@@ -1,5 +1,7 @@
 class Post < ActiveRecord::Base
   belongs_to :user
+  has_many :generators, dependent: :destroy
+
 
   CATEGORIES = ["Japon", "Chine", "Corée du Sud", "Moyen-Orient"]
   TAGS = ["Design", "Mode", "Tendance", "Life-Style", "Tradition", "Gastronomie", "Insolite", "Technologie"]

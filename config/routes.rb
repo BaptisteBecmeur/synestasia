@@ -18,12 +18,15 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :posts
+  resources :posts do
+   resources :generators
+  end
 
-  resources :hiraganas #do
-    #resources :favs, only: [:create]
-  #end
+  resources :hiraganas
+
   resources :favs, only: [:index, :destroy]
+
+
 
   get 'courses', to: 'courses#index'
 
@@ -40,26 +43,35 @@ end
   #     end
   #   end
 
-
  # get 'courses/:id' => 'courses#show', as: :courses_show
   #   get 'chapters/show'
   #     get 'items/show'
-
 
   # resources: :courses, only: [:show], path: "" do
   #   resources: :chapters, only: [:show], path: "" do
   #     resources: :items, only: [:show], path: ""
   #   end
 
-
   # root to: 'courses#index'
   # devise_for :users
+
+  #resources :hiraganas #do
+    #resources :favs, only: [:create]
+  #end
 
   # resources :courses, only: [:show], path: "" do # => TODO: friendly-id
   #   resources :chapters, only: [:show], path: "" do # => TODO: add simply the name
   #     resources :items, only: [:show], path: "" # => friendly-id
   #   end
   # end
+
+  # get 'generators/index'
+  # get 'generators/show'
+  # get 'generators/new'
+  # get 'generators/create'
+  # get 'generators/edit'
+  # get 'generators/update'
+  # get 'generators/destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
