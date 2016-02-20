@@ -1,5 +1,5 @@
 <div class="col-md-12">
-    <% @post.generators.each do |generator| %>
+    <% @post.generators.order('created_at ASC').each do |generator| %>
   <ul class="list-inline text-center card-frame">
       <li>
         <div class="cardgenerator">
