@@ -27,8 +27,8 @@
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 300px;
-  width: 620px;
+  height: 220px;
+  width: 340px;
 
 // Front section
 
@@ -42,59 +42,20 @@
       left: 15px;
       bottom: 15px;
     }
-
-// H4 font-size in popover
-
-  h4 {
-    font-size: 30px;
-  }
-
-// Features top FRONT card
-
-     // oeil
-    .card-question {
-      top: 10px;
-      right: 10px;
-      display: inline-block;
-      color: red;
-      position: absolute;
-      // text-shadow: 2px 1px #686868;
-      cursor: pointer;
-    }
-
-     // volume on
-    .audioclick {
-      top: 10px;
-      right: 41px;
-      display: inline-block;
-      color: red;
-      position: absolute;
-      // text-shadow: 2px 1px #686868;
-      cursor: pointer;
-    }
-
-   // lightbulb
-   .idea {
-      top: 10px;
-      right: 71px;
-      display: inline-block;
-      color: red;
-      position: absolute;
-      // text-shadow: 2px 1px #686868;
-      cursor: pointer;
-    }
   }
 
 // Card hiragana FRONT
-
-  .card-generator h1 {
-    padding-top: 20px;
-    font-size: 170px;
+  .frontcard-generator h1 {
+    font-size: 120px;
 
     h1:hover {
       color: grey;
     }
   }
+
+  h4 {
+      font-size: 25px;
+    }
 
 // hiragana A couleur verte
     .hiragana-a {
@@ -146,44 +107,36 @@
     }
   }
 
-// card katakana FRONT
-
-  .card-katakana {
-      color: black;
-      font-size: 40px
-    }
-
 // BACK card
 
   .back {
 
-    h4 {
-      padding-top: 10px;
-      color: white;
+    .backcard-generator h1 {
+      font-size: 120px;
+      color: black;
+    }
+
+     h4 {
+      font-size: 25px;
+      color: black;
       font-weight: 300;
     }
 
-    .backcard-generator h1 {
-      padding-top: 25px;
-      font-size: 120px;
-      color: white;
-    }
-
 // background A couleur verte
-  .containerbackcards-a {
+  .containerbackcards {
     border-radius: 6px;
-    height: 300px;
-    width: 620px;
+    height: 220px;
+    width: 340px;
     overflow: visible;
-    background-color: $green;
+    background-color: #F2F2F2;
   }
 
 // background E couleur rouge
   .containerbackcards-e {
     position: relative;
     border-radius: 6px;
-    height: 300px;
-    width: 620px;
+    height: 220px;
+    width: 340px;
     overflow: visible;
     background-color: $red;
   }
@@ -192,8 +145,8 @@
     .containerbackcards-i {
       position: relative;
       border-radius: 6px;
-      height: 300px;
-      width: 620px;
+      height: 220px;
+      width: 340px;
       overflow: visible;
       background-color: $pink;
     }
@@ -202,8 +155,8 @@
     .containerbackcards-u {
       position: relative;
       border-radius: 6px;
-      height: 300px;
-      width: 620px;
+      height: 220px;
+      width: 340px;
       overflow: visible;
       background-color: $purple;
     }
@@ -212,23 +165,18 @@
     .containerbackcards-o {
       position: relative;
       border-radius: 6px;
-      height: 300px;
-      width: 620px;
+      height: 220px;
+      width: 340px;
       overflow: visible;
       background-color: $blue;
-    }
-
-     .card-bigletter {
-      color: white;
-      font-size: 100px
     }
   }
 }
 
 .trash-generator {
   position: absolute;
-  top: 25px;
-  left: 82px;
+  top: -15px;
+  left: -5px;
 
   img {
     width:20px;
