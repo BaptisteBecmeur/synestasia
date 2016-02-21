@@ -26,8 +26,8 @@
   position: relative;
   overflow: visible;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
   height: 200px;
@@ -49,6 +49,7 @@
 
 // Card hiragana FRONT
   .frontcard-generator h1 {
+    padding-top: 35px;
     font-size: 50px;
     word-spacing: -0.28em;
 
@@ -58,11 +59,12 @@
   }
 
   h4 {
+      padding-top: 20px;
       font-size: 25px;
     }
 
 // hiragana A couleur verte
-    .hiragana-a {
+    .generator-a {
       color: black;
 
     h1:hover {
@@ -72,7 +74,7 @@
   }
 
   // hiragana E couleur rouge
-    .hiragana-e {
+    .generator-e {
       color: black;
 
     h1:hover {
@@ -82,7 +84,7 @@
   }
 
 // hiragana I couleur orange
-    .hiragana-i {
+    .generator-i {
       color: black;
 
     h1:hover {
@@ -92,7 +94,7 @@
   }
 
   // hiragana U couleur violet
-    .hiragana-u {
+    .generator-u {
       color: black;
 
     h1:hover {
@@ -102,7 +104,7 @@
   }
 
 // hiragana O couleur bleu
-    .hiragana-o {
+    .generator-o {
       color: black;
 
     h1:hover {
@@ -116,11 +118,13 @@
   .back {
 
     .backcard-generator h1 {
+      padding-top: 35px;
       font-size: 50px;
       color: black;
     }
 
      h4 {
+      padding-top: 20px;
       font-size: 25px;
       color: black;
       font-weight: 300;
