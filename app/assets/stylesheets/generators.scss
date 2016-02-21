@@ -1,4 +1,3 @@
-
 .container-generator {
   background-color: #f2f2f2;
   padding-top: 20px;
@@ -10,10 +9,14 @@
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+   h3 {
+    padding-bottom: 10px;
   }
 }
 
@@ -27,8 +30,8 @@
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 220px;
-  width: 340px;
+  height: 200px;
+  width: 320px;
 
 // Front section
 
@@ -46,7 +49,8 @@
 
 // Card hiragana FRONT
   .frontcard-generator h1 {
-    font-size: 110px;
+    font-size: 50px;
+    word-spacing: -0.28em;
 
     h1:hover {
       color: grey;
@@ -112,7 +116,7 @@
   .back {
 
     .backcard-generator h1 {
-      font-size: 95px;
+      font-size: 50px;
       color: black;
     }
 
@@ -122,53 +126,13 @@
       font-weight: 300;
     }
 
-// background A couleur verte
+// background couleur unie => grise
   .containerbackcards {
     border-radius: 6px;
-    height: 220px;
-    width: 340px;
+    height: 200px;
+    width: 320px;
     overflow: visible;
     background-color: #F2F2F2;
-  }
-
-// background E couleur rouge
-  .containerbackcards-e {
-    position: relative;
-    border-radius: 6px;
-    height: 220px;
-    width: 340px;
-    overflow: visible;
-    background-color: $red;
-  }
-
-// background I couleur orange
-    .containerbackcards-i {
-      position: relative;
-      border-radius: 6px;
-      height: 220px;
-      width: 340px;
-      overflow: visible;
-      background-color: $pink;
-    }
-
-// background U couleur violette
-    .containerbackcards-u {
-      position: relative;
-      border-radius: 6px;
-      height: 220px;
-      width: 340px;
-      overflow: visible;
-      background-color: $purple;
-    }
-
-// background O couleur bleue
-    .containerbackcards-o {
-      position: relative;
-      border-radius: 6px;
-      height: 220px;
-      width: 340px;
-      overflow: visible;
-      background-color: $blue;
     }
   }
 }

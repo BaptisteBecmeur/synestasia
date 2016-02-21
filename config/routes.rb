@@ -26,8 +26,6 @@ Rails.application.routes.draw do
 
   resources :favs, only: [:index, :destroy]
 
-
-
   get 'courses', to: 'courses#index'
 
   post 'favs/:hiragana_id', to: 'favs#create', as: "hiragana_favs"

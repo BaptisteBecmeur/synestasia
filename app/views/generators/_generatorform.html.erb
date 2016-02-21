@@ -1,0 +1,40 @@
+<div class="row">
+  <div class= "col-md-8 col-md-offset-2 form-post">
+    <h3 class="text-center">Générateur de flashcards</h3>
+      <%= simple_form_for [@post, @generator] do |f| %>
+      <%= f.error_notification %>
+      <div class="row">
+        <div class="col-sm-6">
+          <%= f.input :ideog1, label: 'Ideogramme 1 = Hiragana', input_html: { class: "input-lg"} %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.input :ideog2, label: 'Ideogramme 2', input_html: { class: "input-lg"} %>
+        </div>
+      </div>
+       <div class="row">
+        <div class="col-sm-6">
+          <%= f.input :ideog3, label: 'Ideogramme 3', input_html: { class: "input-lg"}  %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.input :ideog4, label: 'Ideogramme 4 = Kanji', input_html: { class: "input-lg"}  %>
+        </div>
+      </div>
+
+      <%= f.input :romanji, label: 'Tanscription en Romanji', input_html: { class: "input-lg"} %>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <%= f.input :transcription1, label: 'Transcription 1 = Traduction en français' %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.input :transcription2 %>
+        </div>
+      </div>
+      <br/>
+      <div class="text-center">
+       <%= f.submit "Générer la flashcard", class: "btn btn-danger btn-lg" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
