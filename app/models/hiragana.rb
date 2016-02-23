@@ -4,6 +4,8 @@ class Hiragana < ActiveRecord::Base
 
   mount_uploader :upload, ImageUploader
 
+  mount_uploader :sound, SoundUploader
+
   def is_faved_by(user)
     self.favs.where(user: user).take
   end

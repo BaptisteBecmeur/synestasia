@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 class SoundUploader < CarrierWave::Uploader::Base
+  include Cloudinary::CarrierWave
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
