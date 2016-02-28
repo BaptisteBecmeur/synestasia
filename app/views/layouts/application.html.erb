@@ -46,13 +46,25 @@
    <!-- js popover -->
     <script >
       $(document).ready(function(){
-      $(".img-popover").popover({
-      html: true,
-      trigger: "hover",
-      placement: "top"
-      });
+        $(".popover-word").popover({
+          html: true,
+          trigger: "hover",
+          placement: "top"
+        });
       })
     </script>
+
+    <script >
+      $(document).ready(function(){
+        $(".popover-img").popover({
+          html: true,
+          trigger: "hover",
+          content: "img",
+          placement:'bottom'
+        });
+      })
+    </script>
+
 
   <%= yield(:after_js) %>
 
