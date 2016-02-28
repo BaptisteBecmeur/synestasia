@@ -21,10 +21,14 @@
                 <!-- <div class="prononciation">
                   <i class="fa fa-comment"></i>
                 </div> -->
+                <div class="idea">
+                  <i class="fa fa-lightbulb-o fa-lg popover-img" data-content="<%= cl_image_tag(@hiragana.upload, :width => 260, :height => 340) %>"></i>
+                </div>
 
                 <div class="idea">
-                  <i class="fa fa-lightbulb-o fa-lg popover-img" data-content="<%= cl_image_tag @hiragana.upload %>"></i>
+                   <i class="fa fa-lightbulb-o fa-lg popover-img" data-content="<img src='http://res.cloudinary.com/dzr44aeiu/image/upload/v1456668225/70336985767220.png'>"></i>
                 </div>
+
 
                 <div class="card-hiragana hiragana-<%=@hiragana.bigletter.downcase.last%>">
                   <h1><b><%= @hiragana.ideo1 %></b></h1>
@@ -32,7 +36,7 @@
                 <div class="card-katakana">
                   <p><%= @hiragana.ideo2 %></p>
                 </div>
-                        <!-- </div> -->
+                <!-- </div> -->
               </div>
               <div class="back">
                 <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-<%=@hiragana.bigletter.downcase.last%>">
