@@ -1,2 +1,7 @@
-<h1>Generators#edit</h1>
-<p>Find me in app/views/generators/edit.html.erb</p>
+<div class="container-generator">
+  <div class="container-fluid ">
+    <% if current_user.try(:admin?) %>
+      <%= render 'generatorform' %>
+    <% end %>
+  </div>
+</div>

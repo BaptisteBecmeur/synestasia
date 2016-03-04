@@ -36,19 +36,35 @@
 
     <!-- js FlipCard -->
     <script >
-      $(".card, .cardgenerator").flip({axis: 'y'});
+      $(".card").flip({axis: 'y'});
+    </script>
+
+    <script >
+      $(".cardgenerator").flip({axis: 'x'});
     </script>
 
    <!-- js popover -->
     <script >
       $(document).ready(function(){
-      $(".img-popover").popover({
-      html: true,
-      trigger: "hover",
-      placement: "top"
-      });
+        $(".popover-word").popover({
+          html: true,
+          trigger: "hover",
+          placement: "top"
+        });
       })
     </script>
+
+    <script >
+      $(document).ready(function(){
+        $(".popover-img").popover({
+          html: true,
+          trigger: "hover",
+          content: "",
+          placement:'bottom'
+        });
+      })
+    </script>
+
 
   <%= yield(:after_js) %>
 

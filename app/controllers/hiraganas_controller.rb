@@ -8,7 +8,7 @@ class HiraganasController < ApplicationController
   end
 
   def show
-    @alert_message = "Vous avez créer la flashcard #{@hiragana.ideo1}"
+    @alert_message = "Vous avez créé la flashcard #{@hiragana.ideo1}"
   end
 
   def new
@@ -51,7 +51,7 @@ private
   end
 
   def hiragana_params
-    params.require(:hiragana).permit(:ideo1, :ideo2, :bigletter, :midletter, :transcription, :upload, :audioclick)
+    params.require(:hiragana).permit(:ideo1, :ideo2, :bigletter, :midletter, :transcription, :upload, :sound, :audioclick)
 
   end
 end

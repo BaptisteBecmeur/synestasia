@@ -1,4 +1,3 @@
-
 .container-generator {
   background-color: #f2f2f2;
   padding-top: 20px;
@@ -10,10 +9,14 @@
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+   h3 {
+    padding-bottom: 10px;
   }
 }
 
@@ -23,12 +26,12 @@
   position: relative;
   overflow: visible;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 300px;
-  width: 620px;
+  height: 200px;
+  width: 320px;
 
 // Front section
 
@@ -42,62 +45,26 @@
       left: 15px;
       bottom: 15px;
     }
-
-// H4 font-size in popover
-
-  h4 {
-    font-size: 30px;
-  }
-
-// Features top FRONT card
-
-     // oeil
-    .card-question {
-      top: 10px;
-      right: 10px;
-      display: inline-block;
-      color: red;
-      position: absolute;
-      // text-shadow: 2px 1px #686868;
-      cursor: pointer;
-    }
-
-     // volume on
-    .audioclick {
-      top: 10px;
-      right: 41px;
-      display: inline-block;
-      color: red;
-      position: absolute;
-      // text-shadow: 2px 1px #686868;
-      cursor: pointer;
-    }
-
-   // lightbulb
-   .idea {
-      top: 10px;
-      right: 71px;
-      display: inline-block;
-      color: red;
-      position: absolute;
-      // text-shadow: 2px 1px #686868;
-      cursor: pointer;
-    }
   }
 
 // Card hiragana FRONT
-
-  .card-generator h1 {
-    padding-top: 20px;
-    font-size: 170px;
+  .frontcard-generator h1 {
+    padding-top: 35px;
+    font-size: 50px;
+    word-spacing: -0.28em;
 
     h1:hover {
       color: grey;
     }
   }
 
+  h4 {
+      padding-top: 20px;
+      font-size: 25px;
+    }
+
 // hiragana A couleur verte
-    .hiragana-a {
+    .generator-a {
       color: black;
 
     h1:hover {
@@ -107,7 +74,7 @@
   }
 
   // hiragana E couleur rouge
-    .hiragana-e {
+    .generator-e {
       color: black;
 
     h1:hover {
@@ -117,7 +84,7 @@
   }
 
 // hiragana I couleur orange
-    .hiragana-i {
+    .generator-i {
       color: black;
 
     h1:hover {
@@ -127,7 +94,7 @@
   }
 
   // hiragana U couleur violet
-    .hiragana-u {
+    .generator-u {
       color: black;
 
     h1:hover {
@@ -137,7 +104,7 @@
   }
 
 // hiragana O couleur bleu
-    .hiragana-o {
+    .generator-o {
       color: black;
 
     h1:hover {
@@ -146,89 +113,38 @@
     }
   }
 
-// card katakana FRONT
-
-  .card-katakana {
-      color: black;
-      font-size: 40px
-    }
-
 // BACK card
 
   .back {
 
-    h4 {
-      padding-top: 10px;
-      color: white;
+    .backcard-generator h1 {
+      padding-top: 35px;
+      font-size: 50px;
+      color: black;
+    }
+
+     h4 {
+      padding-top: 20px;
+      font-size: 25px;
+      color: black;
       font-weight: 300;
     }
 
-    .backcard-generator h1 {
-      padding-top: 25px;
-      font-size: 120px;
-      color: white;
-    }
-
-// background A couleur verte
-  .containerbackcards-a {
+// background couleur unie => grise
+  .containerbackcards {
     border-radius: 6px;
-    height: 300px;
-    width: 620px;
+    height: 200px;
+    width: 320px;
     overflow: visible;
-    background-color: $green;
-  }
-
-// background E couleur rouge
-  .containerbackcards-e {
-    position: relative;
-    border-radius: 6px;
-    height: 300px;
-    width: 620px;
-    overflow: visible;
-    background-color: $red;
-  }
-
-// background I couleur orange
-    .containerbackcards-i {
-      position: relative;
-      border-radius: 6px;
-      height: 300px;
-      width: 620px;
-      overflow: visible;
-      background-color: $pink;
-    }
-
-// background U couleur violette
-    .containerbackcards-u {
-      position: relative;
-      border-radius: 6px;
-      height: 300px;
-      width: 620px;
-      overflow: visible;
-      background-color: $purple;
-    }
-
-// background O couleur bleue
-    .containerbackcards-o {
-      position: relative;
-      border-radius: 6px;
-      height: 300px;
-      width: 620px;
-      overflow: visible;
-      background-color: $blue;
-    }
-
-     .card-bigletter {
-      color: white;
-      font-size: 100px
+    background-color: #F2F2F2;
     }
   }
 }
 
 .trash-generator {
   position: absolute;
-  top: 25px;
-  left: 82px;
+  top: -15px;
+  left: -5px;
 
   img {
     width:20px;

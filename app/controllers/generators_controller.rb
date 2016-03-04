@@ -1,7 +1,7 @@
 class GeneratorsController < ApplicationController
 
   before_filter :authenticate_user!
-  before_action :set_post, only: [:show, :new, :create, :destroy]
+  before_action :set_post, only: [:show, :new, :create, :destroy, :edit, :update]
 
   def index
     @generators = Generator.all
@@ -28,6 +28,12 @@ class GeneratorsController < ApplicationController
   end
 
   def update
+      @generator = Generator.new(generator_params)
+    if @generator.save
+      redirect_to @generator
+    else
+      render :new
+    end
   end
 
   def destroy
