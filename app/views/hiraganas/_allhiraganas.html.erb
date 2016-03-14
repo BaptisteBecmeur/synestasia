@@ -19,9 +19,14 @@
             <i class="fa fa-volume-up fa-lg"></i>
           </span>
           <!-- image mnémotechnique -->
-          <span class="idea popover-word" data-content="<p class='text-center'><b>l'image est bientôt prête !</b><%= hiragana.upload %></p>">
-            <i class="fa fa-lightbulb-o fa-lg"></i>
-          </span>
+           <div class="idea">
+                <span class="popover-trigger"
+                  data-toggle="popover"
+                  data-content='<%= cl_image_tag(hiragana.upload,
+                  :width => 210, :height => 290) %>'>
+                  <i class="fa fa-lightbulb-o fa-lg"></i>
+                </span>
+              </div>
           <!-- <div class="prononciation">
             <i class="fa fa-comment"></i>
           </div> -->

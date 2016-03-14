@@ -54,17 +54,22 @@
       })
     </script>
 
-    <script >
-      $(document).ready(function(){
-        $(".popover-img").popover({
-          html: true,
-          trigger: "hover",
-          content: "",
-          placement:'bottom'
-        });
-      })
+    <script>
+    $('[data-toggle="popover"]').popover({
+      html: true,
+      trigger: 'hover',
+      placement:'bottom',
+      content: function () {
+      return $(this).data('content');
+      }
+    });
     </script>
 
+    <script >
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
 
   <%= yield(:after_js) %>
 

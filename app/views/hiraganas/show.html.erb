@@ -21,9 +21,15 @@
                 <!-- <div class="prononciation">
                   <i class="fa fa-comment"></i>
                 </div> -->
+
                 <div class="idea">
-                  <i class="fa fa-lightbulb-o fa-lg popover-img" data-content="<img src='https://res.cloudinary.com/dzr44aeiu/image/upload/v1456681844/a-hiragana-picture.png'>"></i>
-                </div>
+                <span class="popover-trigger"
+                  data-toggle="popover"
+                  data-content='<%= cl_image_tag(@hiragana.upload,
+                  :width => 210, :height => 290) %>'>
+                  <i class="fa fa-lightbulb-o fa-lg"></i>
+                </span>
+              </div>
 
                 <div class="card-hiragana hiragana-<%=@hiragana.bigletter.downcase.last%>">
                   <h1><b><%= @hiragana.ideo1 %></b></h1>
