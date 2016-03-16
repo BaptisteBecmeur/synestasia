@@ -22,6 +22,8 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'redcarpet'
 
+gem 'gibbon'
+
 gem 'carrierwave'
 gem 'cloudinary'
 
