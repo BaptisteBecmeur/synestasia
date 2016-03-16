@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
   has_many :favs, dependent: :destroy
   has_many :generators, dependent: :destroy
 
+  after_create :subscribe_to_newsletter
+
  def self.find_for_facebook_oauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.provider = auth.provider
@@ -42,6 +44,12 @@ class User < ActiveRecord::Base
       user.picture = auth.info.image
       user.token = auth.credentials.token
     end
+  end
+
+  private
+
+  def subscribe_to_newsletter
+    SubscribeToNewsletter.new(self).run
   end
 
 end
