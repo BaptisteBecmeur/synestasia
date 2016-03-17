@@ -21,15 +21,20 @@
                 <!-- <div class="prononciation">
                   <i class="fa fa-comment"></i>
                 </div> -->
-
+                <% if @hiragana.upload.blank? %>
+                  <div class="idea">
+                    <i class="fa fa-lightbulb-o fa-lg"></i>
+                  </div>
+                <% else %>
                 <div class="idea">
-                <span class="popover-trigger"
+                  <span class="popover-trigger"
                   data-toggle="popover"
                   data-content='<%= cl_image_tag(@hiragana.upload,
                   :width => 210, :height => 290) %>'>
                   <i class="fa fa-lightbulb-o fa-lg"></i>
                 </span>
               </div>
+            <% end %>
 
                 <div class="card-hiragana hiragana-<%=@hiragana.bigletter.downcase.last%>">
                   <h1><b><%= @hiragana.ideo1 %></b></h1>
