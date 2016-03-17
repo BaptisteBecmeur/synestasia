@@ -1,0 +1,60 @@
+<div class="row">
+  <ul class="list-inline text-center card-frame">
+    <li>
+      <div class="card">
+        <div class="front">
+          <% if current_user.try(:admin?) %>
+            <%= link_to hiragana_path(hiragana), class:'trash-hiragana', data: { confirm: 'Are you sure?' }, method: :delete do %>
+            <%= image_tag("delete-btn.png") %>
+            <% end %>
+          <% end %>
+        <!-- PARAMETRER LE RESPONSIVE BOOTSTRAP -->
+        <!-- <div class="col-sm- col-xs-4 col-md-3"> -->
+          <span class="card-question popover-word" data-content="<h4 class='text-center letter-uppercase'><%= hiragana.bigletter.upcase %></h4><p class='text-center'><b><%= hiragana.midletter %></b> comme dans <b><%= hiragana.transcription %></b></p>">
+            <i class="fa fa-eye fa-lg"></i>
+          </span>
+
+          <!-- son de l'hiragana -->
+          <span class="audioclick popover-word" data-content="<p class='text-center'><b>le son arrive prochainement !</b></p>">
+            <i class="fa fa-volume-up fa-lg"></i>
+          </span>
+          <!-- image mnémotechnique -->
+           <div class="idea">
+                <span class="popover-trigger"
+                  data-toggle="popover"
+                  data-content='<%= cl_image_tag(hiragana.upload,
+                  :width => 210, :height => 290) %>'>
+                  <i class="fa fa-lightbulb-o fa-lg"></i>
+                </span>
+              </div>
+          <!-- <div class="prononciation">
+            <i class="fa fa-comment"></i>
+          </div> -->
+
+          <div class="card-hiragana hiragana-<%=hiragana.bigletter.downcase.last%>">
+            <h1><b><%= hiragana.ideo2 %></b></h1>
+          </div>
+
+          <div class="card-katakana">
+            <p><%= hiragana.ideo1 %></p>
+          </div>
+          <div id="favorite_<%=hiragana.id%>">
+            <%= render 'favs/favorites', hiragana: hiragana %>
+          </div>
+        </div>
+        <div class="back">
+          <div class="col-sm-3 col-xs-4 col-md-3 containerbackcards-<%=hiragana.bigletter.downcase.last%>">
+            <div class="backcard-hiragana">
+              <h1><b><%= hiragana.ideo2 %></b></h1>
+            </div>
+            <div class="card-bigletter">
+              <h4><%= hiragana.bigletter.upcase %></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+

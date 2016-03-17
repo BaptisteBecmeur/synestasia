@@ -28,4 +28,8 @@ class PagesController < ApplicationController
     @hiraganas = Hiragana.all
   end
 
+  def kanjis
+    @hiraganas = Hiragana.all
+  end
+
 end

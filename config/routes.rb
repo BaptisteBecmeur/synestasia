@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'legal', to: 'pages#legal'
   get 'blog', to: 'pages#blog'
   get  'hiraganas-mix', to: 'pages#hiraganas_mix'
+  get  'kanjis', to: 'pages#kanjis'
 
   root to: 'pages#home'
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
