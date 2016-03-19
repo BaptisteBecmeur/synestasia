@@ -1,0 +1,40 @@
+<div class="container-formpost">
+  <div class="container">
+    <div class="row">
+
+      <div class="text-center">
+        <h1 class="text-center"><span class="inset-hiragana">tableau des kanjis</span></h1>
+      </div>
+
+      <div class="col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <%= link_to hiraganas_path do %>
+              <p class="color-link"><i class="fa fa-arrow-left"></i> Retourner vers le tableau des hiraganas</p>
+            <% end %>
+          </div>
+      </div>
+
+      <ul class="list-inline text-center">
+        <% @hiraganas.each do |hiragana| %>
+          <li>
+            <%= render 'kanjisrender', hiragana: hiragana %>
+          </li>
+        <% end %>
+      </ul>
+
+      <div class="col-md-8 col-md-offset-2">
+        <ul class="list-unstyled list-inline text-center">
+          <li>
+            <%= link_to hiraganas_mix_path do %>
+              <div class="mix-button">
+                <h5>Mélanger les hiraganas</h5>
+              </div>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
