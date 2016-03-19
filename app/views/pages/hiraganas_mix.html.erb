@@ -7,19 +7,19 @@
             <li>
               <%= link_to hiraganas_mix_path do %>
                 <div class="mix-button">
-                  <h5>Mélanger les hiraganas</h5>
+                  <h5>Mélanger</h5>
                 </div>
               <% end %>
             </li>
           </ul>
           <div class="text-center">
             <%= link_to hiraganas_path do %>
-              <p class="color-link"><i class="fa fa-arrow-left"></i> Retourner vers le tableau</p>
+              <p class="color-link"><i class="fa fa-arrow-left"></i> Retourner vers le tableau des hiraganas</p>
             <% end %>
           </div>
       </div>
       <ul class="list-inline text-center">
-        <% @hiraganas.shuffle.each do |hiragana| %>
+        <% @hiraganas.order("RANDOM()").each do |hiragana| %>
           <li>
             <%= render 'hiraganasmix', hiragana: hiragana %>
           </li>
@@ -29,7 +29,7 @@
         <li>
           <%= link_to hiraganas_mix_path do %>
             <div class="mix-button">
-                <h5>Mélanger les hiraganas</h5>
+                <h5>Mélanger</h5>
             </div>
           <% end %>
         </li>

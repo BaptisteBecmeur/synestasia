@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
-         :omniauthable, omniauth_providers: [:facebook] #, :google_oauth2
+         :omniauthable, omniauth_providers: [:facebook, :google_oauth2] #, :google_oauth2
 
   has_and_belongs_to_many :oauth_credentials
 
@@ -46,10 +46,11 @@ class User < ActiveRecord::Base
     end
   end
 
+  validates :first_name, presence: true
+
   private
 
   def subscribe_to_newsletter
     SubscribeToNewsletter.new(self).run
   end
-
 end
