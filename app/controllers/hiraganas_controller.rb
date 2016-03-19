@@ -52,7 +52,7 @@ private
 
   def hiragana_params
     params.require(:hiragana).permit(:ideo1, :ideo2, :bigletter, :midletter, :transcription, :upload, :sound, :audioclick)
-
   end
+
 end
 
