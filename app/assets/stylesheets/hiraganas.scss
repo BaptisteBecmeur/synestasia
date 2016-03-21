@@ -94,6 +94,10 @@
       position: absolute;
       // text-shadow: 2px 1px #686868;
       cursor: pointer;
+
+      .fa-volume-up {
+        color: red;
+      }
     }
 
    // lightbulb
@@ -106,6 +110,10 @@
       // text-shadow: 2px 1px #686868;
       cursor: pointer;
     }
+
+     .cursor-stop {
+        cursor: not-allowed
+      }
 
     // // bubble
     // .prononciation {

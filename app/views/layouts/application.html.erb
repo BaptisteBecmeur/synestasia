@@ -54,6 +54,7 @@
       })
     </script>
 
+    <!-- js popover content -->
     <script>
     $('[data-toggle="popover"]').popover({
       html: true,
@@ -63,12 +64,6 @@
       return $(this).data('content');
       }
     });
-    </script>
-
-    <script >
-      $(function () {
-        $('[data-toggle="popover"]').popover()
-      })
     </script>
 
   <%= yield(:after_js) %>

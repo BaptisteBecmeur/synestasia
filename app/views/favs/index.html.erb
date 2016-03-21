@@ -15,32 +15,35 @@
                   <%= link_to fav_path(fav), class:'trash-fav', data: { confirm: 'Vous allez retirer cet article de vos favoris, êtes-vous sûre ?' }, method: :delete do %>
                     <%= image_tag("delete-btn.png") %>
                   <% end %>
-                <!--   <span class="card-question img-popover" data-content="<h4 class='text-center letter-uppercase'><%= fav.hiragana.bigletter.upcase %></h4><p class='text-center'><b><%= fav.hiragana.midletter %></b> comme dans <b><%= fav.hiragana.transcription %></b></p>">
-                    <i class="fa fa-eye fa-lg"></i>
-                  </span> -->
 
                 <span class="card-question popover-word" data-content="<h4 class='text-center letter-uppercase'><%= fav.hiragana.bigletter.upcase %></h4><p class='text-center'><b><%= fav.hiragana.midletter %></b> comme dans <b><%= fav.hiragana.transcription %></b></p>">
                   <i class="fa fa-eye fa-lg"></i>
                 </span>
                   <!-- son de l'hiragana -->
-                  <span class="audioclick img-popover" data-content="<p class='text-center'><b>le son arrive prochainement !</b></p>">
-                    <i class="fa fa-volume-up fa-lg"></i>
-                  </span>
-                  <!-- image mnémotechnique -->
-                <% if fav.hiragana.upload.blank? %>
-                  <div class="idea">
-                    <i class="fa fa-lightbulb-o fa-lg"></i>
-                  </div>
+                <div class="audioclick">
+                  <% if fav.hiragana.sound.blank? %>
+                <i class="fa fa-volume-up fa-lg cursor-stop"></i>
                   <% else %>
-                    <div class="idea">
-                      <span class="popover-trigger"
+                    <a onclick="h=function(event) { event.preventDefault(); $('#audio_<%= fav.hiragana.id%>')[0].play();}; h(event)"><i class="fa fa-volume-up fa-lg"></i></a>
+                <audio id="audio_<%= fav.hiragana.id%>">
+                  <source src="<%= fav.hiragana.sound%>" type="audio/mp3">
+                  Your browser does not support the video tag.
+                </audio>
+                <% end %>
+                </div>
+                  <!-- image mnémotechnique -->
+                <div class="idea">
+                  <% if fav.hiragana.upload.blank? %>
+                    <i class="fa fa-lightbulb-o fa-lg cursor-stop"></i>
+                  <% else %>
+                    <span class="popover-trigger"
                       data-toggle="popover"
                       data-content='<%= cl_image_tag(fav.hiragana.upload,
                       :width => 210, :height => 290) %>'>
                       <i class="fa fa-lightbulb-o fa-lg"></i>
                     </span>
-                  </div>
-                <% end %>
+                  <% end %>
+                </div>
                   <!-- <div class="prononciation">
                     <i class="fa fa-comment"></i>
                   </div> -->

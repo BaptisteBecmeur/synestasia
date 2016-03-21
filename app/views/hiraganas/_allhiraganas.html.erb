@@ -15,24 +15,31 @@
           </span>
 
           <!-- son de l'hiragana -->
-          <span class="audioclick popover-word" data-content="<p class='text-center'><b>le son arrive prochainement !</b></p>">
-            <i class="fa fa-volume-up fa-lg"></i>
-          </span>
+          <div class="audioclick">
+            <% if hiragana.sound.blank? %>
+              <i class="fa fa-volume-up fa-lg cursor-stop"></i>
+            <% else %>
+              <a onclick="h=function(event) { event.preventDefault(); $('#audio_<%= hiragana.id%>')[0].play();}; h(event)"><i class="fa fa-volume-up fa-lg"></i></a>
+            <audio id="audio_<%= hiragana.id%>">
+              <source src="<%=hiragana.sound%>" type="audio/mp3">
+                Your browser does not support the video tag.
+            </audio>
+              <% end %>
+          </div>
+
           <!-- image mnémotechnique -->
-           <% if hiragana.upload.blank? %>
-              <div class="idea">
+          <div class="idea">
+            <% if hiragana.upload.blank? %>
+              <i class="fa fa-lightbulb-o fa-lg cursor-stop"></i>
+            <% else %>
+            <span class="popover-trigger"
+              data-toggle="popover"
+              data-content='<%= cl_image_tag(hiragana.upload,
+              :width => 210, :height => 290) %>'>
                 <i class="fa fa-lightbulb-o fa-lg"></i>
-              </div>
-              <% else %>
-                <div class="idea">
-                  <span class="popover-trigger"
-                  data-toggle="popover"
-                  data-content='<%= cl_image_tag(hiragana.upload,
-                  :width => 210, :height => 290) %>'>
-                  <i class="fa fa-lightbulb-o fa-lg"></i>
-                </span>
-              </div>
-            <% end %>
+            </span>
+              <% end %>
+          </div>
 
           <!-- <div class="prononciation">
             <i class="fa fa-comment"></i>
