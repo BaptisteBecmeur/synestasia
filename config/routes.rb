@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'kanjis', to: 'pages#kanjis'
 
   root to: 'pages#home'
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  devise_for :users, controllers: { registrations: 'users/registrations', omniauth_callbacks: 'users/omniauth_callbacks' }
 
   resources :courses, only: [:show] do
     resources :chapters, only: [:show] do
