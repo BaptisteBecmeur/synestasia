@@ -27,6 +27,9 @@ gem 'gibbon'
 gem 'carrierwave'
 gem 'cloudinary'
 
+# seed from heroku to local
+gem 'seed_dump'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-simplemde'
 end
