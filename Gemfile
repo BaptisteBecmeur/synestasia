@@ -22,13 +22,13 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'redcarpet'
 
-gem 'gibbon'
+#gem 'gibbon'
 
 gem 'carrierwave'
 gem 'cloudinary'
 
 # seed from heroku to local
-gem 'seed_dump'
+#gem 'seed_dump'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-simplemde'
