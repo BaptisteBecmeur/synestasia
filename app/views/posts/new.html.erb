@@ -2,6 +2,8 @@
   <div class="container-fluid ">
     <% if current_user.try(:admin?) %>
       <%= render 'form' %>
+      <% else %>
+      <%= render 'hiraganas/redirect' %>
     <% end %>
   </div>
 </div>
