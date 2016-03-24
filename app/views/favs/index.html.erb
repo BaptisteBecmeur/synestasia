@@ -6,7 +6,9 @@
         <div class="text-center">
         <%= link_to hiraganas_path do %>
           <p class="color-link"><i class="fa fa-arrow-left"></i> Retourner vers le tableau</p>
-        <% end %>
+          <% end %>
+        </div>
+
         <% @favs.each do |fav| %>
          <ul class="list-inline text-center card-frame">
             <li>
@@ -65,11 +67,10 @@
                   </div>
                 </div>
               </div>
-
+              </li>
             <% end %>
-          </ul>
 
-        </div>
+          </ul>
       </div>
     </div>
   </div>
