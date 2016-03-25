@@ -124,13 +124,9 @@ ActiveRecord::Schema.define(version: 20160223142858) do
     t.string   "category"
     t.string   "tag"
     t.integer  "user_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.string   "subtitle"
-    t.string   "ideo3"
-    t.string   "ideo4"
-    t.string   "romanji"
-    t.string   "transcription1"
   end
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
