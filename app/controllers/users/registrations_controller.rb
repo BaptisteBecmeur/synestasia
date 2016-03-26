@@ -1,24 +1,24 @@
-# class Users::RegistrationsController < Devise::RegistrationsController
+class Users::RegistrationsController < Devise::RegistrationsController
 
-#   protected
+  protected
 
-#   def update_resource(resource, params)
-#     resource.update_without_password(params)
-#   end
+  def update_resource(resource, params)
+    resource.update_without_password(params)
+  end
 
-#   def after_update_path_for(resource)
-#     user_path(resource)
-#   end
+  def after_update_path_for(resource)
+    root_path(resource #user_path(resource)
+  end
 
-#   private
+  private
 
-#   def sign_up_params
-#     params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :picture)
-#   end
+  def sign_up_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :picture)
+  end
 
-#   def account_update_params
-#     params.require(:user).permit(:first_name, :last_name, :picture, :birth_date, :email, :password, :password_confirmation, :gender, :country, :address, :phone_number, :interests, :language_course)
-#   end
-# end
+  def account_update_params
+    params.require(:user).permit(:first_name, :last_name, :email, :picture, :birth_date, :password, :password_confirmation, :gender, :country, :address, :phone_number, :interests, :language_course)
+  end
+end
 
 
