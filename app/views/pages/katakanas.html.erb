@@ -4,15 +4,15 @@
         <h1 class="text-center"><span class="inset-hiragana">tableau des katakanas</span></h1>
 
       <div class="col-md-8 col-md-offset-2">
-          <div class="text-center">
-            <%= link_to hiraganas_path do %>
-              <p class="color-link"><i class="fa fa-arrow-left"></i> Retourner vers le tableau des hiraganas</p>
+        <div class="text-center">
+          <%= link_to hiraganas_path do %>
+            <p class="color-link"><i class="fa fa-arrow-left"></i> Retourner vers le tableau des hiraganas</p>
             <% end %>
+          </div>
         </div>
       </div>
 
-
-         <ul class=" list-unstyled list-inline margin-iteration text-center">
+        <ul class=" list-unstyled list-inline margin-iteration text-center">
             <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'a' }.each do |hiragana| %>
             <li>
               <%= render 'katakanarender', hiragana: hiragana %>
@@ -60,14 +60,14 @@
         <ul class="list-unstyled list-inline text-center">
           <li>
             <%= link_to "" do %>
-              <div class="mix-button">
+              <div class="mix-button iteration-separator">
                 <h5>Mélanger les katakanas</h5>
               </div>
             <% end %>
           </li>
         </ul>
       </div>
-    </div>
+
   </div>
 </div>
 

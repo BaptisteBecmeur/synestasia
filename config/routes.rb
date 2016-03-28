@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'katakanas', to: 'pages#katakanas'
 
   root to: 'pages#home'
-  devise_for :users, controllers: { registrations: 'users/registrations', omniauth_callbacks: 'users/omniauth_callbacks' }
+  devise_for :users, controllers: {  registrations: 'users/registrations', omniauth_callbacks: 'users/omniauth_callbacks' } #registrations: 'users/registrations',
 
   resources :courses, only: [:show] do
     resources :chapters, only: [:show] do

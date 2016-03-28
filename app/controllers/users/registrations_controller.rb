@@ -7,7 +7,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def after_update_path_for(resource)
-    user_path(resource)
+    root_path(resource #user_path(resource)
   end
 
   private
@@ -17,7 +17,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def account_update_params
-    params.require(:user).permit(:first_name, :last_name, :picture, :birth_date, :email, :password, :password_confirmation, :gender, :country, :address, :phone_number, :interests, :language_course)
+    params.require(:user).permit(:first_name, :last_name, :email, :picture, :birth_date, :password, :password_confirmation, :gender, :country, :address, :phone_number, :interests, :language_course)
   end
 end
 

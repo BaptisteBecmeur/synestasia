@@ -46,7 +46,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  validates :first_name, presence: true
+  #validates :first_name, presence: true
 
   #private
 
