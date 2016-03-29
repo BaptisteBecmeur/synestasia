@@ -12,9 +12,9 @@
         </div>
       </div>
 
-        <ul class=" list-unstyled list-inline margin-iteration text-center">
+        <ul class=" list-unstyled list-inline text-center">
             <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'a' }.each do |hiragana| %>
-            <li class="col-md-3 iteration-separator">
+            <li class="col-md-3">
               <%= render 'katakanarender', hiragana: hiragana %>
             </li>
           <% end %>
@@ -22,36 +22,36 @@
 
         <br/>
 
-        <ul class="list-unstyled list-inline margin-iteration text-center">
+        <ul class="list-unstyled list-inline text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'e' }.each do |hiragana| %>
-          <li class="col-md-3 iteration-separator">
+          <li class="col-md-3">
             <%= render 'katakanarender', hiragana: hiragana %>
           </li>
         <% end %>
         </ul>
 
 
-        <ul class="list-unstyled list-inline margin-iteration text-center">
+        <ul class="list-unstyled list-inline text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'i' }.each do |hiragana| %>
-          <li class="col-md-3 iteration-separator">
+          <li class="col-md-3">
             <%= render 'katakanarender', hiragana: hiragana %>
           </li>
         <% end %>
         </ul>
 
 
-        <ul class="list-unstyled list-inline margin-iteration text-center">
+        <ul class="list-unstyled list-inline text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'o' }.each do |hiragana| %>
-          <li class="col-md-3 iteration-separator">
+          <li class="col-md-3">
             <%= render 'katakanarender', hiragana: hiragana %>
           </li>
         <% end %>
         </ul>
 
 
-        <ul class="list-unstyled list-inline margin-iteration text-center">
+        <ul class="list-unstyled list-inline text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'u' }.each do |hiragana| %>
-          <li class="col-md-3 iteration-separator">
+          <li class="col-md-3">
             <%= render 'katakanarender', hiragana: hiragana %>
           </li>
         <% end %>
