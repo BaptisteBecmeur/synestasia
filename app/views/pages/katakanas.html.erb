@@ -14,16 +14,17 @@
 
         <ul class=" list-unstyled list-inline margin-iteration text-center">
             <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'a' }.each do |hiragana| %>
-            <li class="col-md-3">
+            <li class="col-md-3 iteration-separator">
               <%= render 'katakanarender', hiragana: hiragana %>
             </li>
           <% end %>
         </ul>
 
+        <br/>
 
         <ul class="list-unstyled list-inline margin-iteration text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'e' }.each do |hiragana| %>
-          <li class="col-md-3">
+          <li class="col-md-3 iteration-separator">
             <%= render 'katakanarender', hiragana: hiragana %>
           </li>
         <% end %>
@@ -32,7 +33,7 @@
 
         <ul class="list-unstyled list-inline margin-iteration text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'i' }.each do |hiragana| %>
-          <li class="col-md-3">
+          <li class="col-md-3 iteration-separator">
             <%= render 'katakanarender', hiragana: hiragana %>
           </li>
         <% end %>
@@ -41,7 +42,7 @@
 
         <ul class="list-unstyled list-inline margin-iteration text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'o' }.each do |hiragana| %>
-          <li class="col-md-3">
+          <li class="col-md-3 iteration-separator">
             <%= render 'katakanarender', hiragana: hiragana %>
           </li>
         <% end %>
@@ -50,7 +51,7 @@
 
         <ul class="list-unstyled list-inline margin-iteration text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'u' }.each do |hiragana| %>
-          <li class="col-md-3">
+          <li class="col-md-3 iteration-separator">
             <%= render 'katakanarender', hiragana: hiragana %>
           </li>
         <% end %>
