@@ -22,6 +22,11 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'redcarpet'
 
+
+# social share button
+gem 'social-share-button'
+
+
 #gem 'gibbon'
 
 gem 'carrierwave'

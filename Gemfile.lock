@@ -239,6 +239,9 @@ GEM
       actionpack (~> 4.0)
       activemodel (~> 4.0)
     slop (3.6.0)
+    social-share-button (0.2.0)
+      coffee-rails
+      sass-rails
     spring (1.6.0)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
@@ -292,6 +295,7 @@ DEPENDENCIES
   redcarpet
   sass-rails (~> 5.0)
   simple_form
+  social-share-button
   spring
   uglifier
 

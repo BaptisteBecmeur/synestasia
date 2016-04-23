@@ -20,6 +20,17 @@
               <div class="content-part">
                 <p><%= markdown @post.content %></p>
               </div>
+
+              <%= social_share_button_tag(@post.title, :url => "http://www.synestasia.co/posts/#{@post.id}",
+
+                :'data-source' => "https://raw.github.com/vkulpa/social-share-button/master/lib/assets/images/sprites/social-share-button/tumblr.png", :'data-type' => 'photo',
+
+
+              desc: "The summary of page",
+              via: "Synestasia",
+              :popup => "true") %>
+
+
             <!-- Render generator/showgenerator à mettre ici -->
                 <%= render 'generators/showgenerator' %>
             <!-- Render generator/showgenerator fini ici -->

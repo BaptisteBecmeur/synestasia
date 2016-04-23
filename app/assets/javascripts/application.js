@@ -3,6 +3,7 @@
 //= require bootstrap-sprockets
 //= require bootstrap/popover
 //= require simplemde
+//= require social-share-button
 //= require_tree .
 
 

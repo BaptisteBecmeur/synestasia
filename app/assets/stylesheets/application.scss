@@ -9,10 +9,18 @@
 @import "font-awesome";
 @import "simplemde";
 
+
 // Your CSS
 @import "layout/index";
 @import "components/index";
 @import "pages/index";
 @import "pages/devise";
 @import "vendor/index";
+@import "social-share-button";
+
+/*
+ *= require_tree .
+ *= require social-share-button
+ *= require_self
+ */
 
