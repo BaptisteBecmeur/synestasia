@@ -19,56 +19,55 @@
               <div class="mix-button iteration-separator">
                 <h5>Mélanger les hiraganas</h5>
               </div>
-            <% end %>
-          </li>
+            </li>
+          <% end %>
         </ul>
       </div>
     </div>
 
-        <ul class=" list-unstyled list-inline margin-iteration text-center">
+        <ul class=" list-unstyled list-inline text-center">
             <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'a' }.each do |hiragana| %>
-            <li>
+            <li class="col-md-3" >
               <%= render 'allhiraganas', hiragana: hiragana %>
             </li>
           <% end %>
         </ul>
 
 
-        <ul class="list-unstyled list-inline margin-iteration text-center">
+        <ul class="list-unstyled list-inline text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'e' }.each do |hiragana| %>
-          <li>
+          <li class="col-md-3">
             <%= render 'allhiraganas', hiragana: hiragana %>
           </li>
         <% end %>
         </ul>
 
 
-        <ul class="list-unstyled list-inline margin-iteration text-center">
+        <ul class="list-unstyled list-inline text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'i' }.each do |hiragana| %>
-          <li>
+          <li class="col-md-3">
             <%= render 'allhiraganas', hiragana: hiragana %>
           </li>
         <% end %>
         </ul>
 
 
-        <ul class="list-unstyled list-inline margin-iteration text-center">
+        <ul class="list-unstyled list-inline text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'o' }.each do |hiragana| %>
-          <li>
+          <li class="col-md-3">
             <%= render 'allhiraganas', hiragana: hiragana %>
           </li>
         <% end %>
         </ul>
 
 
-        <ul class="list-unstyled list-inline margin-iteration text-center">
+        <ul class="list-unstyled list-inline text-center">
           <% @hiraganas.select { |hiragana| hiragana.bigletter.last == 'u' }.each do |hiragana| %>
-          <li>
+          <li class="col-md-3">
             <%= render 'allhiraganas', hiragana: hiragana %>
           </li>
         <% end %>
         </ul>
-
 
       <div class="col-md-8 col-md-offset-2">
         <ul class="list-unstyled list-inline text-center ">
@@ -77,8 +76,8 @@
               <div class="mix-button iteration-separator ">
                 <h5>Mélanger les hiraganas</h5>
               </div>
-            <% end %>
-          </li>
+            </li>
+          <% end %>
         </ul>
       </div>
     </div>

@@ -8,6 +8,8 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "simplemde";
+@import "social-share-button";
+
 
 // Your CSS
 @import "layout/index";
@@ -15,4 +17,11 @@
 @import "pages/index";
 @import "pages/devise";
 @import "vendor/index";
+
+
+/*
+ *= require_tree .
+ *= require social-share-button
+ *= require_self
+ */
 

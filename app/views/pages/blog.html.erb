@@ -5,11 +5,12 @@
         <div class="text-center separ-blog">
           <h1>Lisez nos derniers articles</h1>
         </div>
-        <div class="text-center buttons-view-post">
+         <div class="text-center buttons-view-post separ-blog">
           <% if current_user.try(:admin?) %>
-        <%= link_to "Créer un article", new_post_path, class: "btn btn-default btn-md" %>
-          <% end %>
+          <%= link_to "Créer un article", new_post_path, class: "btn btn-default btn-md" %>
+        <% end %>
         </div>
+
           <ul>
             <% @posts.each do |post| %>
             <li class=" col-sm-12 col-xs-12 col-md-4 container-cards">
